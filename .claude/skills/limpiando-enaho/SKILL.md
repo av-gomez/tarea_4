@@ -1,10 +1,10 @@
 ---
 name: limpiando-enaho
-description: Limpia, une y valida los módulos 34 (sumaria) y 02 (miembros) de la ENAHO 2024 del INEI y produce bases de personas y hogares con pobreza monetaria, departamento, área y factores de expansión, más indicadores ponderados con intervalos de confianza. Úsala cuando pidan limpiar o procesar la ENAHO, calcular la pobreza (nacional, urbana, rural, por departamento, sexo o edad), validar cifras del INEI, o cuando otra skill necesite salidas/personas_2024.parquet o salidas/indicadores.csv.
-argument-hint: "[--forzar]"
+description: Limpia, une y valida los módulos 34 (sumaria) y 02 (miembros) de la ENAHO 2019-2025 del INEI (un año o la serie completa, más cualquier otro módulo) y produce bases de personas y hogares con pobreza monetaria, departamento, área y factores de expansión, más indicadores ponderados con intervalos de confianza. Úsala cuando pidan limpiar o procesar la ENAHO, calcular la pobreza (nacional, urbana, rural, por departamento, sexo o edad), validar cifras del INEI, o cuando otra skill necesite salidas/personas_2024.parquet o salidas/indicadores.csv.
+argument-hint: "[--anio 2025 | --anios 2019 ... 2025] [--modulos 03 05] [--forzar]"
 ---
 
-# Limpiar y validar la ENAHO 2024
+# Limpiar y validar la ENAHO (2019-2025)
 
 Esta skill es la base del sistema: las skills `graficando-enaho`, `mapeando-enaho` e `informando-investigacion`
 consumen lo que produce. Toda cifra de ENAHO del proyecto sale de aquí; nunca se escriben cifras a mano.
@@ -17,11 +17,18 @@ consumen lo que produce. Toda cifra de ENAHO del proyecto sale de aquí; nunca s
    uv run .claude/skills/limpiando-enaho/scripts/descargar.py
    ```
 
-2. Ejecuta exactamente (añade `--forzar` solo si piden rehacer la base):
+2. Ejecuta exactamente (añade `--forzar` solo si piden rehacer la base). Los zip que falten se descargan solos:
 
    ```bash
    uv run .claude/skills/limpiando-enaho/scripts/limpiar.py $ARGUMENTS
+   uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --anios 2019 2020 2021 2022 2023 2024 2025
+   uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --anio 2025 --modulos 01 03 04 05
    ```
+
+   Años: 2019 (código INEI 687), 2020 (737), 2021 (759), 2022 (784), 2023 (906), 2024 (966), 2025 (1031).
+   Cada año se valida contra la pobreza oficial publicada por el INEI (nacional, urbana, rural y extrema).
+   `--modulos` une otros módulos a nivel persona u hogar con validación m:1 (los de detalle se agregan con
+   `explorando-enaho`).
 
 3. Lee `salidas/validacion.txt`. Si dice `FALLO DE VALIDACION ESENCIAL`, detente e informa cuál verificación
    falló. No ajustes filtros, ponderadores ni cifras para forzar la coincidencia con el INEI.
@@ -37,6 +44,8 @@ consumen lo que produce. Toda cifra de ENAHO del proyecto sale de aquí; nunca s
 | `salidas/hogares_2024.parquet` | 33,691 hogares, con `pondera = factor07 × mieperho` |
 | `salidas/indicadores.csv` | Pobreza total y extrema por área, región, dominio, departamento, sexo, edad y jefatura |
 | `salidas/validacion.txt` | 18 verificaciones, cada una APROBADA, FALLIDA o ADVERTENCIA |
+| `salidas/{personas,hogares}_<año>.parquet`, `indicadores_<año>.csv`, `validacion_<año>.txt` | Lo mismo para cada año 2019-2025 |
+| `salidas/serie_indicadores.csv` | Todos los años procesados en una tabla larga (columna `anio`) |
 
 ## Reglas que el script aplica (no se discuten)
 

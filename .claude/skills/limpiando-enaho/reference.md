@@ -55,3 +55,25 @@ El zip del módulo 34 incluye también `sumaria-2024-12g.dta` (gasto en 12 grupo
 | Residentes habituales | 108,664 |
 | Hogares | 33,691 |
 | Departamentos | 25 (ver `referencias/pobreza_departamento_2024.csv`) |
+
+## Serie 2019-2025 (verificada al procesar cada año)
+
+| Año | Código INEI | Pobreza oficial | Calculada | Urbana | Rural | Extrema |
+|---|---|---:|---:|---:|---:|---:|
+| 2019 | 687 | 20.2 | 20.19 | 14.58 | 40.78 | 2.85 |
+| 2020 | 737 | 30.1 | 30.13 | 26.03 | 45.72 | 5.15 |
+| 2021 | 759 | 25.9 | 25.87 | 22.33 | 39.71 | 4.12 |
+| 2022 | 784 | 27.5 | 27.52 | 24.14 | 41.12 | 5.01 |
+| 2023 | 906 | 29.0 | 29.05 | 26.43 | 39.79 | 5.75 |
+| 2024 | 966 | 27.6 | 27.58 | 24.81 | 39.30 | 5.50 |
+| 2025 | 1031 | 25.7 | 25.67 | 23.41 | 35.45 | 4.65 |
+
+Las variables clave (llaves, `pobreza`, `factor07`, `mieperho`, `estrato`, `dominio`, `p203`-`p208a`,
+`facpob07`) tienen el mismo nombre en los siete años. Cifras oficiales: informes técnicos de pobreza monetaria
+del INEI (2025: publicado el 5 de mayo de 2026).
+
+## Otros módulos
+
+`comun/enaho.py` lee cualquiera de los 29 módulos (`enaho.MODULOS`), detecta su nivel (persona, hogar o
+detalle) por la unicidad de las llaves y los une sin duplicar filas. El diccionario oficial de cada archivo se
+obtiene con `explorando-enaho` (`explorar.py diccionario`).

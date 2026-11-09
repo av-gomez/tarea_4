@@ -88,6 +88,8 @@ def graficar(tipo: str, numero: int, ind: pd.DataFrame) -> dict:
     if horizontal:
         alto = 0.28 * len(d) + 2.2
         fig, ax = plt.subplots(figsize=(7.5, alto))
+        ax.grid(axis="y", visible=False)
+        ax.grid(axis="x")
         colores = [apa.AZUL if v > nac else apa.AZUL_CLARO for v in d.valor_pct]
         ax.barh(d.categoria, d.valor_pct, xerr=err, color=colores, edgecolor="none", height=0.7,
                 error_kw={"elinewidth": 0.8, "ecolor": "#404040", "capsize": 2})

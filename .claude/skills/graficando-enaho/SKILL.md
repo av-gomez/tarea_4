@@ -1,10 +1,28 @@
 ---
 name: graficando-enaho
-description: Genera gráficos en formato APA 7 (Times New Roman, título en cursiva, nota con fuente) de la pobreza monetaria de la ENAHO 2024 del INEI por área urbana y rural, sexo, grupo de edad, sexo del jefe de hogar, región natural, dominio o departamento, con estimaciones ponderadas e intervalos de confianza. Úsala cuando pidan graficar, visualizar o comparar la pobreza en el Perú entre grupos o regiones con la ENAHO.
+description: Genera gráficos con el sistema visual del proyecto (APA 7) de la pobreza monetaria de la ENAHO 2019-2025 del INEI: tendencias con bandas de confianza, distribución del gasto frente a la línea de pobreza, mapas de calor por departamento y año, gráficos de pendiente, perfiles de brechas entre pobres y no pobres, waffle, panel inflación-pobreza y barras por área urbana y rural, sexo, grupo de edad, sexo del jefe de hogar, región natural, dominio o departamento, con estimaciones ponderadas e intervalos de confianza. Úsala cuando pidan graficar, visualizar o comparar la pobreza en el Perú entre grupos o regiones con la ENAHO.
 argument-hint: "[area|sexo|edad|sexo_jefe|region|dominio|departamento|extrema|todos] [numero de figura]"
 ---
 
-# Graficar la pobreza con la ENAHO 2024
+# Graficar la pobreza con la ENAHO
+
+## Visualizaciones avanzadas (`scripts/visualizar.py`, varios años)
+
+| Pedido | Subcomando |
+|---|---|
+| tendencia, evolución, 2019-2025 | `evolucion` (líneas con IC 95 %, etiquetas directas) |
+| distribución, cuán lejos de la línea de pobreza | `distribucion` (crestas por año) |
+| departamentos por año | `calor` (mapa de calor) |
+| qué departamentos subieron o bajaron | `pendiente --desde 2019 --hasta 2025` |
+| brechas de acceso pobres vs no pobres | `perfil --indicadores <nombres en tablas/indicador_*.csv>` |
+| cifra destacada "de cada 100" | `waffle --anio 2025` |
+| inflación y pobreza juntas (paneles, sin doble eje) | `macro --bcrp tablas/bcrp_inflacion.csv` |
+
+`uv run .claude/skills/graficando-enaho/scripts/visualizar.py <subcomando> --numero <n>`. Requiere
+`salidas/serie_indicadores.csv` (`limpiando-enaho --anios ...`). Cada comando imprime el pie APA (título y
+nota) para el Markdown; las imágenes no llevan texto incrustado salvo con `--encabezado`.
+
+## Barras de un año (`scripts/graficar.py`)
 
 1. Si no existen `salidas/personas_2024.parquet` y `salidas/indicadores.csv`, usa primero la skill
    `limpiando-enaho` (ejecuta `uv run .claude/skills/limpiando-enaho/scripts/limpiar.py`) y comprueba que su

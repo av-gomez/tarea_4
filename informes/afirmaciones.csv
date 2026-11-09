@@ -1,7 +1,19 @@
 id,afirmacion,fuente,codigo,periodo,agregacion,valor_informe,tolerancia
 f1,Inflación de diciembre de 2022 (8.46 %),bcrp,PN01273PM,2022-12,valor,8.46,0.01
-f2,Inflación de diciembre de 2024 (1.97 %),bcrp,PN01273PM,2024-12,valor,1.97,0.01
-f3,Inflación promedio de 2022 (7.86 %),bcrp,PN01273PM,2022,promedio,7.86,0.01
-f4,Pobreza rural 2024 (39.30 %),enaho,area,Rural,pobreza_monetaria,39.3,0.05
-f5,Pobreza urbana 2024 (24.81 %),enaho,area,Urbana,pobreza_monetaria,24.81,0.05
-f6,Pobreza en Cajamarca 2024 (45.01 %),enaho,departamento,06,pobreza_monetaria,45.01,0.05
+f2,Inflación máxima del periodo en junio de 2022 (8.81 %),bcrp,PN01273PM,2022-06,valor,8.81,0.01
+f3,Inflación promedio de 2025 (1.50 %),bcrp,PN01273PM,2025,promedio,1.50,0.01
+f4,Inflación de diciembre de 2025 (1.51 %),bcrp,PN01273PM,2025-12,valor,1.51,0.01
+f5,Crecimiento real del PBI en 2020 (-10.93 %),bcrp,PM04923AA,2020,valor,-10.93,0.01
+f6,Crecimiento real del PBI en 2021 (13.42 %),bcrp,PM04923AA,2021,valor,13.42,0.01
+f7,Crecimiento real del PBI en 2025 (3.43 %),bcrp,PM04923AA,2025,valor,3.43,0.01
+f8,Pobreza nacional 2019 (20.19 %),enaho,nacional,Perú,pobreza_monetaria@2019,20.19,0.05
+f9,Pobreza nacional 2020 (30.13 %),enaho,nacional,Perú,pobreza_monetaria@2020,30.13,0.05
+f10,Pobreza nacional 2025 (25.67 %),enaho,nacional,Perú,pobreza_monetaria@2025,25.67,0.05
+f11,Pobreza rural 2019 (40.78 %),enaho,area,Rural,pobreza_monetaria@2019,40.78,0.05
+f12,Pobreza urbana 2019 (14.58 %),enaho,area,Urbana,pobreza_monetaria@2019,14.58,0.05
+f13,Pobreza rural 2025 (35.46 %),enaho,area,Rural,pobreza_monetaria@2025,35.46,0.05
+f14,Pobreza urbana 2025 (23.41 %),enaho,area,Urbana,pobreza_monetaria@2025,23.41,0.05
+f15,Pobreza en Cajamarca 2025 (41.04 %),enaho,departamento,06,pobreza_monetaria@2025,41.04,0.05
+f16,Pobreza en Lima 2019 (14.21 %),enaho,departamento,15,pobreza_monetaria@2019,14.21,0.05
+f17,Pobreza en Lima 2025 (26.33 %),enaho,departamento,15,pobreza_monetaria@2025,26.33,0.05
+f18,Pobreza extrema nacional 2025 (4.65 %),enaho,nacional,Perú,pobreza_extrema@2025,4.65,0.05

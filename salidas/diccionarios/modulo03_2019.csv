@@ -1,0 +1,477 @@
+anio,modulo,variable,etiqueta,valores
+2019,03,anio,año de la encuesta,
+2019,03,mes,mes de ejecución de la encuesta,
+2019,03,nconglome,número de conglomerado (proveniente del marco),
+2019,03,conglome,número de conglomerado,
+2019,03,vivienda,número de selección de la vivienda,
+2019,03,hogar,número secuencial del hogar,
+2019,03,codperso,código de la persona,
+2019,03,ubigeo,ubicación geográfica,
+2019,03,dominio,dominio geográfcio,1=costa norte; 2=costa centro; 3=costa sur; 4=sierra norte; 5=sierra centro; 6=sierra sur; 7=selva; 8=lima metropolitana
+2019,03,estrato,estrato geográfico,1=de 500 000 a más habitantes; 2= de 100 000 a 499 999 habitantes; 3= de 50 000 a 99 999 habitantes; 4= de 20 000 a 49 999 habitantes; 5= de 2 000 a 19 999 habitantes; 6= de 500 a 1 999 habitantes; 7= Área de empadronamiento rural (aer) compuesto; 8= Área de empadronamiento rural (aer) simple
+2019,03,codinfor,código de informante del capítulo 300,
+2019,03,p300n,número de la persona,
+2019,03,p300i,código de informante,
+2019,03,p300a,¿cuál es el idioma o lengua materna que aprendió en su niñez?,1=quechua; 2=aymará; 3=otra lengua nativa; 4=castellano; 6=portugués; 7=otra lengua extranjera; 8=no escucha/no habla; 9=lengua de señas peruanas
+2019,03,p301a,¿cuál es el último año o grado de estudios y nivel que aprobó? - nivel,1=sin nivel; 2=educación inicial; 3=primaria incompleta; 4=primaria completa; 5=secundaria incompleta; 6=secundaria completa; 7=superior no universitaria incompleta; 8=superior no universitaria completa; 9=superior universitaria incompleta; 10=superior universitaria completa; 11=maestria/doctorado; 12=básica especial
+2019,03,p301b,¿cuál es el último año o grado de estudios y nivel que aprobó? - año,
+2019,03,p301c,¿cuál es el último año o grado de estudios y nivel que aprobó? - grado,
+2019,03,p301d,¿cuál es el último año o grado de estudios y nivel que aprobó? - centro de estud,1=estatal; 2=no estatal
+2019,03,p301a0,¿cuál es la carrera superior universitaria o no universitaria que ud. estudia o ,0=respondió; 1=ninguna; 2=no sabe
+2019,03,p301a1,código de la carrera superior universitaria o no universitaria que ud. estudia o,"11015=armas submarinas; 11016=ciencias de la administración aeroespacial (aviacion); 11025=artilleria; 11026=ciencias militares (ejercito); 11035=capitania y guardacostas; 11036=ciencias administrativas maritimas (marina); 11045=defensa aerea; 11055=fuerzas especiales; 11065=infanteria de marina; 11075=inteligencia; 11085=maniobras; 11095=operaciones especiales; 11105=policia naval; 11115=seguridad e instruccion militar; 11125=sensores; 21015=administración y ciencias policiales; 21016=administración y ciencias policiales (oficiales); 111015=educación inicial; 111016=educación básica, inicial y primaria; 111025=educación inicial (intercultural y bilingue); 111026=educación inicial; 111036=educación inicial -  niniez temprana; 111046=educación inicial -  retardo mental; 111056=educación inicial bilingue; 111066=educación inicial y arte; 111076=educación intercultural bilingue: nivel inicial y nivel primaria; 112015=educación primaria; 112016=educación primaria; 112025=educación primaria (intercultural y bilingue); 112026=educación primaria -  educación basica alternativa; 112036=educación primaria - ingles; 112046=educación primaria intercultural; 112056=educación primaria y bilingue; 112066=educación primaria y bilingue intercultural; 112076=educación primaria y problemas de aprendizaje; 121015=educación en computacion e informatica; 121016=educación secundaria; 121025=educación en idiomas - ingles; 121026=educación secundaria - antropologia social; 121035=educación para el trabajo"
+2019,03,p301b0,¿cuál es el nombre del centro de estudios donde estudia o ha estudiado la carrer,0=pase; 1=no sabe/no recuerda
+2019,03,p301b1,código del centro de estudios donde estudia o ha estudiado la carrera superior u,140332361=instituto de educación superior tecnologica (iest) naciones unidas; 140337915=instituto de educación superior tecnologica (iest) argentina; 140337931=instituto de educación superior tecnologica (iest) disenio y comunicacion; 140359729=instituto de educación superior tecnologica (iest) carlos salazar romero; 140450114=instituto de educación superior tecnologica (iest) jose pardo; 140478412=instituto de educación superior tecnologica (iest) maria rosario araoz pinto; 140479048=instituto de educación superior tecnologica (iest) santiago antunez de mayolo; 140481085=instituto de educación superior tecnologica (iest) pedro p. diaz; 140481093=instituto de educación superior tecnologica (iest) jose carlos mariategui- mariscal nieto; 140481127=instituto de educación superior tecnologica (iest) tupac amaru; 140481143=instituto de educación superior tecnologica (iest) pedro a. del aguila hidalgo; 140481218=instituto de educación superior tecnologica (iest) jose antonio encinas; 140481226=instituto de educación superior tecnologica (iest) manuel nuniez butron; 140508473=instituto de educación superior tecnologica (iest) victor alvarez huapaya; 140510784=instituto de educación superior tecnologica (iest) cap fap jose abelardo quiniones; 140517664=instituto de educación superior tecnologica (iest) chincha; 140520197=instituto de educación superior tecnologica (iest) la salle; 140521682=instituto de educación superior tecnologica (iest) nor oriental de la selva; 140532226=instituto de educación superior tecnologica (iest) huarmaca; 140551317=instituto de educación superior tecnologica (iest) francisco de paula gonzales vigil; 140560615=instituto de educación superior tecnologica (iest) san andres - ayabaca; 140563460=instituto de educación superior tecnologica (iest) pisco; 140563619=instituto de educación superior tecnologica (iest) catalina buendia de pecho; 140567313=instituto de educación superior tecnologica (iest) adolfo vienrich; 140568154=instituto de educación superior tecnologica (iest) peru-japon; 140575746=instituto de educación superior tecnologica (iest) pasco; 140584672=instituto de educación superior tecnologica (iest) eleazar guzman barron; 140584722=instituto de educación superior tecnologica (iest) suiza; 140586628=instituto de educación superior tecnologica (iest) aparicio pomares; 140588012=instituto de educación superior tecnologica (iest) trujillo; 140591941=instituto de educación superior tecnologica (iest) 4 de junio de 1821; 140597237=instituto de educación superior tecnologica (iest) simon bolivar - callao; 140605717=instituto de educación superior tecnologica (iest) general oscar arteta terzi; 140606475=instituto de educación superior tecnologica (iest) pedro ortiz montoya; 140606541=instituto de educación superior tecnologica (iest) cajamarca; 140622365=instituto de educación superior tecnologica (iest) nueva esperanza; 140622860=instituto de educación superior tecnologica (iest) sullana; 140623082=instituto de educación superior tecnologica (iest) julio cesar tello; 140626192=instituto de educación superior tecnologica (iest) república federal de alemania; 140630467=instituto de educación superior tecnologica (iest) juli
+2019,03,p301b3,código del departamento donde estudia o ha estudiado la carrera superior univers,
+2019,03,p302,¿sabe leer y escribir? - respuesta espontánea,1=si; 2=no
+2019,03,p302x,¿sabe leer y escribir? - aplicó cartilla,1=si; 2=no; 3=no se aplicó cartilla
+2019,03,p302a,"en los últimos 12 meses, ¿recibió programa de alfabetización ?",1=si; 2=no
+2019,03,p302b,¿quién le dio?,1=pronama/dialfa; 2=iglesia; 3=ong; 4=otro
+2019,03,p303,"el año pasado (...), ¿estuvo matriculado en algún centro o programa de educación",1=si; 2=no
+2019,03,p304a,¿cuál es el grado o año de estudios al que asistió el año pasado (...)?  nivel,1=educación inicial; 2=primaria; 3=secundaria; 4=superior no universitaria; 5=superior universitaria; 6=maestria/doctorado; 7=básica especial
+2019,03,p304b,¿cuál es el grado o año de estudios al que asistió el año pasado ()?  año,
+2019,03,p304c,¿cuál es el grado o año de estudios al que asistió el año pasado (...)?  grado,
+2019,03,p304d,¿cuál es el grado o año de estudios al que asistió el año pasado ()?  centro d,1=estatal; 2=no estatal
+2019,03,p305,el resultado que obtuvo el año pasado (...) fue :,"1=aprobado; 2=desaprobado; 3=retirado; 4=otro; 5=no aprueba, ni desaprueba (inicial)"
+2019,03,p306,"este año, ¿está matriculado en algún centro o programa de educación básica o sup",1=si; 2=no
+2019,03,p307,"actualmente, ¿asiste a algún centro o programa de educación básica o superior ?",1=si; 2=no
+2019,03,p308a,¿cuál es el grado o año de estudios en el que está matriculado? - nivel,1=educacion inicial; 2=primaria; 3=secundaria; 4=superior no universitaria; 5=superior universitaria; 6=maestria/doctorado; 7=básica especial
+2019,03,p308b,¿cuál es el grado o año de estudios en el que está matriculado? - año,
+2019,03,p308c,¿cuál es el grado o año de estudios en el que está matriculado? - grado,
+2019,03,p308d,¿cuál es el grado o año de estudios en el que está matriculado? -  centro de est,1=estatal; 2=no estatal
+2019,03,p308b1,"en su opinión, ¿el servicio educativo que brinda el centro de eseñanza donde asi",1=muy malo; 2=malo; 3=bueno; 4=muy bueno; 5=no sabe
+2019,03,p308b2,"en su opinión, ¿el servicio educativo que brinda el centro de eseñanza donde asi",1=muy malo; 2=malo; 3=bueno; 4=muy bueno; 5=no sabe
+2019,03,p308b3,"en su opinión, ¿el servicio educativo que brinda el centro de eseñanza donde asi",1=muy malo; 2=malo; 3=bueno; 4=muy bueno; 5=no sabe
+2019,03,p308b4,"en su opinión, ¿el servicio educativo que brinda el centro de eseñanza donde asi",1=muy malo; 2=malo; 3=bueno; 4=muy bueno; 5=no sabe
+2019,03,p308b5,"en su opinión, ¿el servicio educativo que brinda el centro de eseñanza donde asi",1=muy malo; 2=malo; 3=bueno; 4=muy bueno; 5=no sabe
+2019,03,p308c1,"la institución educativa o colegio, instituto superior o universidad a la que as",0=en otro distrito; 1=aquí en este distrito
+2019,03,p308c2,"la institución educativa o colegio, instituto superior o universidad a la que as",
+2019,03,p310,"en los últimos 12 meses, de ... a ... ¿recibió enseñanza en algún centro o progr",1=si; 2=no
+2019,03,p310b1,"en el presente año o en años anteriores, ¿recibió enseñanza del nivel auxiliar t",1=si; 2=no
+2019,03,p310c0,no sabe-¿cuál es el nombre de la última carrera de nivel auxiliar técnico o técn,0=pase; 1=no sabe
+2019,03,p310c1,"código de la  última carrera de nivel auxiliar técnico o técnico, que usted estu",131014=deportes; 131024=direccion tecnica en futbol; 214013=idioma; 216014=literatura biblica; 216024=teologia pastoral; 222013=encuadernacion; 222014=publicidad y medios digitales; 222023=serigrafia; 226013=artesania en ceramica; 226014=joyeria; 226023=artesania en cuero y pieles; 226033=artesania en madera; 226043=artesania en metales; 226053=artesania en piedra tallada; 226063=artesania en textiles; 226073=bisuteria; 226083=decoracion de eventos; 226093=pintura; 311013=asistente adulto mayor; 311023=asistente de ninios; 311033=cuidado de ninios; 311043=cuidado de ninios y ancianos; 313014=psicoterapia psicoanalitica; 321014=producción radial y televisiva; 322013=locucion y comunicacion de radio y tv; 322014=locucion y comunicacion de radio y television; 322023=teleoperador de call center; 323014=operacion de equipos de grabacion y mezcla; 323024=operacion de equipos de radio y television; 323034=operacion de sistemas de difusion sonora; 332013=asistencia de panaderia y pasteleria; 332014=administración de hosteleria; 332023=asistencia en cocina; 332024=administración de hoteles; 332033=barman; 332034=administración de restaurantes; 332043=cocina (alta cocina); 332044=administración turistica; 332053=cocina y reposteria; 332054=aviacion comercial
+2019,03,p310d1,¿cuál es el tiempo de duración de la carrera de nivel auxiliar técnico o técnico,
+2019,03,p310d2,¿cuál es el tiempo de duración de la carrera de nivel auxiliar técnico o técnico,
+2019,03,p310e0,¿cuál es el nombre del centro de estudios donde estudia o ha estudiado la carrer,0=pase; 1=no sabe/no recuerda
+2019,03,p310e1,código del centro de estudios donde estudia o ha estudiado la carrera de nivel a,130064030=centros de educación técnico productiva (cetpro) 34007-iv centenario; 130207647=centros de educación técnico productiva (cetpro) clorinda mattos de turner; 130207654=centros de educación técnico productiva (cetpro) tinta; 130207696=centros de educación técnico productiva (cetpro) dionicia herrera alvarado; 130207712=centros de educación técnico productiva (cetpro) juan tomas tuiro tupac inca; 130207761=centros de educación técnico productiva (cetpro) andahuaylas; 130209635=centros de educación técnico productiva (cetpro) nuestra señora de las mercedes; 130209668=centros de educación técnico productiva (cetpro) naciones unidas; 130238865=centros de educación técnico productiva (cetpro) cesar vallejo; 130238881=centros de educación técnico productiva (cetpro) bilingue de yarina cocha; 130240010=centros de educación técnico productiva (cetpro) horacio zevallos gamez; 130240036=centros de educación técnico productiva (cetpro) huancane; 130240044=centros de educación técnico productiva (cetpro) pucara; 130240069=centros de educación técnico productiva (cetpro) puno; 130240085=centros de educación técnico productiva (cetpro) juli; 130240093=centros de educación técnico productiva (cetpro) asillo; 130262329=centros de educación técnico productiva (cetpro) chachapoyas; 130263137=centros de educación técnico productiva (cetpro) santa maria de la merced; 130263152=centros de educación técnico productiva (cetpro) nieva; 130266700=centros de educación técnico productiva (cetpro) indiana; 130266791=centros de educación técnico productiva (cetpro) aucayo; 130274019=centros de educación técnico productiva (cetpro) juan pablo mori; 130276204=centros de educación técnico productiva (cetpro) santiago; 130276212=centros de educación técnico productiva (cetpro) manuel corpus de la cruz; 130276220=centros de educación técnico productiva (cetpro) ica; 130276246=centros de educación técnico productiva (cetpro) nuestra señora de las mercedes; 130285825=centros de educación técnico productiva (cetpro) sicuani; 130285841=centros de educación técnico productiva (cetpro) san pablo; 130290940=centros de educación técnico productiva (cetpro) kotosh; 130290999=centros de educación técnico productiva (cetpro) inca garcilazo de la vega; 130305631=centros de educación técnico productiva (cetpro) carlos cueto fernandini; 130310706=centros de educación técnico productiva (cetpro) 40049 dean valdivia; 130310730=centros de educación técnico productiva (cetpro) jose caceres bernal; 130326116=centros de educación técnico productiva (cetpro) centro folklorico del magisterio alejandro vivanco guerra; 130327528=centros de educación técnico productiva (cetpro) 002 tumbes; 130329912=centros de educación técnico productiva (cetpro) nuestra señora de lourdes; 130329987=centros de educación técnico productiva (cetpro) 7047 tacna; 130330001=centros de educación técnico productiva (cetpro) villa jardin; 130330027=centros de educación técnico productiva (cetpro) pedro paulet; 130330035=centros de educación técnico productiva (cetpro) jose olaya
+2019,03,p310e3,código del departamento del centro de estudios donde estudia o ha estudiado la c,0=búsqueda; 1=amazonas; 2=ancash; 3=apurímac; 4=arequipa; 5=ayacucho; 6=cajamarca; 7=callao; 8=cusco; 9=huancavelica; 10=huánuco; 11=ica; 12=junín; 13=la libertad; 14=lambayeque; 15=lima; 16=loreto; 17=madre de dios; 18=moquegua; 19=pasco; 20=piura; 21=puno; 22=san martín; 23=tacna; 24=tumbes; 25=ucayali
+2019,03,p311n_1,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=uniforme escolar
+2019,03,p311n_2,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",2=calzado escolar
+2019,03,p311n_3,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",3=libros y textos
+2019,03,p311n_4,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",4=Útiles escolares
+2019,03,p311n_5,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",5=matricula
+2019,03,p311n_6,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",6=apafa
+2019,03,p311n_7,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",7=otros
+2019,03,p311n_8,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",8=laptop del programa - una laptop por niño
+2019,03,p311_1,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=sí; 2=no
+2019,03,p311_2,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=sí; 2=no
+2019,03,p311_3,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=sí; 2=no
+2019,03,p311_4,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=sí; 2=no
+2019,03,p311_5,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=sí; 2=no
+2019,03,p311_6,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=sí; 2=no
+2019,03,p311_7,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=sí; 2=no
+2019,03,p311_8,"en los últimos 12 meses de ... a ... ,¿ gastó, obtuvo, consiguió o le regalaron:",1=sí; 2=no
+2019,03,p311a1_1,¿cómo obtuvieron el(la) - uniforme escolar?: comprado,1=comprado
+2019,03,p311a1_2,¿cómo obtuvieron el(la) - calzado escolar?: comprado,1=comprado
+2019,03,p311a1_3,¿cómo obtuvieron el(la) - libros y textos?: comprado,1=comprado
+2019,03,p311a1_4,¿cómo obtuvieron el(la) - Útiles escolares?: comprado,1=comprado
+2019,03,p311a1_5,¿cómo obtuvieron el(la) - matrícula?: comprado,1=comprado
+2019,03,p311a1_6,¿cómo obtuvieron el(la) - apafa?: comprado,1=comprado
+2019,03,p311a1_7,"¿cómo obtuvieron el(la) - otros (fotocopias, cuotas extraordinarias, etc)?: comp",1=comprado
+2019,03,p311a1_8,¿cómo obtuvieron el(la) - laptop del programa una laptop por niño?: comprado,1=comprado
+2019,03,p311a2_1,¿cómo obtuvieron el(la) - uniforme escolar?: autoconsumo,1=autoconsumo
+2019,03,p311a2_2,¿cómo obtuvieron el(la) - calzado escolar?: autoconsumo,1=autoconsumo
+2019,03,p311a2_3,¿cómo obtuvieron el(la) - libros y textos?: autoconsumo,1=autoconsumo
+2019,03,p311a2_4,¿cómo obtuvieron el(la) - Útiles escolares?: autoconsumo,1=autoconsumo
+2019,03,p311a2_5,¿cómo obtuvieron el(la) - matrícula?: autoconsumo,1=autoconsumo
+2019,03,p311a2_6,¿cómo obtuvieron el(la) - apafa?: autoconsumo,1=autoconsumo
+2019,03,p311a2_7,"¿cómo obtuvieron el(la) - otros (fotocopias, cuotas extraordinarias, etc)?: auto",1=autoconsumo
+2019,03,p311a2_8,¿cómo obtuvieron el(la) - laptop del programa una laptop por niño?: autoconsumo,1=autoconsumo
+2019,03,p311a3_1,¿cómo obtuvieron el(la) - uniforme escolar?: autosuministro,1=autosuministro
+2019,03,p311a3_2,¿cómo obtuvieron el(la) - calzado escolar?: autosuministro,1=autosuministro
+2019,03,p311a3_3,¿cómo obtuvieron el(la) - libros y textos?: autosuministro,1=autosuministro
+2019,03,p311a3_4,¿cómo obtuvieron el(la) - Útiles escolares?: autosuministro,1=autosuministro
+2019,03,p311a3_5,¿cómo obtuvieron el(la) - matrícula?: autosuministro,1=autosuministro
+2019,03,p311a3_6,¿cómo obtuvieron el(la) - apafa?: autosuministro,1=autosuministro
+2019,03,p311a3_7,"¿cómo obtuvieron el(la) - otros (fotocopias, cuotas extraordinarias, etc)?: auto",1=autosuministro
+2019,03,p311a3_8,¿cómo obtuvieron el(la) - laptop del programa una laptop por niño?: autosuminist,1=autosuministro
+2019,03,p311a4_1,¿cómo obtuvieron el(la) - uniforme escolar?: pago en especie,1=pago en especie
+2019,03,p311a4_2,¿cómo obtuvieron el(la) - calzado escolar?: pago en especie,1=pago en especie
+2019,03,p311a4_3,¿cómo obtuvieron el(la) - libros y textos?: pago en especie,1=pago en especie
+2019,03,p311a4_4,¿cómo obtuvieron el(la) - Útiles escolares?: pago en especie,1=pago en especie
+2019,03,p311a4_5,¿cómo obtuvieron el(la) - matrícula?: pago en especie,1=pago en especie
+2019,03,p311a4_6,¿cómo obtuvieron el(la) - apafa?: pago en especie,1=pago en especie
+2019,03,p311a4_7,"¿cómo obtuvieron el(la) - otros (fotocopias, cuotas extraordinarias, etc)?: pago",1=pago en especie
+2019,03,p311a4_8,¿cómo obtuvieron el(la) - laptop del programa una laptop por niño?: pago en espe,1=pago en especie
+2019,03,p311a5_1,¿cómo obtuvieron el(la) - uniforme escolar?: otros hogares,1=otros hogares
+2019,03,p311a5_2,¿cómo obtuvieron el(la) - calzado escolar?: otros hogares,1=otros hogares
+2019,03,p311a5_3,¿cómo obtuvieron el(la) - libros y textos?: otros hogares,1=otros hogares
+2019,03,p311a5_4,¿cómo obtuvieron el(la) - Útiles escolares?: otros hogares,1=otros hogares
+2019,03,p311a5_5,¿cómo obtuvieron el(la) - matrícula?: otros hogares,1=otros hogares
+2019,03,p311a5_6,¿cómo obtuvieron el(la) - apafa?: otros hogares,1=otros hogares
+2019,03,p311a5_7,"¿cómo obtuvieron el(la) - otros (fotocopias, cuotas extraordinarias, etc)?: otro",1=otros hogares
+2019,03,p311a5_8,¿cómo obtuvieron el(la) - laptop del programa una laptop por niño?: otros hogare,1=otros hogares
+2019,03,p311a6_1,¿cómo obtuvieron el(la) - uniforme escolar?: programa social,1=programa social
+2019,03,p311a6_2,¿cómo obtuvieron el(la) - calzado escolar?: programa social,1=programa social
+2019,03,p311a6_3,¿cómo obtuvieron el(la) - libros y textos?: programa social,1=programa social
+2019,03,p311a6_4,¿cómo obtuvieron el(la) - Útiles escolares?: programa social,1=programa social
+2019,03,p311a6_5,¿cómo obtuvieron el(la) - matrícula?: programa social,1=programa social
+2019,03,p311a6_6,¿cómo obtuvieron el(la) - apafa?: programa social,1=programa social
+2019,03,p311a6_7,"¿cómo obtuvieron el(la) - otros (fotocopias, cuotas extraordinarias, etc)? progr",1=programa social
+2019,03,p311a6_8,¿cómo obtuvieron el(la) - laptop del programa una laptop por niño?: programa soc,1=programa social
+2019,03,p311a7_1,¿cómo obtuvieron el(la) - uniforme escolar?: otro medio,1=otro
+2019,03,p311a7_2,¿cómo obtuvieron el(la) - calzado escolar?: otro medio,1=otro
+2019,03,p311a7_3,¿cómo obtuvieron el(la) - libros y textos?: otro medio,1=otro
+2019,03,p311a7_4,¿cómo obtuvieron el(la) - Útiles escolares?: otro medio,1=otro
+2019,03,p311a7_5,¿cómo obtuvieron el(la) - matrícula?: otro medio,1=otro
+2019,03,p311a7_6,¿cómo obtuvieron el(la) - apafa?: otro medio,1=otro
+2019,03,p311a7_7,"¿cómo obtuvieron el(la) - otros (fotocopias, cuotas extraordinarias, etc)?: otro",1=otro
+2019,03,p311a7_8,¿cómo obtuvieron el(la) - laptop del programa una laptop por niño?: otro medio,1=otro
+2019,03,p311b_1,¿cuánto fue el monto de: uniforme escolar?,
+2019,03,p311b_2,¿cuánto fue el monto de:calzado escolar?,
+2019,03,p311b_3,¿cuánto fue el monto de libros y textos?,
+2019,03,p311b_4,¿cuánto fue el monto de: Útiles escolares?,
+2019,03,p311b_5,¿cuánto fue el monto de:matrícula?,
+2019,03,p311b_6,¿cuánto fue el monto de:apafa?,
+2019,03,p311b_7,"¿cuánto fue el monto de:otros (fotocopias, cuotas extraordinarias, etc)?",
+2019,03,p311b_8,¿cuánto fue el monto de: laptop del programa una laptop por niño?,
+2019,03,p311c_1,¿dónde compró el(los): uniforme escolar?,"1=ambulante; 2=librería; 3=centro de estudios; 4=feria; 5=puesto de mercado; 6=bazar; 7=bodega, tienda, etc.; 8=tienda especializada al por mayor; 9=tienda especializada al por menor; 10=otro"
+2019,03,p311c_2,¿dónde compró el(los): calzado escolar?,"1=ambulante; 2=librería; 3=centro de estudios; 4=feria; 5=puesto de mercado; 6=bazar; 7=bodega, tienda, etc.; 8=tienda especializada al por mayor; 9=tienda especializada al por menor; 10=otro"
+2019,03,p311c_3,¿dónde compró el(los): libros y textos?,"1=ambulante; 2=librería; 3=centro de estudios; 4=feria; 5=puesto de mercado; 6=bazar; 7=bodega, tienda, etc.; 8=tienda especializada al por mayor; 9=tienda especializada al por menor; 10=otro"
+2019,03,p311c_4,¿dónde compró el(los): Útiles escolares?,"1=ambulante; 2=librería; 3=centro de estudios; 4=feria; 5=puesto de mercado; 6=bazar; 7=bodega, tienda, etc.; 8=tienda especializada al por mayor; 9=tienda especializada al por menor; 10=otro"
+2019,03,p311c_5,¿dónde compró el(los): matrícula?,
+2019,03,p311c_6,¿dónde compró el(los): apafa?,
+2019,03,p311c_7,"¿dónde compró el(los): otros (fotocopias, cuotas extraordinarias, etc)","1=ambulante; 2=librería; 3=centro de estudios; 4=feria; 5=puesto de mercado; 6=bazar; 7=bodega, tienda, etc.; 8=tienda especializada al por mayor; 9=tienda especializada al por menor; 10=otro"
+2019,03,p311c_8,¿dónde compró el(los): laptop del programa una laptop por niño?,"1=ambulante; 2=librería; 3=centro de estudios; 4=feria; 5=puesto de mercado; 6=bazar; 7=bodega, tienda, etc.; 8=tienda especializada al por mayor; 9=tienda especializada al por menor; 10=otro"
+2019,03,p311d_1,¿cuánto cree que le costaría si tuviera que pagar por: uniforme escolar?,
+2019,03,p311d_2,¿cuánto cree que le costaría si tuviera que pagar por: calzado escolar?,
+2019,03,p311d_3,¿cuánto cree que le costaría si tuviera que pagar por: libros y textos?,
+2019,03,p311d_4,¿cuánto cree que le costaría si tuviera que pagar por: Útiles escolares?,
+2019,03,p311d_5,¿cuánto cree que le costaría si tuviera que pagar por: matrícula?,
+2019,03,p311d_6,¿cuánto cree que le costaría si tuviera que pagar por: apafa?,
+2019,03,p311d_7,"¿cuánto cree que le costaría si tuviera que pagar por: otros (fotocopias, cuotas",
+2019,03,p311d_8,¿cuánto cree que le costaría si tuviera que pagar por: laptop del programa una l,
+2019,03,p311d2_1,¿cuánto cree que le costaría si tuviera que pagar por: uniforme escolar? - autoc,
+2019,03,p311d2_2,¿cuánto cree que le costaría si tuviera que pagar por: calzado escolar? - autoco,
+2019,03,p311d2_3,¿cuánto cree que le costaría si tuviera que pagar por: libros y textos? - autoco,
+2019,03,p311d2_4,¿cuánto cree que le costaría si tuviera que pagar por: Útiles escolares? - autoc,
+2019,03,p311d2_5,¿cuánto cree que le costaría si tuviera que pagar por: matrícula? - autoconsumo,
+2019,03,p311d2_6,¿cuánto cree que le costaría si tuviera que pagar por: apafa? - autoconsumo,
+2019,03,p311d2_7,"¿cuánto cree que le costaría si tuviera que pagar por: otros (fotocopias, cuotas",
+2019,03,p311d2_8,¿cuánto cree que le costaría si tuviera que pagar por: laptop del programa una l,
+2019,03,p311d3_1,¿cuánto cree que le costaría si tuviera que pagar por: uniforme escolar? - autos,
+2019,03,p311d3_2,¿cuánto cree que le costaría si tuviera que pagar por: calzado escolar? - autosu,
+2019,03,p311d3_3,¿cuánto cree que le costaría si tuviera que pagar por: libros y textos? - autosu,
+2019,03,p311d3_4,¿cuánto cree que le costaría si tuviera que pagar por: Útiles escolares? - autos,
+2019,03,p311d3_5,¿cuánto cree que le costaría si tuviera que pagar por: matrícula? - autosuminist,
+2019,03,p311d3_6,¿cuánto cree que le costaría si tuviera que pagar por: apafa? - autosuministro,
+2019,03,p311d3_7,"¿cuánto cree que le costaría si tuviera que pagar por: otros (fotocopias, cuotas",
+2019,03,p311d3_8,¿cuánto cree que le costaría si tuviera que pagar por: laptop del programa una l,
+2019,03,p311d4_1,¿cuánto cree que le costaría si tuviera que pagar por: uniforme escolar? - pago ,
+2019,03,p311d4_2,¿cuánto cree que le costaría si tuviera que pagar por: calzado escolar? - pago e,
+2019,03,p311d4_3,¿cuánto cree que le costaría si tuviera que pagar por: libros y textos? - pago e,
+2019,03,p311d4_4,¿cuánto cree que le costaría si tuviera que pagar por: Útiles escolares? - pago ,
+2019,03,p311d4_5,¿cuánto cree que le costaría si tuviera que pagar por: matrícula? - pago en espe,
+2019,03,p311d4_6,¿cuánto cree que le costaría si tuviera que pagar por: apafa? - pago en especie,
+2019,03,p311d4_7,"¿cuánto cree que le costaría si tuviera que pagar por: otros (fotocopias, cuotas",
+2019,03,p311d4_8,¿cuánto cree que le costaría si tuviera que pagar por: laptop del programa una l,
+2019,03,p311d5_1,¿cuánto cree que le costaría si tuviera que pagar por: uniforme escolar? - otros,
+2019,03,p311d5_2,¿cuánto cree que le costaría si tuviera que pagar por: calzado escolar? - otros ,
+2019,03,p311d5_3,¿cuánto cree que le costaría si tuviera que pagar por: libros y textos? - otros ,
+2019,03,p311d5_4,¿cuánto cree que le costaría si tuviera que pagar por: Útiles escolares? - otros,
+2019,03,p311d5_5,¿cuánto cree que le costaría si tuviera que pagar por: matrícula? - otros hogare,
+2019,03,p311d5_6,¿cuánto cree que le costaría si tuviera que pagar por: apafa? - otros hogares,
+2019,03,p311d5_7,"¿cuánto cree que le costaría si tuviera que pagar por: otros (fotocopias, cuotas",
+2019,03,p311d5_8,¿cuánto cree que le costaría si tuviera que pagar por: laptop del programa una l,
+2019,03,p311d6_1,¿cuánto cree que le costaría si tuviera que pagar por: uniforme escolar? - progr,
+2019,03,p311d6_2,¿cuánto cree que le costaría si tuviera que pagar por: calzado escolar? - progra,
+2019,03,p311d6_3,¿cuánto cree que le costaría si tuviera que pagar por: libros y textos? - progra,
+2019,03,p311d6_4,¿cuánto cree que le costaría si tuviera que pagar por: Útiles escolares? - progr,
+2019,03,p311d6_5,¿cuánto cree que le costaría si tuviera que pagar por: matrícula? - programa soc,
+2019,03,p311d6_6,¿cuánto cree que le costaría si tuviera que pagar por: apafa? - programa social,
+2019,03,p311d6_7,"¿cuánto cree que le costaría si tuviera que pagar por: otros (fotocopias, cuotas",
+2019,03,p311d6_8,¿cuánto cree que le costaría si tuviera que pagar por: laptop del programa una l,
+2019,03,p311d7_1,¿cuánto cree que le costaría si tuviera que pagar por: uniforme escolar? - otro,
+2019,03,p311d7_2,¿cuánto cree que le costaría si tuviera que pagar por: calzado escolar? - otro,
+2019,03,p311d7_3,¿cuánto cree que le costaría si tuviera que pagar por: libros y textos? - otro,
+2019,03,p311d7_4,¿cuánto cree que le costaría si tuviera que pagar por: Útiles escolares? - otro,
+2019,03,p311d7_5,¿cuánto cree que le costaría si tuviera que pagar por: matrícula? - otro,
+2019,03,p311d7_6,¿cuánto cree que le costaría si tuviera que pagar por: apafa? - otro,
+2019,03,p311d7_7,"¿cuánto cree que le costaría si tuviera que pagar por: otros (fotocopias, cuotas",
+2019,03,p311d7_8,¿cuánto cree que le costaría si tuviera que pagar por: laptop del programa una l,
+2019,03,p311e_1,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces:,
+2019,03,p311e_2,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces:,
+2019,03,p311e_3,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces:,
+2019,03,p311e_4,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces:,
+2019,03,p311e_5,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces:,
+2019,03,p311e_6,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces:,
+2019,03,p311e_7,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces:,
+2019,03,p311e_8,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces:,
+2019,03,p311t1,total gasto en los últimos 12 meses (s/.),
+2019,03,p311t22,¿cuánto cree que le costaría si tuviera que pagar por este producto o  servicio?,
+2019,03,p311t23,¿cuánto cree que le costaría si tuviera que pagar por este producto o  servicio?,
+2019,03,p311t24,¿cuánto cree que le costaría si tuviera que pagar por este producto o  servicio?,
+2019,03,p311t25,¿cuánto cree que le costaría si tuviera que pagar por este producto o  servicio?,
+2019,03,p311t26,¿cuánto cree que le costaría si tuviera que pagar por este producto o  servicio?,
+2019,03,p311t27,¿cuánto cree que le costaría si tuviera que pagar por este producto o  servicio?,
+2019,03,p311t2,total estimado en los últimos 12 meses(s/.),
+2019,03,p3121,"en el mes anterior, gastó en : ¿pensión mensual de enseñanza?",1=si; 2=no
+2019,03,p3121a1,¿cómo obtuvieron el(la): pensión mensual de enseñanza?: comprado,1=comprado
+2019,03,p3121a2,¿cómo obtuvieron el(la): pensión mensual de enseñanza?: autosuministro,1=autosuministro
+2019,03,p3121a3,¿cómo obtuvieron el(la): pensión mensual de enseñanza?: pago en especie,1=pago en especie
+2019,03,p3121a4,¿cómo obtuvieron el(la): pensión mensual de enseñanza?: otros hogares,1=otros hogares
+2019,03,p3121a5,¿cómo obtuvieron el(la): pensión mensual de enseñanza?: programa social,1=programa social
+2019,03,p3121a6,¿cómo obtuvieron el(la): pensión mensual de enseñanza?: otro,1=otro
+2019,03,p3121b,¿cuánto fue el monto de: pensión mensual de enseñanza?,
+2019,03,p3121c,¿cuánto cree que le costaría si tuviera que pagarlo?: pensión mensual de enseñan,
+2019,03,p3121c2,¿cuánto cree que le costaria si tuviera que pagar por pensión mensual de enseñan,
+2019,03,p3121c3,¿cuánto cree que le costaria si tuviera que pagar por pensión mensual de enseñan,
+2019,03,p3121c4,¿cuánto cree que le costaria si tuviera que pagar por pensión mensual de enseñan,
+2019,03,p3121c5,¿cuánto cree que le costaria si tuviera que pagar por pensión mensual de enseñan,
+2019,03,p3121c6,¿cuánto cree que le costaria si tuviera que pagar por pensión mensual de enseñan,
+2019,03,p3121d,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces ,
+2019,03,p3122,"en el mes anterior, gastó en : ¿movilidad particular al centro de enseñanza?",1=si; 2=no
+2019,03,p3122a1,¿cómo obtuvieron el(la): movilidad particular al centro de enseñanza ?: comprado,1=comprado
+2019,03,p3122a2,¿cómo obtuvieron el(la): movilidad particular al centro de enseñanza ?: autosumi,1=autosuministro
+2019,03,p3122a3,¿cómo obtuvieron el(la): movilidad particular al centro de enseñanza ?: pago en ,1=pago en especie
+2019,03,p3122a4,¿cómo obtuvieron el(la): movilidad particular al centro de enseñanza ?: otros ho,1=otros hogares
+2019,03,p3122a5,¿cómo obtuvieron el(la): movilidad particular al centro de enseñanza ?: programa,1=programa social
+2019,03,p3122a6,¿cómo obtuvieron el(la): movilidad particular al centro de enseñanza ?: otro,1=otro
+2019,03,p3122b,¿cuánto fue el monto de: movilidad particular al centro de enseñanza ?,
+2019,03,p3122c,¿cuánto cree que le costaría si tuviera que pagarlo?: movilidad particular al ce,
+2019,03,p3122c2,¿cuánto cree que le costaria si tuviera que pagar por movilidad particular al ce,
+2019,03,p3122c3,¿cuánto cree que le costaria si tuviera que pagar por movilidad particular al ce,
+2019,03,p3122c4,¿cuánto cree que le costaria si tuviera que pagar por movilidad particular al ce,
+2019,03,p3122c5,¿cuánto cree que le costaria si tuviera que pagar por movilidad particular al ce,
+2019,03,p3122c6,¿cuánto cree que le costaria si tuviera que pagar por movilidad particular al ce,
+2019,03,p3122d,¿cuántas veces realizó el gasto durante los últimos 12 meses? - número de veces ,
+2019,03,p312t1,total gasto mes anterior (s/.),
+2019,03,p312t22,¿cuánto cree que le costaría si tuviera que pagarlo? - total autosuministro,
+2019,03,p312t23,¿cuánto cree que le costaría si tuviera que pagarlo? - total pago en especie,
+2019,03,p312t24,¿cuánto cree que le costaría si tuviera que pagarlo? - total otros hogares,
+2019,03,p312t25,¿cuánto cree que le costaría si tuviera que pagarlo? - total programa social,
+2019,03,p312t26,¿cuánto cree que le costaría si tuviera que pagarlo? - total otro,
+2019,03,p312t2,total estimado mes anterior (s/.),
+2019,03,p313,¿cuál es la principal razón por la que no está matriculado o no asiste a algún c,1=problemas económicos; 2=estoy trabajando; 3=terminó sus estudios: secundarios/ superiores /asiste a academia preuniversitaria; 4=no tiene la edad suficiente (para el grupo 3-5 años); 5=problemas familiares; 6=de vacaciones; 7=no existe centro de educación básica o superior en el centro poblado; 8=asiste a un centro de educación técnico productiva; 9=no me interesa/no me gusta el estudio; 10=se dedica a los quehaceres del hogar; 11=otra razón
+2019,03,p314a,"en el mes anterior, ¿ud. hizo uso del servicio de internet?",1=si; 2=no
+2019,03,p314b_1,"en el mes anterior, ¿uso ud., el servicio de internet en: el hogar?",0=pase; 1=el hogar
+2019,03,p314b_2,"en el mes anterior, ¿uso ud., el servicio de internet en: el trabajo?",0=pase; 2=el trabajo
+2019,03,p314b_3,"en el mes anterior, ¿uso ud., el servicio de internet en: un establecimiento edu",0=pase; 3=un establecimiento educativo
+2019,03,p314b_4,"en el mes anterior, ¿uso ud., el servicio de internet en: una cabina pública?",0=pase; 4=una cabina pública
+2019,03,p314b_5,"en el mes anterior, ¿uso ud., el servicio de internet: en casa de otra persona?",0=pase; 5=en casa de otra persona
+2019,03,p314b_6,"en el mes anterior, ¿uso ud., el servicio de internet en: otro?",0=pase; 6=otro
+2019,03,p314b_7,"en el mes anterior, ¿uso ud., el servicio de internet en: acceso móvil a interne",0=pase; 7=acceso móvil a internet
+2019,03,p314b1_1,"en el mes anterior, ¿el servicio de internet lo usó a través de una/un: computad",0=pase; 1=computadora
+2019,03,p314b1_2,"en el mes anterior, ¿el servicio de internet lo usó a través de una/un: laptop",0=pase; 2=laptop
+2019,03,p314b1_6,"en el mes anterior, ¿el servicio de internet lo usó a través de una/un: tablet",0=pase; 6=tablet
+2019,03,p314b1_7,"en el mes anterior, ¿el servicio de internet lo usó a través de una/un: otro",0=pase; 7=otro
+2019,03,p314b1_8,"en el mes anterior, ¿el servicio de internet lo usó a través de una/un: celular ",0=pase; 6=celular sin plan de datos
+2019,03,p314b1_9,"en el mes anterior, ¿el servicio de internet lo usó a través de una/un: celular ",0=celular con plan de datos; 7=otro
+2019,03,p314d,¿ud. usa internet al menos:?,1=una vez al dia; 2=una vez a la semana; 3=una vez al mes; 4=cada 2 meses o más
+2019,03,p3151,en el mes anterior ¿obtuvo el servicio de internet en cabina pública? - comprado,1=comprado
+2019,03,p3152,en el mes anterior ¿obtuvo el servicio de internet en cabina pública? - autosumi,1=autosuministro
+2019,03,p3153,en el mes anterior ¿obtuvo el servicio de internet en cabina pública? - pago en ,1=pago en especie
+2019,03,p3154,en el mes anterior ¿obtuvo el servicio de internet en cabina pública? - otros ho,1=otros hogares
+2019,03,p3155,en el mes anterior ¿obtuvo el servicio de internet en cabina pública? - programa,1=programa social
+2019,03,p3156,en el mes anterior ¿obtuvo el servicio de internet en cabina pública? - otro,1=otro
+2019,03,p315a,¿cuánto fue el monto del servicio en el mes anterior?,
+2019,03,p315b,¿cuánto cree que le constaría si tuviera que pagar por este servicio que usó el ,
+2019,03,p315b2,¿cuánto cree que le constaría si tuviera que pagar por este servicio que usó el ,
+2019,03,p315b3,¿cuánto cree que le constaría si tuviera que pagar por este servicio que usó el ,
+2019,03,p315b4,¿cuánto cree que le constaría si tuviera que pagar por este servicio que usó el ,
+2019,03,p315b5,¿cuánto cree que le constaría si tuviera que pagar por este servicio que usó el ,
+2019,03,p315b6,¿cuánto cree que le constaría si tuviera que pagar por este servicio que usó el ,
+2019,03,p316_1,¿usó el internet para: obtener información?,1=si; 2=no
+2019,03,p316_2,"¿usó el internet para: comunicarse (e-mail, chat, etc,)?",1=si; 2=no
+2019,03,p316_3,¿usó el internet para: comprar productos y/o servicios?,1=si; 2=no
+2019,03,p316_4,¿usó el internet para: operaciones de banca electrónica y otros servicios financ,1=si; 2=no
+2019,03,p316_5,¿usó el internet para: educación formal y actividades de capacitación?,1=si; 2=no
+2019,03,p316_6,¿usó el internet para: transacciones (interactuar) con organizaciones estatales/,1=si; 2=no
+2019,03,p316_7,"¿usó el internet para: actividades de entretenimiento (juegos de video, obtener ",1=si; 2=no
+2019,03,p316_8,"¿usó el internet para: vender productos y/o servicios (mercado libre, olx, faceb",1=si; 2=no
+2019,03,p316_9,¿usó el internet para: otros?,1=si; 2=no
+2019,03,p316_10,¿usó el internet para: otros?,1=si; 2=no
+2019,03,p316_11,¿usó el internet para: otros?,1=si; 2=no
+2019,03,p316_12,¿usó el internet para: descarga de antivirus/aplicativos/software(programas)?,1=si; 2=no
+2019,03,p316a1,"¿en el mes anterior, ud. utilizó: teléfono celular propio?",0=pase; 1=teléfono celular propio.
+2019,03,p316a2,"¿en el mes anterior, ud. utilizó: teléfono celular de un familiar o amigo/a?",0=pase; 2=teléfono celular de un familiar o amigo
+2019,03,p316a3,"¿en el mes anterior, ud. utilizó: teléfono celular de su centro de trabajo?",0=pase; 3=teléfono celular de su centro de trabajo
+2019,03,p316a4,"¿en el mes anterior, ud. utilizó: otro?",0=pase; 4=otro
+2019,03,p316a5,"¿en el mes anterior, ud. utilizó: no utiliza?",0=pase; 5= no utiliza
+2019,03,p316a6,"¿en el mes anterior, ud. utilizó: teléfono celular alquilado?",
+2019,03,p316b,"¿en los últimos 3 meses¿ha utilizado una computadora laptop, tablet o similar?",1=si; 2=no
+2019,03,p316c1,¿actividades informáticas que ha realizado:copiar o mover un archivo o carpeta? ,1=si; 2=no
+2019,03,p316c2,¿actividades informáticas que ha realizado:utilizar herramientas de copiar y peg,1=si; 2=no
+2019,03,p316c3,¿actividades informáticas que ha realizado:enviar correos electronicos (e-mails),1=si; 2=no
+2019,03,p316c4,¿actividades informáticas que ha realizado:utilizar formulas aritmeticas basicas,1=si; 2=no
+2019,03,p316c5,¿actividades informáticas que ha realizado:conectar e instalar nuevos dispositiv,1=si; 2=no
+2019,03,p316c6,"¿actividades informáticas que ha realizado:encontrar, descargar, instalar y conf",1=si; 2=no
+2019,03,p316c7,¿actividades informáticas que ha realizado:crear presentaciones electrónicas con,1=si; 2=no
+2019,03,p316c8,¿actividades informáticas que ha realizado:transferir archivos entre computadora,1=si; 2=no
+2019,03,p316c9,¿actividades informáticas que ha realizado:redactar un programa informático medi,1=si; 2=no
+2019,03,p316c10,¿actividades informáticas que ha realizado:otros?,1=si; 2=no
+2019,03,t313a,(recodificada ) ¿cuál es la principal razón por la que no está matriculado o no ,1=problemas económicos; 2=estoy trabajando; 3=terminó sus estudios: secundarios/ superiores /asiste a academia preuniversitaria; 4=no tiene la edad suficiente; 5=problemas familiares; 6=de vacaciones; 7=no existe centro de educación básica o superior en el centro poblado; 8=asiste a un centro de educación técnico productivo; 9=no me interesa/no me gusta el estudio; 10=se dedica a los quehaceres del hogar; 11=otra razón; 12=asiste a un centro de enseñanza no regular
+2019,03,p203,¿cuál es la relación de parentesco con el jefe(a) del hogar?,0=panel; 1=jefe/jefa; 2=esposo(a)/compañero(a); 3=hijo(a)/hijastro(a); 4=yerno/nuera; 5=nieto(a); 6=padres/suegros; 7=otros parientes; 8=trabajador hogar; 9=pensionista; 10=otros no parientes; 11=hermano(a)
+2019,03,p204,¿es miembro del hogar?,1=si; 2=no
+2019,03,p205,¿se encuentra ausente del hogar 30 días o más?,1=si; 2=no
+2019,03,p206,¿está presente en el hogar 30 días o más?,1=si; 2=no
+2019,03,p207,sexo,1=hombre; 2=mujer
+2019,03,p208a,¿qué edad tiene en años cumplidos ?,
+2019,03,p209,¿cuál es su estado civil o conyugal?,1=conviviente; 2=casado(a); 3=viudo(a); 4=divorciado(a); 5=separado(a); 6=soltero(a)
+2019,03,ticuest01a,origen de cuestionario,1=cuestionario en hojas; 2=cuestionario en tablet
+2019,03,d311b_1,"(deflactado, anualizado) ¿cuánto fue el monto de: uniforme escolar?",
+2019,03,d311d2_1,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d3_1,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d4_1,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d5_1,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d6_1,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d7_1,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d_1,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por e",
+2019,03,d311b_2,"(deflactado, anualizado) ¿cuánto fue el monto de: calzado escolar?",
+2019,03,d311d2_2,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d3_2,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d4_2,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d5_2,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d6_2,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d7_2,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d_2,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por e",
+2019,03,d311b_3,"(deflactado, anualizado) ¿cuánto fue el monto de: libros y textos?",
+2019,03,d311d2_3,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d3_3,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d4_3,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d5_3,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d6_3,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d7_3,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d_3,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por e",
+2019,03,d311b_4,"(deflactado, anualizado) ¿cuánto fue el monto de: Útiles escolares?",
+2019,03,d311d2_4,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d3_4,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d4_4,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d5_4,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d6_4,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d7_4,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d_4,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por e",
+2019,03,d311b_5,"(deflactado, anualizado) ¿cuánto fue el monto de: matrícula?",
+2019,03,d311d2_5,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d3_5,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d4_5,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d5_5,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d6_5,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d7_5,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d_5,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por e",
+2019,03,d311b_6,"(deflactado, anualizado) ¿cuánto fue el monto de: apafa?",
+2019,03,d311d2_6,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d3_6,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d4_6,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d5_6,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d6_6,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d7_6,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d_6,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por e",
+2019,03,d311b_7,"(deflactado, anualizado) ¿cuánto fue el monto de: otro (fotocopias, cuotas extra",
+2019,03,d311d2_7,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d3_7,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d4_7,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d5_7,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d6_7,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d7_7,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por: ",
+2019,03,d311d_7,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagar por e",
+2019,03,d3121b,"(deflactado, anualizado) ¿cuánto fue el monto de: pensión mensual de enseñanza?",
+2019,03,d3121c2,"(deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanza",
+2019,03,d3121c3,"(deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanza",
+2019,03,d3121c4,"(deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanza",
+2019,03,d3121c5,"(deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanza",
+2019,03,d3121c6,"(deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanza",
+2019,03,d3121c,"(deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que pagarlo: pe",
+2019,03,d3122b,"(deflactado, anualizado) ¿cuánto fue el monto de:  movilidad particular al centr",
+2019,03,d3122c2,"(deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanza",
+2019,03,d3122c3," (deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanz",
+2019,03,d3122c4,"(deflactado, anual) ¿en cuánto estima el valor de otros hogares: movilidad parti",
+2019,03,d3122c5,"(deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanza",
+2019,03,d3122c6," (deflactado, anualizado) ¿cuánto estima el valor de pensión mensual de enseñanz",
+2019,03,d3122c,"(deflactado, anualizado) ¿cuánto cree que le costarìa si tuviera que pagarlo: mo",
+2019,03,d315a,"(deflactado, anualizado) ¿cuánto fue el monto del servicio en el mes anterior?",
+2019,03,d315b2,"(deflactado, anual) autosuministro - ¿cuánto cree que le constaría si tuviera qu",
+2019,03,d315b3,"(deflactado, anual) pago en especie - ¿cuánto cree que le constaría si tuviera q",
+2019,03,d315b4,"(deflactado, anual) otros hogares - ¿cuánto cree que le constaría si tuviera que",
+2019,03,d315b5,"(deflactado, anual) programa social - ¿cuánto cree que le constaría si tuviera q",
+2019,03,d315b6,"(deflactado, anual) otro - ¿cuánto cree que le constaría si tuviera que pagar po",
+2019,03,d315b,"(deflactado, anualizado) ¿cuánto cree que le constaría si tuviera que pagar por ",
+2019,03,i311b_1,"(imputado, deflactado, anualizado) ¿cuánto fue el monto de: uniforme escolar?",
+2019,03,i311b_2,"(imputado, deflactado, anualizado) ¿cuánto fue el monto de: calzado escolar?",
+2019,03,i311b_4,"(imputado, deflactado, anualizado) ¿cuánto fue el monto de: Útiles escolares?",
+2019,03,i311b_6,"(imputado, deflactado, anualizado) ¿cuánto fue el monto de: apafa?",
+2019,03,i311b_3,"(imputado, deflactado, anualizado) ¿cuánto fue el monto de: libros y textos?",
+2019,03,i311b_5,"(imputado, deflactado, anualizado) ¿cuánto fue el monto de: matrícula?",
+2019,03,i311b_7,"(imputado, deflactado, anualizado) ¿cuánto fue el monto de: otro (fotocopias, cu",
+2019,03,i311d2_1,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d3_1,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d4_1,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d5_1,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d6_1,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d7_1,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d2_2,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d3_2,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d4_2,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d5_2,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d6_2,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d7_2,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d2_4,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d3_4,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d4_4,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d5_4,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d6_4,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d7_4,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d2_6,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d3_6,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d4_6,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d5_6,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d6_6,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d7_6,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d2_3,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d3_3,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d4_3,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d5_3,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d6_3,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d7_3,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d2_5,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d3_5,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d4_5,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d5_5,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d6_5,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d7_5,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d2_7,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d3_7,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d4_7,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d5_7,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d6_7,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d7_7,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i3121b,"(imputado, deflactado, anualizado)  ¿cuánto fue el monto de: pensión mensual de ",
+2019,03,i3122b,"(imputado, deflactado, anualizado) ¿cuánto fue el monto de: movilidad particular",
+2019,03,i3121c2,"(imputado, deflactado, anual) ¿cuánto estima el valor de pensión mensual de ense",
+2019,03,i3121c3,"(imputado, deflactado, anual) ¿cuánto estima el valor de pensión mensual de ense",
+2019,03,i3121c4,"(imputado, deflactado, anual) ¿cuánto estima el valor de pensión mensual de ense",
+2019,03,i3121c5,"(imputado, deflactado, anual) ¿cuánto estima el valor de pensión mensual de ense",
+2019,03,i3121c6,"(imputado, deflactado, anual) ¿cuánto estima el valor de pensión mensual de ense",
+2019,03,i3122c2,"(imputado, deflactado, anualizado) ¿cuánto estima el valor de movilidad particul",
+2019,03,i3122c3,"(imputado, deflactado, anualizado) ¿cuánto estima el valor de movilidad particul",
+2019,03,i3122c4,"(imputado, deflactado, anualizado) ¿cuánto estima el valor de movilidad particul",
+2019,03,i3122c5,"(imputado, deflactado, anualizado) ¿cuánto estima el valor de movilidad particul",
+2019,03,i3122c6,"(imputado, deflactado, anualizado) ¿cuánto estima el valor de movilidad particul",
+2019,03,i315a,"(imputado, deflactado, anualizado) ¿cuánto fue el monto del servicio en el mes a",
+2019,03,i315b2,"(imputado, deflactado, anual) ¿cuánto cree que le constaría si tuviera que pagar",
+2019,03,i315b3,"(imputado, deflactado, anual) ¿cuánto cree que le constaría si tuviera que pagar",
+2019,03,i315b4,"(imputado, deflactado, anual) ¿cuánto cree que le constaría si tuviera que pagar",
+2019,03,i315b5,"(imputado, deflactado, anual) ¿cuánto cree que le constaría si tuviera que pagar",
+2019,03,i315b6,"(imputado, deflactado, anual) ¿cuánto cree que le constaría si tuviera que pagar",
+2019,03,i311d_1,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d_2,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d_3,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d_4,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d_5,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d_6,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i311d_7,"(imputado, deflactado, anualizado) ¿cuánto cree que le costaría si tuviera que p",
+2019,03,i3121c,"(imputado, deflactado, anualizado)  ¿cuánto cree que le costaría si tuviera que ",
+2019,03,i3122c,"(imputado, deflactado, anualizado) ¿cuánto cree que le costarìa si tuviera que p",
+2019,03,i315b,"(imputado, deflactado, anualizado) ¿cuánto cree que le constaría si tuviera que ",
+2019,03,imputado,conglomerado - (imputación hot-deck),1=con imputación hot-deck
+2019,03,factor07,factor de expansión anual proyecciones cpv-2007,
+2019,03,factora07,factor de población ajustado por grupos de edad,

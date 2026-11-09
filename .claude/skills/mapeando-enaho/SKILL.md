@@ -1,10 +1,14 @@
 ---
 name: mapeando-enaho
-description: Construye un mapa coroplético APA 7 de la pobreza monetaria (o extrema) por departamento del Perú con la ENAHO 2024 del INEI, uniendo por código ubigeo con el GeoJSON departamental (25 unidades, Lima y Callao separados) y validando contra la referencia oficial. Úsala cuando pidan un mapa, una distribución territorial o geográfica, o diferencias entre departamentos o regiones del Perú.
+description: Construye un mapa coroplético APA 7 de la pobreza monetaria (o extrema) por departamento del Perú con la ENAHO 2019-2025 del INEI (un año, mosaico de todos los años con escala común o mapa de cambio), uniendo por código ubigeo con el GeoJSON departamental (25 unidades, Lima y Callao separados) y validando contra la referencia oficial. Úsala cuando pidan un mapa, una distribución territorial o geográfica, o diferencias entre departamentos o regiones del Perú.
 argument-hint: "[pobreza_monetaria|pobreza_extrema] [numero de figura]"
 ---
 
 # Mapear la pobreza departamental
+
+Varios años: `uv run .claude/skills/mapeando-enaho/scripts/mapas_series.py mosaico --numero <n>` (un mapa por
+año con la misma escala) y `mapas_series.py cambio --desde 2019 --hasta 2025 --numero <n>` (escala divergente
+centrada en 0). Requieren `salidas/serie_indicadores.csv`.
 
 1. Si no existen `salidas/personas_2024.parquet` y `salidas/indicadores.csv`, usa primero la skill
    `limpiando-enaho` (`uv run .claude/skills/limpiando-enaho/scripts/limpiar.py`). Si el script de mapas sale con

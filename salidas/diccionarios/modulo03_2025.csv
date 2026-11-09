@@ -1,0 +1,496 @@
+anio,modulo,variable,etiqueta,valores
+2025,03,anio,Año de la encuesta,
+2025,03,mes,Mes de ejecucion de la encuesta,
+2025,03,conglome,N° de conglomerado,
+2025,03,vivienda, N° de seleccion de la vivienda,
+2025,03,hogar, N° secuencial del hogar,
+2025,03,codperso,Codigo de la persona,
+2025,03,ubigeo,Ubicacion geografica,
+2025,03,dominio,Dominio geografico,1=Costa Norte; 2=Costa Centro; 3=Costa Sur; 4=Sierra Norte; 5=Sierra Centro; 6=Sierra Sur; 7=Selva; 8=Lima Metropolitana
+2025,03,estrato,Estrato geografico,1=De 500 000 a mas habitantes; 2=De 100 000 a 499 999 habitantes; 3=De 50 000 a 99 999 habitantes; 4=De 20 000 a 49 999 habitantes; 5=De 2 000 a 19 999 habitantes; 6=De 500 a 1 999 habitantes; 7=Area de Empadronamiento Rural (AER) Compuesto; 8=Area de Empadronamiento Rural (AER) Simple
+2025,03,codinfor,Codigo de informante del Capitulo 300,
+2025,03,p300n, N° de la persona,
+2025,03,p300i,Codigo de informante,
+2025,03,p300a,Cual es el Idioma o lengua materna que aprendio en su niñez,1=Quechua; 2=Aimara; 3=Otra lengua nativa; 4=Castellano; 6=Portugues; 7=Otra lengua extranjera; 8=No escucha/no habla; 9=Lengua de señas peruanas; 10=Ashaninka; 11=Awajun/Aguarun; 12=Shipibo – Konibo; 13=Shawi/Chayahuita; 14=Matsigenka/Machiguenga; 15=Achuar
+2025,03,p301a,Cual es el ultimo año o grado de estudios y nivel que aprobo Nivel,1=Sin nivel; 2=Educacion inicial; 3=Primaria incompleta; 4=Primaria completa; 5=Secundaria incompleta; 6=Secundaria completa; 7=Superior no univ. Incompleta; 8=Superior no univ. completa; 9=Superior univ. incompleta; 10=Superior univ. completa; 11=Maestria / Doctorado; 12=Basica especial
+2025,03,p301b,Cual es el ultimo año o grado de estudios y nivel que aprobo  Año,
+2025,03,p301c,Cual es el ultimo año o grado de estudios y nivel que aprobo Grado,
+2025,03,p301d,Cual es el ultimo año o grado de estudios y nivel que aprobo C.E.,1=Estatal; 2=No estatal
+2025,03,p301a0,Cual es la carrera superior univ. o no univ. que Ud. estudia o ha estudiado,0=Respondio; 1=Ninguna; 2=No sabe
+2025,03,p301a1,Codigo de la carrera superior univ. o no univ. que Ud. estudia o ha estudiado,"11015=Armas Submarinas; 11016=Ciencias de la Administracion Aeroespacial (Aviacion); 11025=Artilleria; 11026=Ciencias Militares (Ejercito); 11035=Capitania y Guardacostas; 11036=Ciencias Administrativas Maritimas (Marina); 11045=Defensa Aerea; 11055=Fuerzas Especiales; 11065=Infanteria de Marina; 11075=Inteligencia; 11085=Maniobras; 11095=Operaciones Especiales; 11105=Policia Naval; 11115=Seguridad e Instruccion Militar; 11125=Sensores; 21015=Administracion y Ciencias Policiales; 21016=Administracion y Ciencias Policiales (oficiales); 111015=Educacion Inicial; 111016=Educacion Basica, Inicial y Primaria; 111025=Educacion Inicial (Intercultural y Bilingue); 111026=Educacion Inicial; 111036=Educacion Inicial -  Niniez Temprana; 111046=Educacion Inicial -  Retardo Mental; 111056=Educacion Inicial Bilingue; 111066=Educacion Inicial y Arte; 111076=Educacion Intercultural Bilingue: Nivel Inicial y Nivel Primaria; 112015=Educacion Primaria; 112016=Educacion Primaria; 112025=Educacion Primaria (Intercultural y Bilingue); 112026=Educacion Primaria -  Educacion Basica Alternativa; 112036=Educacion Primaria - Ingles; 112046=Educacion Primaria Intercultural; 112056=Educacion Primaria y Bilingue; 112066=Educacion Primaria y Bilingue Intercultural; 112076=Educacion Primaria y Problemas de Aprendizaje; 121015=Educacion en Computacion e Informatica; 121016=Educacion Secundaria; 121025=Educacion en Idiomas - Ingles; 121026=Educacion Secundaria - Antropologia Social; 121035=Educacion para el Trabajo"
+2025,03,p301b0,Cual es el nombre del C.E. donde estudia...la carrera superior univ. o no univ.,0=Pase; 1=No sabe/No recuerda
+2025,03,p301b1,Codigo del C.E. donde estudia o ha...carrera superior univ. o no univ.,140332361=Instituto de Educacion Superior Tecnologica (IEST) Naciones Unidas; 140337915=Instituto de Educacion Superior Tecnologica (IEST) Argentina; 140337931=Instituto de Educacion Superior Tecnologica (IEST) Disenio Y Comunicacion; 140359729=Instituto de Educacion Superior Tecnologica (IEST) Carlos Salazar Romero; 140450114=Instituto de Educacion Superior Tecnologica (IEST) Jose Pardo; 140478412=Instituto de Educacion Superior Tecnologica (IEST) Maria Rosario Araoz Pinto; 140479048=Instituto de Educacion Superior Tecnologica (IEST) Santiago Antunez De Mayolo; 140481085=Instituto de Educacion Superior Tecnologica (IEST) Pedro P. Diaz; 140481093=Instituto de Educacion Superior Tecnologica (IEST) Jose Carlos Mariategui- Mariscal Nieto; 140481127=Instituto de Educacion Superior Tecnologica (IEST) Tupac Amaru; 140481143=Instituto de Educacion Superior Tecnologica (IEST) Pedro A. Del Aguila Hidalgo; 140481218=Instituto de Educacion Superior Tecnologica (IEST) Jose Antonio Encinas; 140481226=Instituto de Educacion Superior Tecnologica (IEST) Manuel Nuniez Butron; 140508473=Instituto de Educacion Superior Tecnologica (IEST) Victor Alvarez Huapaya; 140510784=Instituto de Educacion Superior Tecnologica (IEST) Cap Fap Jose Abelardo Quiniones; 140517664=Instituto de Educacion Superior Tecnologica (IEST) Chincha; 140520197=Instituto de Educacion Superior Tecnologica (IEST) La Salle; 140521682=Instituto de Educacion Superior Tecnologica (IEST) Nor Oriental De La Selva; 140532226=Instituto de Educacion Superior Tecnologica (IEST) Huarmaca; 140551317=Instituto de Educacion Superior Tecnologica (IEST) Francisco De Paula Gonzales Vigil; 140560615=Instituto de Educacion Superior Tecnologica (IEST) San Andres - Ayabaca; 140563460=Instituto de Educacion Superior Tecnologica (IEST) Pisco; 140563619=Instituto de Educacion Superior Tecnologica (IEST) Catalina Buendia De Pecho; 140567313=Instituto de Educacion Superior Tecnologica (IEST) Adolfo Vienrich; 140568154=Instituto de Educacion Superior Tecnologica (IEST) Peru-Japon; 140575746=Instituto de Educacion Superior Tecnologica (IEST) Pasco; 140584672=Instituto de Educacion Superior Tecnologica (IEST) Eleazar Guzman Barron; 140584722=Instituto de Educacion Superior Tecnologica (IEST) Suiza; 140586628=Instituto de Educacion Superior Tecnologica (IEST) Aparicio Pomares; 140588012=Instituto de Educacion Superior Tecnologica (IEST) Trujillo; 140591941=Instituto de Educacion Superior Tecnologica (IEST) 4 De Junio De 1821; 140597237=Instituto de Educacion Superior Tecnologica (IEST) Simon Bolivar - Callao; 140605717=Instituto de Educacion Superior Tecnologica (IEST) General Oscar Arteta Terzi; 140606475=Instituto de Educacion Superior Tecnologica (IEST) Pedro Ortiz Montoya; 140606541=Instituto de Educacion Superior Tecnologica (IEST) Cajamarca; 140622365=Instituto de Educacion Superior Tecnologica (IEST) Nueva Esperanza; 140622860=Instituto de Educacion Superior Tecnologica (IEST) Sullana; 140623082=Instituto de Educacion Superior Tecnologica (IEST) Julio Cesar Tello; 140626192=Instituto de Educacion Superior Tecnologica (IEST) Republica Federal De Alemania; 140630467=Instituto de Educacion Superior Tecnologica (IEST) Juli
+2025,03,p301b3,Codigo del departamento donde estudia o ha estudiado la carrera superior univ. o no univ.,98=Estudio en el extranjero
+2025,03,p302,Sabe leer y escribir - Respuesta espontanea,1=Si; 2=No
+2025,03,p302x,Sabe leer y escribir - Aplico cartilla,1=Si; 2=No; 3=No se aplico cartilla
+2025,03,p303,"El año pasado, estuvo matriculado en algun centro o Prog. de educacion basica o superior",1=Si; 2=No
+2025,03,p304a,Cual es el grado o año de estudios al que asistio el año pasado–Nivel,1=Educacion inicial; 2=Primaria; 3=Secundaria; 4=Superior no univ.; 5=Superior univ.; 6=Maestria/Doctorado; 7=Basica especial
+2025,03,p304b,Cual es el grado o año de estudios al que asistio el año pasado–Año,
+2025,03,p304c,Cual es el grado o año de estudios al que asistio el año pasado–Grado,
+2025,03,p304d,Cual es el grado o año de estudios al que asistio el año pasado–C.E.,1=Estatal; 2=No Estatal
+2025,03,p305,El resultado que obtuvo el año pasado fue :,"1=Aprobado; 2=Desaprobado; 3=Retirado; 4=Otro; 5=No aprueba, ni desaprueba (inicial)"
+2025,03,p306,"Este año, esta matriculado en algun centro o Prog. de educacion basica o superior",1=Si; 2=No
+2025,03,p307,"Actualmente, Asiste a algun centro o Prog. de educación basica o superior",1=Si; 2=No
+2025,03,p307d,"Su educacion primaria/secundaria, la recibe o recibio en un centro de educacion basica alternativa(CEBA)",1=Si; 2=No
+2025,03,p308a,Cual es el grado o año de estudios en el que esta matriculado - Nivel,1=Educacion inicial; 2=Primaria; 3=Secundaria; 4=Superior no univ.; 5=Superior univ.; 6=Maestria/Doctorado; 7=Basica especial
+2025,03,p308b,Cual es el grado o año de estudios en el que esta matriculado -Año,
+2025,03,p308c,Cual es el grado o año de estudios en el que esta matriculado -Grado,
+2025,03,p308d,Cual es el grado o año de estudios en el que esta matriculado - C.E.,1=Estatal; 2=No estatal
+2025,03,p308b1,"En su opinion, El servicio educativo que brinda el centro de eseñanza...: Infraestructura es",1=Muy malo; 2=Malo; 3=Bueno; 4=Muy bueno; 5=No sabe
+2025,03,p308b2,"En su opinion, El servicio educativo que brinda el centro de eseñanza...: Equipamiento es",1=Muy malo; 2=Malo; 3=Bueno; 4=Muy bueno; 5=No sabe
+2025,03,p308b3,"En su opinion, El servicio educativo que brinda el centro de eseñanza...: Enseñanza de los maestros es",1=Muy malo; 2=Malo; 3=Bueno; 4=Muy bueno; 5=No sabe
+2025,03,p308b4,"En su opinion, El servicio educativo que brinda el centro de eseñanza...: Dotacion de materiales educativos es",1=Muy malo; 2=Malo; 3=Bueno; 4=Muy bueno; 5=No sabe; 6=No corresponde
+2025,03,p308b5,"En su opinion, El servicio educativo que brinda el centro de eseñanza donde asiste.: Apoyo a la participacion de los padres",1=Muy malo; 2=Malo; 3=Bueno; 4=Muy bueno; 5=No sabe; 6=No corresponde
+2025,03,p308c1,"La institucion educativa o colegio, instituto superior o universidad..., Esta ubicada: Aqui en este distrito",0=En otro distrito; 1=Aqui en este distrito
+2025,03,p308c2,"La institucion educativa o colegio, instituto superior o universidad..., Esta ubicada: En otro distrito",
+2025,03,p310,"En los ultimos 12 meses, Recibio enseñanza en algun cto. o Prog. de estudios cuya duracion sea menor a 3 años",1=Si; 2=No
+2025,03,p310b1,"En el presente año..., Recibio enseñanza del nivel tecnico, en algun centro  de estudios cuya duracion sea menor a 3 años",1=Si; 2=No
+2025,03,p310c0,No sabe-Cual es el nombre de la ultima carrera de nivel auxiliar tecnico...,0=Pase; 1=No sabe
+2025,03,p310c1,Codigo de la  ultima carrera de nivel auxiliar tecnico..,131014=Deportes; 131024=Direccion Tecnica en Futbol; 214013=Idioma; 216014=Literatura Biblica; 216024=Teologia Pastoral; 222013=Encuadernacion; 222014=Publicidad y Medios Digitales; 222023=Serigrafia; 226013=Artesania en Ceramica; 226014=Joyeria; 226023=Artesania en Cuero y Pieles; 226033=Artesania en Madera; 226043=Artesania en Metales; 226053=Artesania en Piedra Tallada; 226063=Artesania en Textiles; 226073=Bisuteria; 226083=Decoracion de Eventos; 226093=Pintura; 311013=Asistente Adulto Mayor; 311023=Asistente de Ninios; 311033=Cuidado de Ninios; 311043=Cuidado de Ninios y Ancianos; 313014=Psicoterapia Psicoanalitica; 321014=Produccion Radial y Televisiva; 322013=Locucion y Comunicacion de Radio y TV; 322014=Locucion y Comunicacion de Radio y Television; 322023=Teleoperador de Call Center; 323014=Operacion de Equipos de Grabacion y Mezcla; 323024=Operacion de Equipos de Radio y Television; 323034=Operacion de Sistemas de Difusion Sonora; 332013=Asistencia de Panaderia y Pasteleria; 332014=Administracion de Hosteleria; 332023=Asistencia en Cocina; 332024=Administracion de Hoteles; 332033=Barman; 332034=Administracion de Restaurantes; 332043=Cocina (Alta Cocina); 332044=Administracion Turistica; 332053=Cocina y Reposteria; 332054=Aviacion Comercial
+2025,03,p310d1,Cual es el tiempo de duracion de la carrera de nivel auxiliar tecnico..  Años,
+2025,03,p310d2,Cual es el tiempo de duracion de la carrera de nivel auxiliar tecnico..  Meses,
+2025,03,p310e0,Cual es el nombre del C.E. donde estudia o ha estudiado la carrera de nivel auxiliar..,0=Pase; 1=No sabe/no recuerda
+2025,03,p310e1,Codigo del C.E. donde estudia o ha estudiado la carrera de nivel auxiliar..,130064030=Centros de Educación Técnico Productiva (CETPRO) 34007-Iv Centenario; 130207647=Centros De Educación Técnico Productiva (CETPRO) Clorinda Mattos De Turner; 130207654=Centros De Educación Técnico Productiva (CETPRO) Tinta; 130207696=Centros De Educación Técnico Productiva (CETPRO) Dionicia Herrera Alvarado; 130207712=Centros De Educación Técnico Productiva (CETPRO) Juan Tomas Tuiro Tupac Inca; 130207761=Centros De Educación Técnico Productiva (CETPRO) Andahuaylas; 130209635=Centros De Educación Técnico Productiva (CETPRO) Nuestra Señora De Las Mercedes; 130209668=Centros De Educación Técnico Productiva (CETPRO) Naciones Unidas; 130238865=Centros De Educación Técnico Productiva (CETPRO) Cesar Vallejo; 130238881=Centros De Educación Técnico Productiva (CETPRO) Bilingue De Yarina Cocha; 130240010=Centros De Educación Técnico Productiva (CETPRO) Horacio Zevallos Gamez; 130240036=Centros De Educación Técnico Productiva (CETPRO) Huancane; 130240044=Centros De Educación Técnico Productiva (CETPRO) Pucara; 130240069=Centros De Educación Técnico Productiva (CETPRO) Puno; 130240085=Centros De Educación Técnico Productiva (CETPRO) Juli; 130240093=Centros De Educación Técnico Productiva (CETPRO) Asillo; 130262329=Centros De Educación Técnico Productiva (CETPRO) Chachapoyas; 130263137=Centros De Educación Técnico Productiva (CETPRO) Santa Maria De La Merced; 130263152=Centros De Educación Técnico Productiva (CETPRO) Nieva; 130266700=Centros De Educación Técnico Productiva (CETPRO) Indiana; 130266791=Centros De Educación Técnico Productiva (CETPRO) Aucayo; 130274019=Centros De Educación Técnico Productiva (CETPRO) Juan Pablo Mori; 130276204=Centros De Educación Técnico Productiva (CETPRO) Santiago; 130276212=Centros De Educación Técnico Productiva (CETPRO) Manuel Corpus De La Cruz; 130276220=Centros De Educación Técnico Productiva (CETPRO) Ica; 130276246=Centros De Educación Técnico Productiva (CETPRO) Nuestra Señora De Las Mercedes; 130285825=Centros De Educación Técnico Productiva (CETPRO) Sicuani; 130285841=Centros De Educación Técnico Productiva (CETPRO) San Pablo; 130290940=Centros De Educación Técnico Productiva (CETPRO) Kotosh; 130290999=Centros De Educación Técnico Productiva (CETPRO) Inca Garcilazo De La Vega; 130305631=Centros De Educación Técnico Productiva (CETPRO) Carlos Cueto Fernandini; 130310706=Centros De Educación Técnico Productiva (CETPRO) 40049 Dean Valdivia; 130310730=Centros De Educación Técnico Productiva (CETPRO) Jose Caceres Bernal; 130326116=Centros De Educación Técnico Productiva (CETPRO) Centro Folklorico Del Magisterio Alejandro Vivanco Guerra; 130327528=Centros De Educación Técnico Productiva (CETPRO) 002 Tumbes; 130329912=Centros De Educación Técnico Productiva (CETPRO) Nuestra Señora De Lourdes; 130329987=Centros De Educación Técnico Productiva (CETPRO) 7047 Tacna; 130330001=Centros De Educación Técnico Productiva (CETPRO) Villa Jardin; 130330027=Centros De Educación Técnico Productiva (CETPRO) Pedro Paulet; 130330035=Centros De Educación Técnico Productiva (CETPRO) Jose Olaya
+2025,03,p310e3,Codigo del dpto. del C.E. donde estudia o ha estudiado la carrera de nivel auxiliar tecnico.,0=Busqueda; 1=Amazonas; 2=Ancash; 3=Apurimac; 4=Arequipa; 5=Ayacucho; 6=Cajamarca; 7=Callao; 8=Cusco; 9=Huancavelica; 10=Huanuco; 11=Ica; 12=Junin; 13=La Libertad; 14=Lambayeque; 15=Lima; 16=Loreto; 17=Madre de Dios; 18=Moquegua; 19=Pasco; 20=Piura; 21=Puno; 22=San Martin; 23=Tacna; 24=Tumbes; 25=Ucayali
+2025,03,p311n_1,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Uniforme escolar",1=Uniforme Escolar
+2025,03,p311n_2,"En los ultimos 12 meses,Gasto, obtuvo, consiguio...: Calzado escolar",2=Calzado Escolar
+2025,03,p311n_3,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Libros y textos",3=Libros y textos
+2025,03,p311n_4,"En los ultimos 12 meses,Gasto, obtuvo, consiguio...: Utiles Escolares",4=Utiles Escolares
+2025,03,p311n_5,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Matricula",5=Matricula
+2025,03,p311n_6,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: APAFA",6=APAFA
+2025,03,p311n_7,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Otros",7=Otros
+2025,03,p311n_8,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Laptop del Prog.",8=Laptop del Prog. - Una laptop por niño
+2025,03,p311n_9,"En los ultimos 12 meses, Gasto, obtuvo, consiguio ...: Tablet MINEDU",9=Tablet MINEDU
+2025,03,p311_1,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Uniforme escolar",1=Si; 2=No
+2025,03,p311_2,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Calzado escolar",1=Si; 2=No
+2025,03,p311_3,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Libros y textos",1=Si; 2=No
+2025,03,p311_4,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Utiles Escolares",1=Si; 2=No
+2025,03,p311_5,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Matricula",1=Si; 2=No
+2025,03,p311_6,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: APAFA",1=Si; 2=No
+2025,03,p311_7,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Otros",1=Si; 2=No
+2025,03,p311_8,"En los ultimos 12 meses,Gasto, obtuvo, consiguio..: Laptop del Prog.",1=Si; 2=No
+2025,03,p311_9,"En los ultimos 12 meses, Gasto, obtuvo, consiguio o le regalaron: Tablet MINEDU",1=Si; 2=No
+2025,03,p311a1_1,Como obtuvieron...Uniforme Escolar: Comprado,1=Comprado
+2025,03,p311a1_2,Como obtuvieron...Calzado Escolar: Comprado,1=Comprado
+2025,03,p311a1_3,Como obtuvieron.. Libros y textos: Comprado,1=Comprado
+2025,03,p311a1_4,Como obtuvieron.. Utiles Escolares: Comprado,1=Comprado
+2025,03,p311a1_5,Como obtuvieron.. Matricula: Comprado,1=Comprado
+2025,03,p311a1_6,Como obtuvieron.. APAFA: Comprado,1=Comprado
+2025,03,p311a1_7,Como obtuvieron.. Otros : Comprado,1=Comprado
+2025,03,p311a1_8,Como obtuvieron.. Laptop del Prog.: Comprado,
+2025,03,p311a1_9,Como obtuvieron - Prog.Tablet MINEDU: Comprado,
+2025,03,p311a2_1,Como obtuvieron.. Uniforme Escolar: Autoconsumo,1=Autoconsumo
+2025,03,p311a2_2,Como obtuvieron.. Calzado Escolar: Autoconsumo,1=Autoconsumo
+2025,03,p311a2_3,Como obtuvieron.. Libros y textos: Autoconsumo,1=Autoconsumo
+2025,03,p311a2_4,Como obtuvieron.. Utiles Escolares: Autoconsumo,1=Autoconsumo
+2025,03,p311a2_5,Como obtuvieron...Matricula: Autoconsumo,1=Autoconsumo
+2025,03,p311a2_6,Como obtuvieron..APAFA: Autoconsumo,1=Autoconsumo
+2025,03,p311a2_7,Como obtuvieron..Otros : Autoconsumo,1=Autoconsumo
+2025,03,p311a2_8,Como obtuvieron .. Laptop del Prog.: Autoconsumo,
+2025,03,p311a2_9,Como obtuvieron - Prog.Tablet MINEDU: Autoconsumo,
+2025,03,p311a3_1,Como obtuvieron..Uniforme Escolar: Autosuministro,1=Autosuministro
+2025,03,p311a3_2,Como obtuvieron..Calzado Escolar: Autosuministro,1=Autosuministro
+2025,03,p311a3_3,Como obtuvieron..Libros y textos: Autosuministro,1=Autosuministro
+2025,03,p311a3_4,Como obtuvieron .. Utiles Escolares: Autosuministro,1=Autosuministro
+2025,03,p311a3_5,Como obtuvieron .. Matricula: Autosuministro,1=Autosuministro
+2025,03,p311a3_6,Como obtuvieron .. APAFA: Autosuministro,1=Autosuministro
+2025,03,p311a3_7,Como obtuvieron...Otros : Autosuministro,1=Autosuministro
+2025,03,p311a3_8,Como obtuvieron .. Laptop del Prog.: Autosuministro,
+2025,03,p311a3_9,Como obtuvieron - Prog.Tablet MINEDU: Autosuministro,
+2025,03,p311a4_1,Como obtuvieron ..  Uniforme Escolar: Pago en especie,1=Pago en especie
+2025,03,p311a4_2,Como obtuvieron .. Calzado Escolar: Pago en especie,1=Pago en especie
+2025,03,p311a4_3,Como obtuvieron .. Libros y textos: Pago en especie,1=Pago en especie
+2025,03,p311a4_4,Como obtuvieron .. Utiles Escolares: Pago en especie,1=Pago en especie
+2025,03,p311a4_5,Como obtuvieron .. Matricula: Pago en especie,1=Pago en especie
+2025,03,p311a4_6,Como obtuvieron...APAFA: Pago en especie,1=Pago en especie
+2025,03,p311a4_7,Como obtuvieron...Otros : Pago en especie,1=Pago en especie
+2025,03,p311a4_8,Como obtuvieron...Laptop del Prog.: Pago en especie,
+2025,03,p311a4_9,Como obtuvieron - Prog.Tablet MINEDU: Pago en especie,
+2025,03,p311a5_1,Como obtuvieron...Uniforme Escolar: Otros hogares,1=Otros hogares
+2025,03,p311a5_2,Como obtuvieron...Calzado Escolar: Otros hogares,1=Otros hogares
+2025,03,p311a5_3,Como obtuvieron...Libros y textos: Otros hogares,1=Otros hogares
+2025,03,p311a5_4,Como obtuvieron...Utiles Escolares: Otros hogares,1=Otros hogares
+2025,03,p311a5_5,Como obtuvieron...Matricula: Otros hogares,1=Otros hogares
+2025,03,p311a5_6,Como obtuvieron...APAFA: Otros hogares,1=Otros hogares
+2025,03,p311a5_7,Como obtuvieron...Otros : Otros hogares,1=Otros hogares
+2025,03,p311a5_8,Como obtuvieron...Laptop del Prog.: Otros hogares,
+2025,03,p311a5_9,Como obtuvieron - Prog.Tablet MINEDU: Otros hogares,
+2025,03,p311a6_1,Como obtuvieron...Uniforme Escolar: Prog. Social,1=Prog. Social
+2025,03,p311a6_2,Como obtuvieron...Calzado Escolar: Prog. Social,1=Prog. Social
+2025,03,p311a6_3,Como obtuvieron...Libros y textos: Prog. Social,1=Prog. Social
+2025,03,p311a6_4,Como obtuvieron...Utiles Escolares: Prog. Social,1=Prog. Social
+2025,03,p311a6_5,Como obtuvieron...Matricula: Prog. Social,1=Prog. Social
+2025,03,p311a6_6,Como obtuvieron...APAFA: Prog. Social,1=Prog. Social
+2025,03,p311a6_7,Como obtuvieron...Otros  Prog. Social,1=Prog. Social
+2025,03,p311a6_8,Como obtuvieron...Laptop del Prog.: Prog. Social,1=Prog. Social
+2025,03,p311a6_9,Como obtuvieron - Prog.Tablet MINEDU: Prog. social,1=Prog. Social
+2025,03,p311a7_1,Como obtuvieron...Uniforme Escolar: Otro medio,1=Otro
+2025,03,p311a7_2,Como obtuvieron...Calzado Escolar: Otro medio,1=Otro
+2025,03,p311a7_3,Como obtuvieron...Libros y textos: Otro medio,1=Otro
+2025,03,p311a7_4,Como obtuvieron...Utiles Escolares: Otro medio,1=Otro
+2025,03,p311a7_5,Como obtuvieron...Matricula: Otro medio,1=Otro
+2025,03,p311a7_6,Como obtuvieron...APAFA: Otro medio,1=Otro
+2025,03,p311a7_7,Como obtuvieron...Otros : Otro medio,1=Otro
+2025,03,p311a7_8,Como obtuvieron...Laptop del Prog.: Otro medio,
+2025,03,p311a7_9,Como obtuvieron - Prog.Tablet MINEDU: Otro medio,
+2025,03,p311b_1,Cuanto fue el monto de: Uniforme Escolar,
+2025,03,p311b_2,Cuanto fue el monto de: Calzado Escolar,
+2025,03,p311b_3,Cuanto fue el monto de: Libros y Textos,
+2025,03,p311b_4,Cuanto fue el monto de: Utiles Escolares,
+2025,03,p311b_5,Cuanto fue el monto de: Matricula,
+2025,03,p311b_6,Cuanto fue el monto de: APAFA,
+2025,03,p311b_7,Cuanto fue el monto de: Otros,
+2025,03,p311b_8,Cuanto fue el monto de: Laptop del Prog.,
+2025,03,p311b_9,Cuanto fue el monto de: Prog. Tablet MINEDU,
+2025,03,p311c_1,Donde compro el(los): Uniforme Escolar,"1=Ambulante; 2=Libreria; 3=C.E.; 4=Feria; 5=Puesto de mercado; 6=Bazar; 7=Bodega, tienda, etc.; 8=Tienda especializada al por mayor; 9=Tienda especializada al por menor; 10=Otro"
+2025,03,p311c_2,Donde compro el(los): Calzado Escolar,"1=Ambulante; 2=Libreria; 3=C.E.; 4=Feria; 5=Puesto de mercado; 6=Bazar; 7=Bodega, tienda, etc.; 8=Tienda especializada al por mayor; 9=Tienda especializada al por menor; 10=Otro"
+2025,03,p311c_3,Donde compro el(los): Libros y Textos,"1=Ambulante; 2=Libreria; 3=C.E.; 4=Feria; 5=Puesto de mercado; 6=Bazar; 7=Bodega, tienda, etc.; 8=Tienda especializada al por mayor; 9=Tienda especializada al por menor; 10=Otro"
+2025,03,p311c_4,Donde compro el(los): Utiles Escolares,"1=Ambulante; 2=Libreria; 3=C.E.; 4=Feria; 5=Puesto de mercado; 6=Bazar; 7=Bodega, tienda, etc.; 8=Tienda especializada al por mayor; 9=Tienda especializada al por menor; 10=Otro"
+2025,03,p311c_5,Donde compro el(los): Matricula,
+2025,03,p311c_6,Donde compro el(los): APAFA,
+2025,03,p311c_7,Donde compro el(los): Otros,"1=Ambulante; 2=Libreria; 3=C.E.; 4=Feria; 5=Puesto de mercado; 6=Bazar; 7=Bodega, tienda, etc.; 8=Tienda especializada al por mayor; 9=Tienda especializada al por menor; 10=Otro"
+2025,03,p311c_8,Donde compro el(los): Laptop del Prog.,
+2025,03,p311c_9,Donde compro el(los): Prog. Tablet MINEDU,
+2025,03,p311d_1,Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar,
+2025,03,p311d_2,Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar,
+2025,03,p311d_3,Cuanto cree que le costaria si tuviera que pagar..Libros y Textos,
+2025,03,p311d_4,Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares,
+2025,03,p311d_5,Cuanto cree que le costaria si tuviera que pagar..Matricula,
+2025,03,p311d_6,Cuanto cree que le costaria si tuviera que pagar..APAFA,
+2025,03,p311d_7,Cuanto cree que le costaria si tuviera que pagar..Otros,
+2025,03,p311d_8,Cuanto cree que le costaria si tuviera que pagar..Laptop del Prog.,
+2025,03,p311d_9,Cuanto cree que le costaria si tuviera que pagar..Prog. Tablet MINEDU,
+2025,03,p311d2_1,Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Autoconsumo,
+2025,03,p311d2_2,Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Autoconsumo,
+2025,03,p311d2_3,Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Autoconsumo,
+2025,03,p311d2_4,Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Autoconsumo,
+2025,03,p311d2_5,Cuanto cree que le costaria si tuviera que pagar..Matricula - Autoconsumo,
+2025,03,p311d2_6,Cuanto cree que le costaria si tuviera que pagar..APAFA - Autoconsumo,
+2025,03,p311d2_7,Cuanto cree que le costaria si tuviera que pagar..Otros  - Autoconsumo,
+2025,03,p311d2_8,Cuanto cree que le costaria si tuviera que pagar..Laptop del Prog. - Autoconsumo,
+2025,03,p311d2_9,Cuanto cree que le costaria si tuviera que pagar.. Tablet MINEDU,
+2025,03,p311d3_1,Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Autosuministro,
+2025,03,p311d3_2,Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Autosuministro,
+2025,03,p311d3_3,Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Autosuministro,
+2025,03,p311d3_4,Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Autosuministro,
+2025,03,p311d3_5,Cuanto cree que le costaria si tuviera que pagar..Matricula - Autosuministro,
+2025,03,p311d3_6,Cuanto cree que le costaria si tuviera que pagar..APAFA - Autosuministro,
+2025,03,p311d3_7,Cuanto cree que le costaria si tuviera que pagar..Otros  - Autosuministro,
+2025,03,p311d3_8,Cuanto cree que le costaria si tuviera que pagar..Laptop del Prog. - Autosuministro,
+2025,03,p311d3_9,Cuanto cree que le costaria si tuviera que pagar..Prog. Tablet MINEDU - Autosuministro,
+2025,03,p311d4_1,Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Pago en especie,
+2025,03,p311d4_2,Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Pago en especie,
+2025,03,p311d4_3,Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Pago en especie,
+2025,03,p311d4_4,Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Pago en especie,
+2025,03,p311d4_5,Cuanto cree que le costaria si tuviera que pagar..Matricula - Pago en especie,
+2025,03,p311d4_6,Cuanto cree que le costaria si tuviera que pagar..APAFA - Pago en especie,
+2025,03,p311d4_7,Cuanto cree que le costaria si tuviera que pagar..Otros  - Pago en especie,
+2025,03,p311d4_8,Cuanto cree que le costaria si tuviera que pagar..Laptop del Prog. - Pago en especie,
+2025,03,p311d4_9,Cuanto cree que le costaria si tuviera que pagar.. Prog. Tablet MINEDU - Pago en especie,
+2025,03,p311d5_1,Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Otros hogares,
+2025,03,p311d5_2,Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Otros hogares,
+2025,03,p311d5_3,Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Otros hogares,
+2025,03,p311d5_4,Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Otros hogares,
+2025,03,p311d5_5,Cuanto cree que le costaria si tuviera que pagar..Matricula - Otros hogares,
+2025,03,p311d5_6,Cuanto cree que le costaria si tuviera que pagar..APAFA - Otros hogares,
+2025,03,p311d5_7,Cuanto cree que le costaria si tuviera que pagar..Otros  - Otros hogares,
+2025,03,p311d5_8,Cuanto cree que le costaria si tuviera que pagar..Laptop del Prog. - Otros hogares,
+2025,03,p311d5_9,Cuanto cree que le costaria si tuviera que pagar..Prog. Tablet MINEDU - Otros hogares,
+2025,03,p311d6_1,Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Prog. social,
+2025,03,p311d6_2,Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Prog. social,
+2025,03,p311d6_3,Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Prog. social,
+2025,03,p311d6_4,Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Prog. social,
+2025,03,p311d6_5,Cuanto cree que le costaria si tuviera que pagar..Matricula - Prog. social,
+2025,03,p311d6_6,Cuanto cree que le costaria si tuviera que pagar..APAFA - Prog. social,
+2025,03,p311d6_7,Cuanto cree que le costaria si tuviera que pagar..Otros  - Prog. social,
+2025,03,p311d6_8,Cuanto cree que le costaria si tuviera que pagar..Laptop del Prog. - Prog. social,
+2025,03,p311d6_9,Cuanto cree que le costaria si tuviera que pagar..Prog. Tablet MINEDU - Prog. social,
+2025,03,p311d7_1,Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Otro,
+2025,03,p311d7_2,Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Otro,
+2025,03,p311d7_3,Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Otro,
+2025,03,p311d7_4,Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Otro,
+2025,03,p311d7_5,Cuanto cree que le costaria si tuviera que pagar..Matricula - Otro,
+2025,03,p311d7_6,Cuanto cree que le costaria si tuviera que pagar..APAFA - Otro,
+2025,03,p311d7_7,Cuanto cree que le costaria si tuviera que pagar..Otros  - Otro,
+2025,03,p311d7_8,Cuanto cree que le costaria si tuviera que pagar..Laptop del Prog. - Otro,
+2025,03,p311d7_9,Cuanto cree que le costaria si tuviera que pagar..Prog. Tablet MINEDU - Otro,
+2025,03,p311e_1,Cuantas veces realizo el gto. durante los ultimos 12 meses  N° de veces: Uniforme escolar,
+2025,03,p311e_2,Cuantas veces realizo el gto. durante los ultimos 12 meses N° de veces: Calzado escolar,
+2025,03,p311e_3,Cuantas veces realizo el gto. durante los ultimos 12 meses N° de veces: Libros y textos,
+2025,03,p311e_4,Cuantas veces realizo el gto. durante los ultimos 12 meses N° de veces: Utiles Escolares,
+2025,03,p311e_5,Cuantas veces realizo el gto. durante los ultimos 12 meses N° de veces: Matricula,
+2025,03,p311e_6,Cuantas veces realizo el gto. durante los ultimos 12 meses N° de veces: APAFA,
+2025,03,p311e_7,"Cuantas veces realizo el gto. durante los ultimos 12 meses N° de veces: Otros ,",
+2025,03,p311e_8,Cuantas veces realizo el gto. durante los ultimos 12 meses N° de veces: Laptop del Prog.,
+2025,03,p311e_9,Cuantas veces realizo el gto. durante los ultimos 12 meses N° de veces: Prog. Tablet MINEDU,
+2025,03,p311t1,Total Gasto en los ultimos 12 meses (S/.),
+2025,03,p311t22,Cuanto cree que le costaria si tuviera que pagar..- Total Autoconsumo,
+2025,03,p311t23,Cuanto cree que le costaria si tuviera que pagar.. - Total Autosuministro,
+2025,03,p311t24,Cuanto cree que le costaria si tuviera que pagar.. - Total Pago en especie,
+2025,03,p311t25,Cuanto cree que le costaria si tuviera que pagar.. - Total Otros hogares,
+2025,03,p311t26,Cuanto cree que le costaria si tuviera que pagar..- Total Prog. Social,
+2025,03,p311t27,Cuanto cree que le costaria si tuviera que pagar.. - Total Otro (especifique),
+2025,03,p311t2,Total Estimado en los ultimos 12 meses(S/.),
+2025,03,p3121,"En el mes anterior, gasto en : Pension Mensual de Enseñanza",1=Si; 2=No
+2025,03,p3121a1,Como obtuvieron...: Pension Mensual de Enseñanza: Comprado,1=Comprado
+2025,03,p3121a2,Como obtuvieron...: Pension Mensual de Enseñanza: Autosuministro,1=Autosuministro
+2025,03,p3121a3,Como obtuvieron...: Pension Mensual de Enseñanza: Pago en especie,1=Pago en especie
+2025,03,p3121a4,Como obtuvieron...: Pension Mensual de Enseñanza: Otros hogares,1=Otros Hogares
+2025,03,p3121a5,Como obtuvieron...: Pension Mensual de Enseñanza: Prog. social,1=Prog. Social
+2025,03,p3121a6,Como obtuvieron...: Pension Mensual de Enseñanza: Otro,1=Otro
+2025,03,p3121b,Cuanto fue el monto de: Pension Mensual de Enseñanza,
+2025,03,p3121c,Cuanto cree que le costaria si tuviera que pagarlo: Pension Mensual de Enseñanza,
+2025,03,p3121c2,Cuanto cree que le costaria si tuviera que pagar por Pension de Enseñanza – Autosuministro,
+2025,03,p3121c3,Cuanto cree que le costaria si tuviera que pagar por Pension de Enseñanza – Pago en especie,
+2025,03,p3121c4,Cuanto cree que le costaria si tuviera que pagar por Pension  de Enseñanza – Otro hogar,
+2025,03,p3121c5,Cuanto cree que le costaria si tuviera que pagar por Pension de Enseñanza – Prog. Social,
+2025,03,p3121c6,Cuanto cree que le costaria si tuviera que pagar por Pension de Enseñanza – Otro,
+2025,03,p3121d,Cuantas veces realizo el gasto durante los ultimos 12 meses -  N° de veces : Pension de Enseñanza,
+2025,03,p3122,"En el mes anterior, gasto en: Movilidad Particular...",1=Si; 2=No
+2025,03,p3122a1,Como obtuvieron  Movilidad Particular..: Comprado,1=Comprado
+2025,03,p3122a2,Como obtuvieron  Movilidad Particular..: Autosuministro,1=Autosuministro
+2025,03,p3122a3,Como obtuvieron  Movilidad Particular..: Pago en especie,1=Pago en especie
+2025,03,p3122a4,Como obtuvieron  Movilidad Particular..: Otros hogares,1=Otros hogares
+2025,03,p3122a5,Como obtuvieron  Movilidad Particular..: Prog. social,1=Prog. social
+2025,03,p3122a6,Como obtuvieron  Movilidad Particular..: Otro,1=Otro
+2025,03,p3122b,Cuanto fue el monto de: Movilidad Particular..,
+2025,03,p3122c,Cuanto cree que le costaria si tuviera que pagarlo: Movilidad Particular...,
+2025,03,p3122c2,Cuanto cree que le costaria si tuviera que pagar por Movilidad– Autosuministro,
+2025,03,p3122c3,Cuanto cree que le costaria si tuviera que pagar por Movilidad– Pago en especie,
+2025,03,p3122c4,Cuanto cree que le costaria si tuviera que pagar por Movilidad– Otros hogares,
+2025,03,p3122c5,Cuanto cree que le costaria si tuviera que pagar por Movilidad– Prog. Social,
+2025,03,p3122c6,Cuanto cree que le costaria si tuviera que pagar por Movilidad – Otro,
+2025,03,p3122d,Cuantas veces realizo el gasto durante los ultimos 12 meses -  N° de veces: Movilidad...,
+2025,03,p312t1,Total Gasto mes anterior (S/.),
+2025,03,p312t22,Cuanto cree que le costaria si tuviera que pagarlo - Total Autosuministro,
+2025,03,p312t23,Cuanto cree que le costaria si tuviera que pagarlo - Total Pago en especie,
+2025,03,p312t24,Cuanto cree que le costaria si tuviera que pagarlo - Total Otros hogares,
+2025,03,p312t25,Cuanto cree que le costaria si tuviera que pagarlo - Total Prog. social,
+2025,03,p312t26,Cuanto cree que le costaria si tuviera que pagarlo - Total Otro,
+2025,03,p312t2,Total Estimado mes anterior (S/.),
+2025,03,p313,Cual es la principal razon por la que no esta matriculado o no asiste a algun ctro. o prog. de educacion...,1=Problemas economicos; 2=Estoy trabajando; 3=Termino sus estudios: secundarios/ superiores /asiste a academia preuniv.; 4=No tiene la edad suficiente (para el grupo 3-5 años); 5=Problemas familiares; 6=De vacaciones; 7=No existe centro de educacion basica o superior en el centro poblado; 8=Asiste a un centro de educacion tecnico productiva; 9=No me interesa/no me gusta el estudio; 10=Se dedica a los quehaceres del hogar; 11=Otra razon
+2025,03,p314a,"En el mes anterior, Ud. hizo uso del servicio de Internet",1=Si; 2=No
+2025,03,p314b_1,"En el mes anterior, Uso Ud., el servicio de internet en: El hogar",0=Pase; 1=El hogar
+2025,03,p314b_2,"En el mes anterior, Uso Ud., el servicio de internet en: El trabajo",0=Pase; 2=El trabajo
+2025,03,p314b_3,"En el mes anterior, Uso Ud., el servicio de internet en: Un establecimiento educativo",0=Pase; 3=Un establecimiento educativo
+2025,03,p314b_4,"En el mes anterior, Uso Ud., el servicio de internet en: Una cabina publica",0=Pase; 4=Una cabina publica
+2025,03,p314b_5,"En el mes anterior, Uso Ud., el servicio de internet en: En casa de otra persona",0=Pase; 5=En casa de otra persona
+2025,03,p314b_6,"En el mes anterior, Uso Ud., el servicio de internet en: Otro",0=Pase; 6=Otro
+2025,03,p314b_7,"En el mes anterior, Uso Ud., el servicio de internet en: Acceso movil a internet",0=Pase; 7=Acceso movil a Internet
+2025,03,p314b1_1,"En el mes anterior, El servicio de Internet lo uso..:Computadora",0=Pase; 1=Computadora
+2025,03,p314b1_2,"En el mes anterior, El servicio de Internet lo uso... Laptop",0=Pase; 2=Laptop
+2025,03,p314b1_6,"En el mes anterior, El servicio de Internet lo uso..: Tablet",0=Pase; 6=Tablet
+2025,03,p314b1_7,"En el mes anterior, El servicio de Internet lo uso..: Otro",0=Pase; 7=Otro
+2025,03,p314b1_8,"En el mes anterior, El servicio de Internet lo uso..: Celular sin plan de datos",0=Pase; 8=Celular sin plan de datos
+2025,03,p314b1_9,"En el mes anterior, El servicio de Internet lo uso.: Celular con plan de datos",0=Celular con plan de datos; 9=Otro
+2025,03,p314d,Ud. usa Internet al menos:,1=Una vez al dia; 2=Una vez a la semana; 3=Una vez al mes; 4=Cada 2 meses o mas
+2025,03,p3151,En el mes anterior Obtuvo el servicio de Internet en cabina publica - Comprado,1=Comprado
+2025,03,p3152,En el mes anterior Obtuvo el servicio de Internet en cabina publica - Autosuministro,1=Autosuministro
+2025,03,p3153,En el mes anterior Obtuvo el servicio de Internet en cabina publica - Pago en especie,1=Pago en especie
+2025,03,p3154,En el mes anterior Obtuvo el servicio de Internet en cabina publica - Otros hogares,1=Otros hogares
+2025,03,p3155,En el mes anterior Obtuvo el servicio de Internet en cabina publica - Prog. social,1=Prog. social
+2025,03,p3156,En el mes anterior Obtuvo el servicio de Internet en cabina publica - Otro,1=Otro
+2025,03,p315a,Cuanto fue el monto del servicio en el mes anterior,
+2025,03,p315b,Cuanto cree que le constaria si tuviera que pagar por este servicio..,
+2025,03,p315b2,Cuanto cree que le constaria si tuviera que pagar por este servicio.. - Autosuministro,
+2025,03,p315b3,Cuanto cree que le constaria si tuviera que pagar por este servicio..- Pago en especie,
+2025,03,p315b4,Cuanto cree que le constaria si tuviera que pagar por este servicio..- Otros hogares,
+2025,03,p315b5,Cuanto cree que le constaria si tuviera que pagar por este servicio..- Prog. social,
+2025,03,p315b6,Cuanto cree que le constaria si tuviera que pagar por este servicio..- Otro,
+2025,03,p316_1,Uso el Internet para: Obtener informacion,1=Si; 2=No
+2025,03,p316_2,"Uso el Internet para: Comunicarse (e-mail, etc.)",1=Si; 2=No
+2025,03,p316_3,Uso el Internet para: Comprar productos y/o servicios,1=Si; 2=No
+2025,03,p316_4,Uso el Internet para: Operaciones de banca electronica,1=Si; 2=No
+2025,03,p316_5,Uso el Internet para: Educacion formal y actividades de capacitacion,1=Si; 2=No
+2025,03,p316_6,Uso el Internet para: Transacciones con organizaciones estatales,1=Si; 2=No
+2025,03,p316_7,Uso el Internet para: Actividades de entretenimiento,1=Si; 2=No
+2025,03,p316_8,Uso el Internet para: Vender productos y/o servicios,1=Si; 2=No
+2025,03,p316_9,Uso el Internet para: Otros,1=Si; 2=No
+2025,03,p316_10,Uso el Internet para: Otros,1=Si; 2=No
+2025,03,p316_11,Uso el Internet para: Otros,1=Si; 2=No
+2025,03,p316_12,Uso el Internet para: Descarga de antivirus/aplicativos/software,1=Si; 2=No
+2025,03,p316a1,"En el mes anterior, Ud. utilizo: Telef. celular propio",0=Pase; 1=Telf.celular propio.
+2025,03,p316a2,"En el mes anterior, Ud. utilizo: Telef. celular de un familiar o amigo/a",0=Pase; 2=Telf. celular de un familiar o amigo
+2025,03,p316a3,"En el mes anterior, Ud. utilizo: Telef. celular de su centro de trabajo",0=Pase; 3=Telf. celular de su centro de trabajo
+2025,03,p316a4,"En el mes anterior, Ud. utilizo: Otro",0=Pase; 4=Otro
+2025,03,p316a5,"En el mes anterior, Ud. utilizo: No utiliza",0=Pase; 5= No utiliza
+2025,03,p316a6,"En el mes anterior, Ud. utilizo: Telef. celular alquilado",0=Pase; 6=Telf. celular alquilado
+2025,03,p316b,"En los ultimos 3 meses,Ha utilizado una computadora, laptop, tablet...",1=Si; 2=No
+2025,03,p316c1,Acts. inform. que ha realizado:Copiar o mover un archivo o carpeta,1=Si; 2=No
+2025,03,p316c2,Acts. inform. que ha realizado:Utilizar herramientas de copiar y pegar…,1=Si; 2=No
+2025,03,p316c3,Acts. inform. que ha realizado:Enviar correos electronicos con archivos …,1=Si; 2=No
+2025,03,p316c4,Acts. inform. que ha realizado:Utilizar formulas aritmeticas en una hoja de calculo,1=Si; 2=No
+2025,03,p316c5,Acts. inform. que ha realizado:Conectar e instalar nuevos dispositivos…,1=Si; 2=No
+2025,03,p316c6,"Acts. inform. que ha realizado:Encontrar, descargar, instalar y configurar software",1=Si; 2=No
+2025,03,p316c7,Acts. inform. que ha realizado:Crear presentaciones electronicas,1=Si; 2=No
+2025,03,p316c8,Acts. inform. que ha realizado: Transferir archivos entre computadora y otros dispositivos,1=Si; 2=No
+2025,03,p316c9,Acts. inform. que ha realizado: Redactar un Prog. informatico,1=Si; 2=No
+2025,03,p316c10,Acts. inform. que ha realizado: Otros,1=Si; 2=No
+2025,03,t313a,(Recodificada ) Cual es la principal razon por la que no esta matriculado...,1=Problemas economicos; 2=Estoy trabajando; 3=Termino sus estudios: secundarios/ superiores /asiste a academia preuniv.; 4=No tiene la edad suficiente; 5=Problemas familiares; 6=De Vacaciones; 7=No existe centro de educacion basica o superior en el CCPP.; 8=Asiste a un centro de educacion tecnico productivo; 9=No me interesa/no me gusta el estudio; 10=Se dedica a los quehaceres del hogar; 11=Otra razon; 12=Asiste a un centro de enseñanza no regular; 13=Suspension de clases por COVID-19; 14=Sin señal/equipo tecnologico/internet/electricidad; 15=No matriculado por cuarentena; 16=Traslado en proceso de centro estudios por COVID-19; 17=Institucion educativa no licenciada; 18=No le gusta las clases virtuales/ No aprende en clases virtuales
+2025,03,p203,Cual es la relacion de parentesco con el jefe(a) del hogar,0=Panel; 1=Jefe/Jefa; 2=Esposo(a)/compañero(a); 3=Hijo(a)/Hijastro(a); 4=Yerno/Nuera; 5=Nieto(a); 6=Padres/Suegros; 7=Otros parientes; 8=Trabajador Hogar; 9=Pensionista; 10=Otros no parientes; 11=Hermano(a)
+2025,03,p204,Es miembro del hogar,1=Si; 2=No
+2025,03,p205,Se encuentra ausente del hogar 30 dias o mas,1=Si; 2=No
+2025,03,p206,Esta presente en el hogar 30 dias o mas,1=Si; 2=No
+2025,03,p207,Sexo,1=Hombre; 2=Mujer
+2025,03,p208a,Que edad tiene en años cumplidos,
+2025,03,p209,Cual es su estado civil o conyugal,1=Conviviente; 2=Casado(a); 3=Viudo(a); 4=Divorciado(a); 5=Separado(a); 6=Soltero(a)
+2025,03,imputado,Conglomerado - (Imputacion Hot-Deck),1=Con imputación Hot-Deck
+2025,03,ticuest01a,Origen de cuestionario,1=Cuestionario en hojas; 2=Cuestionario en Tablet
+2025,03,d311b_1,(Deflac.) Cuanto fue el monto de: Uniforme Escolar,
+2025,03,d311d2_1,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Autoconsumo,
+2025,03,d311d3_1,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Autosuministro,
+2025,03,d311d4_1,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Pago en especie,
+2025,03,d311d5_1,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Otros hogares,
+2025,03,d311d6_1,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Prog. social,
+2025,03,d311d7_1,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Otro,
+2025,03,d311d_1,(Deflac.) Cuanto cree que le costaria si tuviera que pagar.. Uniforme Escolar,
+2025,03,d311b_2,(Deflac.) Cuanto fue el monto de: Calzado Escolar,
+2025,03,d311d2_2,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Autoconsumo,
+2025,03,d311d3_2,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Autosuministro,
+2025,03,d311d4_2,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Pago en especie,
+2025,03,d311d5_2,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Otros hogares,
+2025,03,d311d6_2,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Prog. social,
+2025,03,d311d7_2,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Otro,
+2025,03,d311d_2,(Deflac.) Cuanto cree que le costaria si tuviera que pagar.. Calzado Escolar,
+2025,03,d311b_3,(Deflac.) Cuanto fue el monto de: Libros y Textos,
+2025,03,d311d2_3,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Autoconsumo,
+2025,03,d311d3_3,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Autosuministro,
+2025,03,d311d4_3,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Pago en especie,
+2025,03,d311d5_3,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Otros hogares,
+2025,03,d311d6_3,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Prog. social,
+2025,03,d311d7_3,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Otro,
+2025,03,d311d_3,(Deflac.) Cuanto cree que le costaria si tuviera que pagar.. Libros y Textos,
+2025,03,d311b_4,(Deflac.) Cuanto fue el monto de: Utiles Escolares,
+2025,03,d311d2_4,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Autoconsumo,
+2025,03,d311d3_4,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Autosuministro,
+2025,03,d311d4_4,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Pago en especie,
+2025,03,d311d5_4,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Otros hogares,
+2025,03,d311d6_4,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Prog. social,
+2025,03,d311d7_4,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Otro,
+2025,03,d311d_4,(Deflac.) Cuanto cree que le costaria si tuviera que pagar.. Utiles Escolares,
+2025,03,d311b_5,(Deflac.) Cuanto fue el monto de: Matricula,
+2025,03,d311d2_5,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Matricula - Autoconsumo,
+2025,03,d311d3_5,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Matricula - Autosuministro,
+2025,03,d311d4_5,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Matricula - Pago en especie,
+2025,03,d311d5_5,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Matricula - Otros hogares,
+2025,03,d311d6_5,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Matricula - Prog. social,
+2025,03,d311d7_5,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Matricula - Otro,
+2025,03,d311d_5,(Deflac.) Cuanto cree que le costaria si tuviera que pagar.. Matricula,
+2025,03,d311b_6,(Deflac.) Cuanto fue el monto de: APAFA,
+2025,03,d311d2_6,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..APAFA - Autoconsumo,
+2025,03,d311d3_6,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..APAFA - Autosuministro,
+2025,03,d311d4_6,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..APAFA - Pago en especie,
+2025,03,d311d5_6,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..APAFA - Otros hogares,
+2025,03,d311d6_6,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..APAFA - Prog. social,
+2025,03,d311d7_6,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..APAFA - Otro,
+2025,03,d311d_6,(Deflac.) Cuanto cree que le costaria si tuviera que pagar.. APAFA,
+2025,03,d311b_7,(Deflac.) Cuanto fue el monto de: Otro,
+2025,03,d311d2_7,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Otros  - Autoconsumo,
+2025,03,d311d3_7,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Otros  - Autosuministro,
+2025,03,d311d4_7,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Otros  - Pago en especie,
+2025,03,d311d5_7,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Otros  - Otros hogares,
+2025,03,d311d6_7,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Otros  - Prog. social,
+2025,03,d311d7_7,(Deflac.) Cuanto cree que le costaria si tuviera que pagar..Otros  - Otro,
+2025,03,d311d_7,"(Deflac.) Cuanto cree que le costaria si tuviera que pagar.. Otro (Fotocopias, etc)",
+2025,03,d3121b,(Deflac.) Cuanto fue el monto de: Pension Mensual de Enseñanza,
+2025,03,d3121c2,(Deflac.) Cuanto estima el valor de Pension Mensual.. - Autosuministro,
+2025,03,d3121c3,(Deflac.) Cuanto estima el valor de Pension Mensual.. - Pago en especie,
+2025,03,d3121c4,(Deflac.) Cuanto estima el valor de Pension Mensual.. - Otros hogares,
+2025,03,d3121c5,(Deflac.) Cuanto estima el valor de Pension Mensual.. - Prog. Social,
+2025,03,d3121c6,(Deflac.) Cuanto estima el valor de Pension Mensual.. - Otro,
+2025,03,d3121c,(Deflac.) Cuanto cree que le costaria si tuviera que pagarlo: Pension Mensual...,
+2025,03,d3122b,(Deflac.) Cuanto fue el monto de:  Movilidad Particular...,
+2025,03,d3122c2,(Deflac.) Cuanto estima el valor de Movilidad particular.. - Autosuministro,
+2025,03,d3122c3, (Deflac.) Cuanto estima el valor de Movilidad particular.. - Pago en especie,
+2025,03,d3122c4,(Deflac.) Cuanto estima el valor de Movilidad particular.. - Otros hogares,
+2025,03,d3122c5,(Deflac.) Cuanto estima el valor de Movilidad particular.. - Prog. social,
+2025,03,d3122c6,(Deflac.) Cuanto estima el valor de Movilidad particular.. - Otro,
+2025,03,d3122c,(Deflac.) Cuanto cree que le costarìa si tuviera que pagarlo: Movilidad Particular...,
+2025,03,d315a,(Deflac.) Cuanto fue el monto del servicio en el mes anterior,
+2025,03,d315b2,(Deflac.) Autosuministro - Cuanto cree que le constaria si tuviera que pagar...,
+2025,03,d315b3,(Deflac.) Pago en especie - Cuanto cree que le constaria si tuviera que pagar...,
+2025,03,d315b4,(Deflac.) Otros hogares - Cuanto cree que le constaria si tuviera que pagar...,
+2025,03,d315b5,(Deflac.) Prog. social - Cuanto cree que le constaria si tuviera que pagar...,
+2025,03,d315b6,(Deflac.) Otro - Cuanto cree que le constaria si tuviera que pagar...,
+2025,03,d315b,(Deflac.) Cuanto cree que le constaria si tuviera que pagar por este servicio..,
+2025,03,i311b_1,(Imputado) Cuanto fue el monto de: Uniforme Escolar,
+2025,03,i311b_2,(Imputado) Cuanto fue el monto de: Calzado Escolar,
+2025,03,i311b_4,(Imputado) Cuanto fue el monto de: Utiles Escolares,
+2025,03,i311b_6,(Imputado) Cuanto fue el monto de: APAFA,
+2025,03,i311b_3,(Imputado) Cuanto fue el monto de: Libros y Textos,
+2025,03,i311b_5,(Imputado) Cuanto fue el monto de: Matricula,
+2025,03,i311b_7,(Imputado) Cuanto fue el monto de: Otro,
+2025,03,i311d2_1,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Autoconsumo,
+2025,03,i311d3_1,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Autosuministro,
+2025,03,i311d4_1,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Pago en especie,
+2025,03,i311d5_1,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Otros hogares,
+2025,03,i311d6_1,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Prog. social,
+2025,03,i311d7_1,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Uniforme Escolar - Otro,
+2025,03,i311d2_2,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Autoconsumo,
+2025,03,i311d3_2,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Autosuministro,
+2025,03,i311d4_2,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Pago en especie,
+2025,03,i311d5_2,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Otros hogares,
+2025,03,i311d6_2,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Prog. social,
+2025,03,i311d7_2,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Calzado Escolar - Otro,
+2025,03,i311d2_4,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Autoconsumo,
+2025,03,i311d3_4,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Autosuministro,
+2025,03,i311d4_4,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Pago en especie,
+2025,03,i311d5_4,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Otros hogares,
+2025,03,i311d6_4,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Prog. social,
+2025,03,i311d7_4,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Utiles Escolares - Otro,
+2025,03,i311d2_6,(Imputado) Cuanto cree que le costaria si tuviera que pagar..APAFA - Autoconsumo,
+2025,03,i311d3_6,(Imputado) Cuanto cree que le costaria si tuviera que pagar..APAFA - Autosuministro,
+2025,03,i311d4_6,(Imputado) Cuanto cree que le costaria si tuviera que pagar..APAFA - Pago en especie,
+2025,03,i311d5_6,(Imputado) Cuanto cree que le costaria si tuviera que pagar..APAFA - Otros hogares,
+2025,03,i311d6_6,(Imputado) Cuanto cree que le costaria si tuviera que pagar..APAFA - Prog. social,
+2025,03,i311d7_6,(Imputado) Cuanto cree que le costaria si tuviera que pagar..APAFA - Otro,
+2025,03,i311d2_3,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Autoconsumo,
+2025,03,i311d3_3,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Autosuministro,
+2025,03,i311d4_3,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Pago en especie,
+2025,03,i311d5_3,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Otros hogares,
+2025,03,i311d6_3,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Prog. social,
+2025,03,i311d7_3,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Libros y Textos - Otro,
+2025,03,i311d2_5,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Matricula - Autoconsumo,
+2025,03,i311d3_5,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Matricula - Autosuministro,
+2025,03,i311d4_5,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Matricula - Pago en especie,
+2025,03,i311d5_5,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Matricula - Otros hogares,
+2025,03,i311d6_5,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Matricula - Prog. social,
+2025,03,i311d7_5,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Matricula - Otro,
+2025,03,i311d2_7,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Otros  - Autoconsumo,
+2025,03,i311d3_7,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Otros  - Autosuministro,
+2025,03,i311d4_7,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Otros  - Pago en especie,
+2025,03,i311d5_7,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Otros  - Otros hogares,
+2025,03,i311d6_7,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Otros  - Prog. social,
+2025,03,i311d7_7,(Imputado) Cuanto cree que le costaria si tuviera que pagar..Otros  - Otro,
+2025,03,i3121b,(Imputado)  Cuanto fue el monto de: Pension Mensual de Enseñanza,
+2025,03,i3122b,(Imputado) Cuanto fue el monto de: Movilidad Particular...,
+2025,03,i3121c2,(Imputado) Cuanto estima el valor de Pension Mensual.. Autosuministro,
+2025,03,i3121c3,(Imputado) Cuanto estima el valor de Pension Mensual.. Pago en especie,
+2025,03,i3121c4,(Imputado) Cuanto estima el valor de Pension Mensual.. Otros hogares,
+2025,03,i3121c5,(Imputado) Cuanto estima el valor de Pension Mensual.. Prog. social,
+2025,03,i3121c6,(Imputado) Cuanto estima el valor de Pension Mensual.. Otro,
+2025,03,i3122c2,(Imputado) Cuanto estima el valor de Movilidad particular.. - Autosuministro,
+2025,03,i3122c3,(Imputado) Cuanto estima el valor de Movilidad particular.. - Pago en especie,
+2025,03,i3122c4,(Imputado) Cuanto estima el valor de Movilidad particular.. - Otros hogares,
+2025,03,i3122c5,(Imputado) Cuanto estima el valor de Movilidad particular.. - Prog. Social,
+2025,03,i3122c6,(Imputado) Cuanto estima el valor de Movilidad particular.. - Otro,
+2025,03,i315a,(Imputado) Cuanto fue el monto del servicio en el mes anterior,
+2025,03,i315b2,(Imputado) Cuanto cree que le constaria si tuviera que pagar.. Autosuministro,
+2025,03,i315b3,(Imputado) Cuanto cree que le constaria si tuviera que pagar.. Pago en especie,
+2025,03,i315b4,(Imputado) Cuanto cree que le constaria si tuviera que pagar.. Otros hogares,
+2025,03,i315b5,(Imputado) Cuanto cree que le constaria si tuviera que pagar.. Prog. social,
+2025,03,i315b6,(Imputado) Cuanto cree que le constaria si tuviera que pagar.. Otro,
+2025,03,i311d_1,(Imputado) Cuanto cree que le costaria si tuviera que pagar...Uniforme Escolar,
+2025,03,i311d_2,(Imputado) Cuanto cree que le costaria si tuviera que pagar.. Calzado Escolar,
+2025,03,i311d_3,(Imputado) Cuanto cree que le costaria si tuviera que pagar.. Libros y Textos,
+2025,03,i311d_4,(Imputado) Cuanto cree que le costaria si tuviera que pagar.. Utiles Escolares,
+2025,03,i311d_5,(Imputado) Cuanto cree que le costaria si tuviera que pagar.. Matricula,
+2025,03,i311d_6,(Imputado) Cuanto cree que le costaria si tuviera que pagar.. APAFA,
+2025,03,i311d_7,"(Imputado) Cuanto cree que le costaria si tuviera que pagar.. Otro (Fotocopias, etc)",
+2025,03,i3121c,(Imputado)  Cuanto cree que le costaria si tuviera que pagarlo: Pension Mensual...,
+2025,03,i3122c,(Imputado) Cuanto cree que le costarìa si tuviera que pagarlo: Movilidad Particular...,
+2025,03,i315b,(Imputado) Cuanto cree que le constaria si tuviera que pagar por este servicio..,
+2025,03,factor07,Factor de expansion anual proyecciones CPV-2007,
+2025,03,factora07,Factor de poblacion ajustado por grupo quinquenal Proyecciones CPV-2007,
+2025,03,nconglome,N° de conglomerado (proveniente del marco),
+2025,03,sub_conglome,Numero de subconglomerado (proveniente del marco),

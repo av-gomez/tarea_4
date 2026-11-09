@@ -344,18 +344,32 @@ def graficar_serie(codigos: list[str], desde: str, hasta: str, titulo: str, nume
     if not codigos:
         raise ToolError("Indiquen al menos un código de serie.")
     apa.aplicar_estilo()
-    fig, ax = plt.subplots(figsize=(8, 5.2))
+    fig, ax = plt.subplots(figsize=(8, 4.8))
     fuentes, nombres, tablas = [], [], []
-    estilos = ["-", "--", ":", "-."]
+    estilos = ["-", "--", ":"]
     tipos = set()
-    for i, c in enumerate(codigos[:4]):
+    codigos = codigos[:3]                      # paleta categórica validada para tres series como máximo
+    for i, c in enumerate(codigos):
         ficha, datos, url = _datos(c, desde, hasta)
-        tipos.add(_tipo(ficha["frecuencia"]))
+        tipo = _tipo(ficha["frecuencia"])
+        tipos.add(tipo)
         df = pd.DataFrame(datos)
-        x = _a_fecha(df.periodo, _tipo(ficha["frecuencia"]))
+        x = _a_fecha(df.periodo, tipo)
         etiqueta = SERIES_CLAVE.get(ficha["codigo"], ficha["nombre"])
-        ax.plot(x, df.valor, linestyle=estilos[i], color=apa.PALETA[i], linewidth=1.6,
-                label=f"{etiqueta} ({ficha['codigo']})")
+        if tipo == "anual" and len(codigos) == 1:
+            # Una serie anual: barras coloreadas por signo con su valor (lectura inmediata de caídas y alzas)
+            colores = [apa.AZUL if v >= 0 else apa.NARANJA for v in df.valor]
+            ax.bar(df.periodo, df.valor, color=colores, width=0.62)
+            for xi, v in zip(df.periodo, df.valor):
+                ax.annotate(f"{v:+.1f}", (xi, v), xytext=(0, 5 if v >= 0 else -5), textcoords="offset points",
+                            ha="center", va="bottom" if v >= 0 else "top", fontsize=9.5, color=apa.TINTA)
+        else:
+            ax.plot(x, df.valor, linestyle=estilos[i], color=apa.CATEGORICA[i], linewidth=2,
+                    label=f"{etiqueta} ({ficha['codigo']})")
+            if tipo in ("anual", "trimestral") or len(df) <= 30:
+                ax.scatter(x, df.valor, s=24, color=apa.CATEGORICA[i], edgecolor=apa.SUPERFICIE, zorder=3)
+            ult = df.iloc[-1]
+            apa.etiqueta_directa(ax, x.iloc[-1], ult.valor, f"{ult.valor:,.2f}")
         fuentes.append(url)
         nombres.append(ficha["codigo"])
         tablas.append(df.assign(codigo=ficha["codigo"], nombre=ficha["nombre"], fuente=url))
@@ -367,9 +381,15 @@ def graficar_serie(codigos: list[str], desde: str, hasta: str, titulo: str, nume
         if etiqueta_referencia:
             ax.text(ax.get_xlim()[0], linea_referencia, f" {etiqueta_referencia}", va="bottom", fontsize=9,
                     color=apa.GRIS)
-    ax.axhline(0, color="#404040", linewidth=0.6)
+    ymin, ymax = ax.get_ylim()
+    if ymin < 0 < ymax:
+        ax.axhline(0, color=apa.EJE, linewidth=0.9)
     ax.set_ylabel(_unidad(nombres[0]))
-    ax.legend(loc="upper left", fontsize=9)
+    if len(codigos) > 1:
+        ax.legend(loc="upper left", fontsize=9)
+    else:
+        ax.set_title(SERIES_CLAVE.get(nombres[0], _ficha(nombres[0])["nombre"]) + f" ({nombres[0]})",
+                     fontsize=10.5, color=apa.TINTA_2, fontweight="normal")
     apa.encabezar(fig, numero_figura, titulo,
                   f"Elaboración propia con datos del BCRP ({', '.join(nombres)}), periodo {desde} a {hasta}. "
                   f"Fuente: {apa.FUENTE_BCRP}.", abajo=0.17)
