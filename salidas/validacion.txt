@@ -1,6 +1,6 @@
 VALIDACION ENAHO 2024
 ==============================================================================
-Generado: 2026-11-08 21:29  |  script: .claude/skills/limpiando-enaho/scripts/limpiar.py
+Generado: 2026-11-08 21:39  |  script: .claude/skills/limpiando-enaho/scripts/limpiar.py
 Fuentes: 966-Modulo34/sumaria-2024.dta (modulo 34) y 966-Modulo02/enaho01-2024-200.dta (modulo 02)
 Unidad de analisis: personas residentes habituales; ponderador facpob07.
 Error estandar: linealizacion de Taylor (UPM = conglome, estratos = departamento x estrato).

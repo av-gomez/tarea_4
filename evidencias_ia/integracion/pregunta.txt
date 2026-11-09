@@ -1,0 +1,5 @@
+Investiga la siguiente pregunta y elabora el informe final del proyecto:
+
+¿Cómo evolucionaron la inflación y la actividad económica del Perú entre 2019 y 2024, y qué brechas territoriales (entre departamentos y entre áreas urbana y rural) presentaba la pobreza monetaria al cierre de ese periodo, en 2024?
+
+Usa las herramientas del proyecto: el servidor MCP del BCRP para las series macroeconómicas y las skills de ENAHO para la pobreza. Sigue el flujo completo (plan, datos, figuras, mapa, informe en informes/informe_final.md, verificación de al menos 3 cifras de ambas fuentes y publicación en HTML).

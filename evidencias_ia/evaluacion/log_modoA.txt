@@ -1,0 +1,16 @@
+10 llamadas a claude -p con sonnet...
+modo                         A
+id                            
+bcrp_ipc_dic22            8.46
+bcrp_pbi_2023            -0.60
+bcrp_ref_dic24            5.00
+bcrp_tc_dic24              NaN
+enaho_pobreza_cajamarca    NaN
+enaho_pobreza_extrema     5.70
+enaho_pobreza_nac        27.60
+enaho_pobreza_rural      39.80
+mixta_gasto_usd            NaN
+mixta_linea_ajustada       NaN
+resultado  correcta  incorrecta  no responde  segundos_promedio
+modo                                                           
+A                 3           3            4                6.6

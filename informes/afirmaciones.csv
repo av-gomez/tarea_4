@@ -1,0 +1,7 @@
+id,afirmacion,fuente,codigo,periodo,agregacion,valor_informe,tolerancia
+f1,"Inflación de diciembre de 2022 (8.46 %)",bcrp,PN01273PM,2022-12,valor,8.46,0.01
+f2,"Inflación de diciembre de 2024 (1.97 %)",bcrp,PN01273PM,2024-12,valor,1.97,0.01
+f3,"Inflación promedio de 2021 (3.97 %)",bcrp,PN01273PM,2021,promedio,3.97,0.01
+f4,"Pobreza rural (39.30 %)",enaho,area,Rural,pobreza_monetaria,39.30,0.05
+f5,"Pobreza urbana (24.81 %)",enaho,area,Urbana,pobreza_monetaria,24.81,0.05
+f6,"Pobreza nacional (27.58 %)",enaho,nacional,Perú,pobreza_monetaria,27.58,0.05

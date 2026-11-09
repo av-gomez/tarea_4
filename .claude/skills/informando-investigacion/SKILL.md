@@ -28,7 +28,10 @@ de una herramienta MCP, de `salidas/indicadores.csv` o de una tabla en `tablas/`
 
 ## 3. Datos de la ENAHO (skills)
 
-1. `limpiando-enaho`: si no existe `salidas/indicadores.csv`, ejecútala y confirma la validación.
+Invoca cada skill con la herramienta `Skill` (no ejecutes sus scripts sin cargarla), para que sus reglas se
+apliquen y quede registro de la coordinación:
+
+1. `limpiando-enaho`: si no existe `salidas/indicadores.csv`, invócala y confirma la validación.
 2. `graficando-enaho`: al menos un gráfico (p. ej. `--tipo area` o `--tipo departamento`).
 3. `mapeando-enaho`: el mapa departamental.
 4. Toma las cifras de `salidas/indicadores.csv` con su IC 95 %; si los IC se superponen, no afirmes diferencia.

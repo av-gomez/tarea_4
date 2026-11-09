@@ -1,0 +1,7 @@
+id,afirmacion,valor_informe,valor_verificado,diferencia,tolerancia,coincide,procedimiento
+f1,Inflación de diciembre de 2022 (8.46 %),8.46,8.4592,0.0008,0.01,Sí,https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01273PM/json/2022-12/2022-12
+f2,Inflación de diciembre de 2024 (1.97 %),1.97,1.9663,0.0037,0.01,Sí,https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01273PM/json/2024-12/2024-12
+f3,Inflación promedio de 2021 (3.97 %),3.97,3.9724,-0.0024,0.01,Sí,https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01273PM/json/2021-1/2021-12
+f4,Pobreza rural (39.30 %),39.3,39.302799224853516,-0.00279999990016222,0.05,Sí,datos/966-Modulo34.zip: sumaria-2024.dta
+f5,Pobreza urbana (24.81 %),24.81,24.80699920654297,0.003000000026077032,0.05,Sí,datos/966-Modulo34.zip: sumaria-2024.dta
+f6,Pobreza nacional (27.58 %),27.58,27.579500198364258,0.0005000000237487257,0.05,Sí,datos/966-Modulo34.zip: sumaria-2024.dta
