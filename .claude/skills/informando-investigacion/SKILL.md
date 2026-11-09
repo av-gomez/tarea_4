@@ -1,6 +1,6 @@
 ---
 name: informando-investigacion
-description: Coordina una investigación socioeconómica del Perú que combina series macroeconómicas del BCRP (servidor MCP bcrp) con microdatos de la ENAHO 2024 del INEI (skills limpiando-enaho, graficando-enaho y mapeando-enaho), y produce un informe académico en formato APA 7 con hallazgos, figuras, mapa, tablas, verificación independiente de cifras, versión HTML y tablero interactivo. Úsala cuando pidan investigar, analizar o redactar un informe sobre pobreza, inflación, actividad económica, tipo de cambio o desigualdad territorial en el Perú.
+description: Coordina una investigación socioeconómica del Perú que combina series macroeconómicas del BCRP (servidor MCP bcrp) con microdatos de la ENAHO 2019-2025 del INEI (skills limpiando-enaho, explorando-enaho, graficando-enaho y mapeando-enaho), y produce un informe académico en formato APA 7 con hallazgos, figuras, mapas, tablas, verificación independiente de cifras, versión HTML y tablero interactivo. Úsala cuando pidan investigar, analizar o redactar un informe sobre pobreza, inflación, actividad económica, empleo, educación, salud, servicios o desigualdad territorial en el Perú.
 argument-hint: "[pregunta de investigación]"
 ---
 
@@ -8,62 +8,57 @@ argument-hint: "[pregunta de investigación]"
 
 Pregunta: $ARGUMENTS
 
-Trabaja en este orden y no te saltes pasos. Ninguna cifra se escribe de memoria: cada número del informe sale
-de una herramienta MCP, de `salidas/indicadores.csv` o de una tabla en `tablas/`.
+Trabaja en este orden. Ninguna cifra se escribe de memoria: cada número sale de una herramienta MCP, de
+`salidas/serie_indicadores.csv`, de `salidas/indicadores_<año>.csv` o de una tabla en `tablas/`.
 
-## 1. Plan (escríbelo en `informes/plan.md`)
+## 1. Plan (`informes/plan.md`)
 
-- Reformula la pregunta, su objetivo y su delimitación (periodo, territorio, unidad de análisis).
-- Lista qué responde cada fuente: BCRP (series nacionales, frecuencia mensual o anual) y ENAHO (corte
-  transversal 2024, personas y hogares). Declara que la comparación es descriptiva y no causal.
-- Lista las herramientas a usar: al menos dos del MCP `bcrp` y al menos dos skills.
+Reformula la pregunta, el objetivo y la delimitación (años, territorio, unidad de análisis). Indica qué aporta
+cada fuente y declara que la comparación entre fuentes es descriptiva, no causal. Lista las herramientas.
 
-## 2. Datos del BCRP (servidor MCP `bcrp`)
+## 2. BCRP (servidor MCP `bcrp`)
 
-1. Identifica las series con `buscar_series` o el recurso `bcrp://series-clave`; lee `bcrp://serie/{codigo}`
-   para conocer su definición.
-2. Obtén cifras con `resumen_anual` (por año), `resumen` (periodo) o `comparar_series` (dos indicadores).
-3. Genera la figura con `graficar_serie` (número APA correlativo; guarda PNG en `figuras/` y datos en `tablas/`).
-4. Anota código, periodo y URL de cada cifra. Si una herramienta falla, regístralo como limitación.
+1. Series con `buscar_series` o `bcrp://series-clave`; definición con `bcrp://serie/{codigo}`.
+2. Cifras con `resumen_anual`, `resumen` o `comparar_series`.
+3. Datos para figuras con `graficar_serie` (guarda la tabla en `tablas/<archivo>.csv`). Para el gráfico
+   combinado inflación-pobreza usa `archivo="bcrp_inflacion.png"` con PN01273PM en el periodo de la ENAHO.
 
-## 3. Datos de la ENAHO (skills)
+## 3. ENAHO (skills; invócalas con la herramienta `Skill`)
 
-Invoca cada skill con la herramienta `Skill` (no ejecutes sus scripts sin cargarla), para que sus reglas se
-apliquen y quede registro de la coordinación:
-
-1. `limpiando-enaho`: si no existe `salidas/indicadores.csv`, invócala y confirma la validación.
-2. `graficando-enaho`: al menos un gráfico (p. ej. `--tipo area` o `--tipo departamento`).
-3. `mapeando-enaho`: el mapa departamental.
-4. Toma las cifras de `salidas/indicadores.csv` con su IC 95 %; si los IC se superponen, no afirmes diferencia.
-
-**Numeración de figuras.** Decide primero el orden de las figuras del informe y pasa a cada script o herramienta
-su número (`--numero n` o `numero_figura`). No uses `--tipo todos` para el informe: renumeraría las figuras desde
-1. Cada PNG ya contiene número, título y nota APA, por lo que en el Markdown solo se inserta la imagen
-(`![Figura n](../figuras/archivo.png)`), sin repetir el pie.
+1. `limpiando-enaho`: todos los años necesarios con `--anios 2019 2020 2021 2022 2023 2024 2025` (valida
+   cada año contra el INEI y crea `salidas/serie_indicadores.csv`).
+2. `explorando-enaho`: dimensiones de otros módulos (educación 03, salud 04, empleo 05, vivienda 01...) con
+   `explorar.py diccionario` e `explorar.py indicador`, por ejemplo por `pobre`, `area` o `departamento`.
+3. `graficando-enaho`: visualizaciones con `scripts/visualizar.py` (evolucion, distribucion, calor, pendiente,
+   perfil, waffle, macro) y, si hace falta, barras de `scripts/graficar.py`.
+4. `mapeando-enaho`: `scripts/mapas_series.py mosaico` y `cambio`, y `scripts/mapear.py`.
+5. Si los IC 95 % se superponen, no afirmes diferencias; advierte CV > 15 %.
 
 ## 4. Informe (`informes/informe_final.md`)
 
-Estructura obligatoria, en español y estilo APA 7 (encabezados de nivel 1 y 2, figuras y tablas numeradas con
-número en negrita y título en cursiva, nota debajo, citas autor-año y lista de referencias con
-`comun/apa.py: REFERENCIAS_APA`):
+Estilo APA 7 con la tipografía del documento. Cada script imprime el pie sugerido; úsalo así (la imagen va sin
+texto incrustado):
 
-1. Pregunta de investigación (tema, objetivo, delimitación).
-2. Fuentes y metodología (series con código; módulos, filtros, ponderadores, error de muestreo).
-3. Resultados: al menos tres hallazgos numerados, cada uno con cifra, fuente y figura o tabla.
-4. Visualizaciones: una figura del BCRP, una de la ENAHO y el mapa (rutas relativas `../figuras/...`).
-5. Interpretación (patrones; asociación, no causalidad).
-6. Limitaciones (cobertura del IPC de Lima, corte transversal 2024, niveles de agregación distintos, error de
-   muestreo, herramientas que fallaron).
-7. Reproducibilidad (comandos, scripts, archivos y códigos de serie).
-8. Referencias.
+```markdown
+**Figura 3**
+
+*Título en cursiva*
+
+![Figura 3. Título](../figuras/archivo.png)
+
+*Nota.* Descripción, método y fuente.
+```
+
+Estructura: resumen ejecutivo (3-5 viñetas con las cifras clave), 1. Pregunta, 2. Fuentes y metodología,
+3. Resultados (al menos cinco hallazgos numerados, cada uno con figura o tabla), 4. Interpretación,
+5. Limitaciones, 6. Reproducibilidad (comandos y archivos), Referencias (de `comun/apa.py: REFERENCIAS_APA`).
+Numera figuras y tablas en orden de aparición y pasa ese número a cada script (`--numero`).
 
 ## 5. Verificación y publicación
 
-1. Escribe `informes/afirmaciones.csv` con al menos 3 cifras del informe (de ambas fuentes); formato en el
-   docstring de `scripts/verificar.py`. Fija la tolerancia antes de verificar.
-2. Ejecuta `uv run .claude/skills/informando-investigacion/scripts/verificar.py informes/afirmaciones.csv`. Si
-   alguna no coincide, corrige el informe con el valor de la herramienta o explica la diferencia; nunca cambies
-   el valor verificado.
-3. Ejecuta `uv run .claude/skills/informando-investigacion/scripts/publicar.py` para generar
-   `informes/informe_final.html` y `informes/dashboard.html`.
-4. Termina con un resumen: hallazgos, archivos generados y herramientas MCP y skills usadas.
+1. `informes/afirmaciones.csv` con al menos 6 cifras de ambas fuentes (formato en `scripts/verificar.py`;
+   para otro año de la ENAHO usa `pobreza_monetaria@2025` en la columna agregacion).
+2. `uv run .claude/skills/informando-investigacion/scripts/verificar.py informes/afirmaciones.csv`.
+3. `uv run .claude/skills/informando-investigacion/scripts/publicar.py` (HTML del informe, tablero y portal
+   `informes/index.html`).
+4. Resume hallazgos, archivos y herramientas usadas.

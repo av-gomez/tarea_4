@@ -1,4 +1,4 @@
-# Agente de investigación socioeconómica del Perú: MCP del BCRP y Skills de ENAHO 2024
+# Agente de investigación socioeconómica del Perú: MCP del BCRP y Skills de ENAHO 2019-2025
 
 Tarea 4 del curso Python Intermedio. Proyecto individual.
 
@@ -10,12 +10,30 @@ combina:
 
 - **Banco Central de Reserva del Perú (BCRP):** series macroeconómicas (inflación, actividad, tipo de cambio,
   tasa de referencia) consultadas mediante un servidor MCP propio construido con FastMCP.
-- **Instituto Nacional de Estadística e Informática (INEI), ENAHO 2024:** microdatos de los módulos 34
-  (sumaria) y 02 (miembros), procesados por Skills de Claude Code con factores de expansión y error de muestreo.
+- **Instituto Nacional de Estadística e Informática (INEI), ENAHO 2019-2025:** microdatos de los módulos 34
+  (sumaria) y 02 (miembros) de siete años, y cualquiera de los 29 módulos de la encuesta (vivienda, educación,
+  salud, empleo, gastos, programas sociales, gobernabilidad), procesados por Skills de Claude Code con factores
+  de expansión y error de muestreo.
 
 Ninguna cifra se escribe de memoria: cada número sale de una herramienta MCP, de un script de una Skill o de un
 archivo generado por ellas, y las cifras del informe se verifican con un procedimiento independiente. Todos los
-productos (figuras, mapas, tablas e informes) siguen el formato APA 7 con tipografía Times New Roman.
+productos siguen la estructura APA 7 (figuras y tablas numeradas, títulos en cursiva, notas con la fuente y
+referencias) con un sistema visual único: la tipografía sans del sistema que usan GitHub y el navegador, y una
+paleta validada para daltonismo (ver `comun/apa.py`).
+
+## Dónde están los resultados
+
+| Qué | Archivo | Cómo verlo |
+|---|---|---|
+| Portal con todo (informe, tablero, galería de figuras y mapas, tablas, validaciones) | `informes/index.html` | Abrir en el navegador |
+| Informe final (Markdown) | [`informes/informe_final.md`](informes/informe_final.md) | GitHub lo muestra directamente |
+| Informe final (HTML con figuras incrustadas) | `informes/informe_final.html` | Abrir en el navegador |
+| Tablero interactivo (mapa con selector de año, tendencias, ranking, series del BCRP) | `informes/dashboard.html` | Abrir en el navegador |
+| Figuras y mapas | `figuras/`, `mapas/` | Imágenes PNG |
+| Datos de cada figura e indicador | `tablas/*.csv`, `salidas/serie_indicadores.csv` | CSV |
+| Validaciones por año | `salidas/validacion_<año>.txt` | Texto |
+
+GitHub no ejecuta archivos HTML: para verlos, descargue el repositorio (o el archivo) y ábralo en el navegador.
 
 ## 2. Arquitectura
 
@@ -59,6 +77,42 @@ Los componentes comparten dos módulos para que los resultados sean coherentes e
   primarias `conglome`, estratos departamento × estrato), intervalo de confianza al 95 % y coeficiente de
   variación.
 
+## Ampliación: siete años y todos los módulos de la ENAHO
+
+| Año | Código INEI | Pobreza oficial (INEI) | Calculada | Urbana | Rural | Extrema |
+|---|---|---:|---:|---:|---:|---:|
+| 2019 | 687 | 20.2 | 20.19 | 14.58 | 40.78 | 2.85 |
+| 2020 | 737 | 30.1 | 30.13 | 26.03 | 45.72 | 5.15 |
+| 2021 | 759 | 25.9 | 25.87 | 22.33 | 39.71 | 4.12 |
+| 2022 | 784 | 27.5 | 27.52 | 24.14 | 41.12 | 5.01 |
+| 2023 | 906 | 29.0 | 29.05 | 26.43 | 39.79 | 5.75 |
+| 2024 | 966 | 27.6 | 27.58 | 24.81 | 39.30 | 5.50 |
+| 2025 | 1031 | 25.7 | 25.67 | 23.41 | 35.45 | 4.65 |
+
+Los siete años reproducen la pobreza oficial con una diferencia de 0.1 puntos o menos, con el mismo
+procedimiento y sin ajustes. Componentes de la ampliación:
+
+- `comun/enaho.py`: descarga y lectura de cualquier módulo y año, detección del nivel (persona, hogar o
+  detalle), diccionario oficial de variables y uniones validadas sin duplicar filas.
+- `limpiando-enaho`: `--anio`, `--anios` (serie en `salidas/serie_indicadores.csv`) y `--modulos` para unir
+  otros módulos a la base.
+- `explorando-enaho` (Skill nueva): busca variables en el diccionario de cualquier módulo y estima indicadores
+  ponderados (proporciones o medias) con IC 95 % por año, área, departamento, sexo, edad o condición de pobreza.
+- `graficando-enaho/scripts/visualizar.py`: tendencias con bandas de confianza, distribución del gasto frente a
+  la línea de pobreza, mapa de calor departamento por año, gráfico de pendiente, perfil de brechas, waffle y panel
+  inflación-pobreza (sin doble eje).
+- `mapeando-enaho/scripts/mapas_series.py`: mosaico de mapas 2019-2025 con escala común y mapa de cambio con
+  escala divergente.
+- `informando-investigacion/scripts/publicar.py`: tablero con mapa animado por año y portal `informes/index.html`.
+
+```bash
+uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --anios 2019 2020 2021 2022 2023 2024 2025
+uv run .claude/skills/explorando-enaho/scripts/explorar.py diccionario --anio 2025 --modulo 04 --buscar seguro
+uv run .claude/skills/explorando-enaho/scripts/explorar.py indicador --modulo 04 --variable p4191     --condicion "==1" --nombre afiliacion_essalud --anios 2019 2025 --por pobre
+uv run .claude/skills/graficando-enaho/scripts/visualizar.py evolucion --numero 2
+uv run .claude/skills/mapeando-enaho/scripts/mapas_series.py mosaico --numero 8
+```
+
 ## 3. Servidor MCP del BCRP (`mcp/server.py`)
 
 | Tipo | Nombre | Función |
@@ -90,6 +144,7 @@ Skills (validación, indicadores ponderados y unión del mapa).
 | `limpiando-enaho` | `datos/966-Modulo34.zip`, `datos/966-Modulo02.zip` | `salidas/personas_2024.parquet`, `salidas/hogares_2024.parquet`, `salidas/indicadores.csv`, `salidas/validacion.txt` | Llaves como texto; residentes habituales; `merge(validate="m:1")`; 18 validaciones; se detiene si falla una esencial |
 | `graficando-enaho` | `salidas/indicadores.csv` | `figuras/pobreza_*.png`, `tablas/pobreza_*.csv` | Estimaciones ponderadas, IC 95 %, barras desde cero, promedio nacional, nota con fuente |
 | `mapeando-enaho` | `salidas/indicadores.csv`, GeoJSON | `mapas/pobreza_departamento.png`, `salidas/validacion_mapa.txt` | Unión `ubigeo[:2]` = `FIRST_IDDP`; 25 unidades; Lima y Callao separados; comparación con la referencia de la sesión 16 |
+| `explorando-enaho` | Cualquier módulo y año de la ENAHO | `tablas/indicador_*.csv`, `salidas/diccionarios/` | Diccionario oficial; indicadores ponderados con IC 95 %; módulos de detalle agregados por hogar |
 | `informando-investigacion` | Pregunta de investigación | `informes/plan.md`, `informe_final.md`, `afirmaciones.csv`, `verificacion.md`, `informe_final.html`, `dashboard.html` | Orquesta MCP y Skills; verificación independiente de cifras; publicación HTML APA 7 |
 
 Las Skills de gráficos y mapas comprueban si existe la base procesada; si no existe, indican (y Claude ejecuta)
@@ -148,14 +203,14 @@ Al abrir `claude` en la carpeta del proyecto, aceptar el servidor `bcrp`. Compro
 1. `/mcp`: el servidor `bcrp` conectado con 6 herramientas.
 2. Recurso: `@bcrp:bcrp://serie/PN01273PM ¿desde cuándo hay datos de esta serie?`
 3. Prompt: `/mcp__bcrp__informe inflación`
-4. Skills: `/skills` lista las cuatro del proyecto.
+4. Skills: `/skills` lista las cinco del proyecto.
 
 Equivalente por línea de comandos: `claude mcp add --scope project bcrp -- uv run mcp/server.py`.
 
 ## 8. Reproducir el procesamiento y las pruebas
 
 ```bash
-uv run pytest -q                                                          # 13 pruebas (10 MCP + 3 Skills)
+uv run pytest -q                                                          # 15 pruebas (10 MCP + 5 Skills)
 uv run pytest mcp -q                                                      # 10 pruebas del servidor MCP
 uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --forzar          # base limpia y validación
 uv run .claude/skills/graficando-enaho/scripts/graficar.py --tipo area --numero 3
@@ -212,6 +267,23 @@ respuesta 3.5 veces mayor.
 - La evaluación usa 10 preguntas y una corrida por modo; no permite inferencias estadísticas generales.
 
 ## 11. Ejemplo de una ejecución completa
+
+### Ejecución ampliada 2019-2025 (informe final vigente)
+
+Pregunta (`evidencias_ia/integracion/pregunta_multianual.txt`): ¿Cómo evolucionaron la pobreza monetaria y sus
+brechas territoriales y sociales en el Perú entre 2019 y 2025, y cómo se compara esa trayectoria con la
+inflación y la actividad económica del mismo periodo?
+
+En una sola ejecución (57 turnos, unos siete minutos), Claude Code cargó la Skill `informando-investigacion`;
+usó cuatro herramientas MCP (`graficar_serie`, `resumen_anual`, `serie`, `resumen`); invocó con la herramienta
+`Skill` a `limpiando-enaho` (siete años validados) y `explorando-enaho` (brechas entre pobres y no pobres con
+los módulos 01, 03, 04 y 05), y ejecutó los scripts de `graficando-enaho` y `mapeando-enaho`. El informe tiene un
+resumen ejecutivo, cinco hallazgos, 11 figuras, 5 tablas APA y 18 cifras verificadas de forma independiente
+(18 de 18 coincidencias). Registro: `evidencias_ia/integracion/ejecucion_multianual.md`. Después de esa
+ejecución, la herramienta `graficar_serie` se mejoró (barras por signo para series anuales y sin leyenda para una
+sola serie) y sus dos figuras se regeneraron con los mismos argumentos registrados.
+
+### Ejecución original (ENAHO 2024)
 
 Pregunta de investigación (`evidencias_ia/integracion/pregunta.txt`):
 

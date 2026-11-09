@@ -71,13 +71,17 @@ def dashboard() -> Path:
     nac = pm[pm.desagregacion == "nacional"].iloc[0]
     area = pm[pm.desagregacion == "area"].set_index("categoria")
     ext = ind[(ind.indicador == "pobreza_extrema") & (ind.desagregacion == "nacional")].iloc[0]
-    fuente_layout = {"family": "Times New Roman, Times, serif", "size": 14, "color": "#111"}
+    fuente_layout = {"family": apa.FUENTE_CSS, "size": 14, "color": apa.TINTA}
+    rampa = ["#eef5fd", *apa.RAMPA_AZUL]
+    escala = [[i / (len(rampa) - 1), c] for i, c in enumerate(rampa)]
+    base_layout = {"font": fuente_layout, "paper_bgcolor": apa.SUPERFICIE, "plot_bgcolor": apa.SUPERFICIE,
+                   "colorway": apa.CATEGORICA, "hoverlabel": {"font": {"family": apa.FUENTE_CSS}}}
     figs = []
 
     geo = json.loads((RAIZ / "datos" / "peru_departamental_simple.geojson").read_text(encoding="utf-8"))
     dep = pm[pm.desagregacion == "departamento"].copy()
     m = go.Figure(go.Choropleth(geojson=geo, featureidkey="properties.FIRST_IDDP", locations=dep.codigo,
-                                z=dep.valor_pct, zmin=0, zmax=50, colorscale="Blues", marker_line_color="#404040",
+                                z=dep.valor_pct, zmin=0, zmax=50, colorscale=escala, marker_line_color=apa.SUPERFICIE,
                                 text=dep.categoria, colorbar={"title": "% de personas"},
                                 customdata=dep[["ic95_inf", "ic95_sup", "cv_pct"]].values,
                                 hovertemplate="<b>%{text}</b><br>Pobreza: %{z:.1f} %<br>IC 95 %: "
@@ -87,6 +91,7 @@ def dashboard() -> Path:
     m.update_layout(title="Pobreza monetaria por departamento, 2024 (% de personas)", font=fuente_layout,
                     height=620, margin={"l": 0, "r": 0, "t": 50, "b": 0})
     figs.append(("mapa", m))
+    figs += multianual(geo, escala, base_layout)
 
     d = dep.sort_values("valor_pct")
     b = go.Figure(go.Bar(x=d.valor_pct, y=d.categoria, orientation="h", marker_color=apa.AZUL,
@@ -152,7 +157,7 @@ body {{ max-width: 1200px; }}
 .panel {{ margin: 1.5em 0; border-bottom: 1px solid #ddd; }}
 pre {{ font-size: 10pt; background: #f7f7f7; padding: 10px; overflow-x: auto; }}
 </style></head><body>
-<h1>Tablero socioeconómico del Perú: pobreza monetaria (ENAHO 2024) y entorno macroeconómico (BCRP)</h1>
+<h1>Tablero socioeconómico del Perú: pobreza monetaria (ENAHO 2019-2025) y entorno macroeconómico (BCRP)</h1>
 <p style="text-align:center">Generado el {datetime.now():%Y-%m-%d %H:%M} con
 <code>.claude/skills/informando-investigacion/scripts/publicar.py</code>. Todas las cifras provienen de
 <code>salidas/indicadores.csv</code> y de las tablas <code>tablas/bcrp_*.csv</code>.</p>
@@ -167,6 +172,97 @@ pre {{ font-size: 10pt; background: #f7f7f7; padding: 10px; overflow-x: auto; }}
     salida.parent.mkdir(exist_ok=True)
     salida.write_text(html, encoding="utf-8")
     return salida
+
+
+def multianual(geo, escala, base_layout):
+    """Figuras interactivas de la serie 2019-2025 (si existe salidas/serie_indicadores.csv)."""
+    import plotly.graph_objects as go
+
+    ruta = RAIZ / "salidas" / "serie_indicadores.csv"
+    if not ruta.exists():
+        return []
+    s = pd.read_csv(ruta, dtype={"codigo": str})
+    pm = s[s.indicador == "pobreza_monetaria"]
+    figs = []
+    t = go.Figure()
+    for nombre, filtro, color in [("Rural", (pm.desagregacion == "area") & (pm.categoria == "Rural"), apa.NARANJA),
+                                  ("Perú", pm.desagregacion == "nacional", apa.AZUL),
+                                  ("Urbana", (pm.desagregacion == "area") & (pm.categoria == "Urbana"), apa.AGUA)]:
+        g = pm[filtro].sort_values("anio")
+        t.add_trace(go.Scatter(x=list(g.anio) + list(g.anio[::-1]), y=list(g.ic95_sup) + list(g.ic95_inf[::-1]),
+                               fill="toself", fillcolor=color, opacity=0.15, line={"width": 0}, hoverinfo="skip",
+                               showlegend=False))
+        t.add_trace(go.Scatter(x=g.anio, y=g.valor_pct, mode="lines+markers", name=nombre,
+                               line={"color": color, "width": 2.5}, marker={"size": 8},
+                               customdata=g[["ic95_inf", "ic95_sup"]].values,
+                               hovertemplate=f"<b>{nombre}</b> %{{x}}: %{{y:.1f}} %<br>IC 95 %: "
+                                             "%{customdata[0]:.1f}–%{customdata[1]:.1f}<extra></extra>"))
+    t.update_layout(**base_layout, title="Pobreza monetaria 2019-2025 por área (IC 95 %)", height=460,
+                    yaxis={"title": "% de personas", "rangemode": "tozero", "gridcolor": apa.REJILLA},
+                    xaxis={"dtick": 1}, hovermode="x unified")
+    figs.append(("tendencia", t))
+    dep = pm[pm.desagregacion == "departamento"].sort_values(["anio", "codigo"])
+    anios = sorted(dep.anio.unique())
+
+    def capa(anio):
+        g = dep[dep.anio == anio]
+        return go.Choropleth(geojson=geo, featureidkey="properties.FIRST_IDDP", locations=g.codigo, z=g.valor_pct,
+                             zmin=0, zmax=50, colorscale=escala, marker_line_color=apa.SUPERFICIE, text=g.categoria,
+                             colorbar={"title": "%"},
+                             hovertemplate="<b>%{text}</b><br>%{z:.1f} %<extra>" + str(anio) + "</extra>")
+
+    mapa = go.Figure(data=[capa(anios[-1])], frames=[go.Frame(data=[capa(a)], name=str(a)) for a in anios])
+    mapa.update_geos(fitbounds="locations", visible=False)
+    mapa.update_layout(**base_layout, title="Pobreza por departamento: mueve el selector de año", height=650,
+                       margin={"l": 0, "r": 0, "t": 50, "b": 0},
+                       sliders=[{"active": len(anios) - 1, "currentvalue": {"prefix": "Año: "},
+                                 "steps": [{"label": str(a), "method": "animate",
+                                            "args": [[str(a)], {"mode": "immediate", "frame": {"duration": 0}}]}
+                                           for a in anios]}])
+    figs.append(("mapa_anual", mapa))
+    return figs
+
+
+def portal() -> Path:
+    """Página índice que reúne informe, tablero, figuras, mapas, tablas y validaciones."""
+    def lista(carpeta, patron):
+        return sorted((RAIZ / carpeta).glob(patron))
+    tarjetas = []
+    for img in [*lista("figuras", "*.png"), *lista("mapas", "*.png")]:
+        rel = f"../{img.parent.name}/{img.name}"
+        tarjetas.append(f'<a class="tarjeta" href="{rel}"><img src="{rel}" loading="lazy" alt="{img.stem}">'
+                        f'<span>{img.parent.name}/{img.name}</span></a>')
+    validaciones = "".join(f'<li><a href="../salidas/{p.name}">{p.name}</a></li>'
+                           for p in lista("salidas", "validacion*.txt"))
+    tablas = "".join(f'<li><a href="../tablas/{p.name}">{p.name}</a></li>' for p in lista("tablas", "*.csv"))
+    css = apa.CSS_APA + """
+.botones { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin:1.2em 0; }
+.boton { display:block; padding:16px; border-radius:10px; background:var(--surface); text-decoration:none;
+         border:1px solid var(--grid); color:var(--ink); }
+.boton b { display:block; font-size:1.05rem; color:var(--s1); }
+.galeria { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:14px; }
+.tarjeta { display:block; background:var(--surface); border:1px solid var(--grid); border-radius:10px; padding:8px;
+           text-decoration:none; color:var(--ink2); font-size:0.8rem; }
+.tarjeta img { width:100%; height:160px; object-fit:contain; background:#fcfcfb; }
+"""
+    html_ = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Portal de resultados</title>
+<style>{css}</style></head><body>
+<h1>Agente de investigación socioeconómica del Perú</h1>
+<p class="lead">Portal de resultados: BCRP (servidor MCP) y ENAHO 2019-2025 del INEI (Skills de Claude Code).</p>
+<div class="botones">
+<a class="boton" href="informe_final.html"><b>Informe final</b>Investigación en formato APA 7</a>
+<a class="boton" href="dashboard.html"><b>Tablero interactivo</b>Mapas por año, tendencias y tablas</a>
+<a class="boton" href="verificacion.md"><b>Verificación de cifras</b>Control independiente</a>
+<a class="boton" href="../evaluacion/comparacion.md"><b>Evaluación del agente</b>Con y sin MCP y Skills</a>
+</div>
+<h2>Figuras y mapas</h2><div class="galeria">{''.join(tarjetas)}</div>
+<h2>Validaciones</h2><ul>{validaciones}</ul>
+<h2>Tablas de datos</h2><ul>{tablas}</ul>
+</body></html>"""
+    destino = RAIZ / "informes" / "index.html"
+    destino.write_text(html_, encoding="utf-8")
+    return destino
 
 
 def main():
@@ -186,6 +282,7 @@ def main():
         print(f"Aviso: no existe {md}; solo se construye el tablero.")
     if not a.sin_dashboard:
         print(f"Tablero: {dashboard().relative_to(RAIZ)}")
+    print(f"Portal: {portal().relative_to(RAIZ)}")
 
 
 if __name__ == "__main__":

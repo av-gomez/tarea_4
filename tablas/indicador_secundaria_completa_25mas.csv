@@ -1,0 +1,5 @@
+anio,indicador,desagregacion,categoria,valor,ee,ic95_inf,ic95_sup,cv_pct,n_muestral,poblacion_expandida,medida,modulo,variable,condicion,universo,ponderador,archivo_fuente,excluidos_sin_dato,codigos_no_validos,confiable_cv15
+2019,secundaria_completa_25mas,pobre,0,60.5333,0.358,59.8315,61.2351,0.5915,57398,15961980.0,porcentaje,03,p301a,>=6,edad >= 25,facpob07,687-Modulo03/enaho01a-2019-300.dta,17,0,True
+2019,secundaria_completa_25mas,pobre,1,28.5977,0.7722,27.0841,30.1113,2.7004,12330,3163527.5,porcentaje,03,p301a,>=6,edad >= 25,facpob07,687-Modulo03/enaho01a-2019-300.dta,17,0,True
+2025,secundaria_completa_25mas,pobre,0,62.7279,0.3784,61.9863,63.4694,0.6032,52372,16695459.529864192,porcentaje,03,p301a,>=6,edad >= 25,facpob07,1031-Modulo03/enaho01a-2025-300.dta,46,0,True
+2025,secundaria_completa_25mas,pobre,1,44.5232,0.7616,43.0305,46.0159,1.7106,12611,4701096.910990834,porcentaje,03,p301a,>=6,edad >= 25,facpob07,1031-Modulo03/enaho01a-2025-300.dta,46,0,True

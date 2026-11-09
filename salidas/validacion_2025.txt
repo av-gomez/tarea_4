@@ -1,0 +1,52 @@
+VALIDACION ENAHO 2025
+==============================================================================
+Generado: 2026-11-08 22:45  |  script: .claude/skills/limpiando-enaho/scripts/limpiar.py
+Fuentes: 1031-Modulo34/sumaria-2025.dta (modulo 34) y 1031-Modulo02/enaho01-2025-200.dta (modulo 02)
+Indicadores territoriales: sumaria con factor07 x mieperho (INEI); individuales: personas con facpob07.
+Error estandar: linealizacion de Taylor (UPM = conglome, estratos = departamento x estrato).
+
+[APROBADA] Llaves como texto con longitud fija (conglome 6, vivienda 3, hogar 2)
+           conglome ej. '015009', ubigeo ej. '010101'
+[APROBADA] Hogares en la sumaria (sin conteo de referencia para este año) (complementaria)
+           33,702
+[APROBADA] Llaves de hogar únicas en la sumaria
+           0 duplicados
+[APROBADA] Llaves de persona únicas en el módulo 02
+           0 duplicados
+[APROBADA] Residentes habituales (sin conteo de referencia para este año) (complementaria)
+           106,135
+[APROBADA] Unión m:1 sin duplicar ni perder personas
+           106,135 personas antes y 106,135 después; 0 sin hogar en la sumaria
+[APROBADA] 25 códigos departamentales (01-25), Lima 15 y Callao 07 separados
+           25 códigos: 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+[APROBADA] Sin factores de expansión faltantes o no positivos
+           facpob07 faltantes: 0
+[APROBADA] Población expandida plausible (31-36 millones) (complementaria)
+           34,480,072 personas
+[APROBADA] Pobreza monetaria nacional (sumaria, factor07 x mieperho; metodo INEI) a <= 0.1 p.p. de 25.7 %
+           25.67 % (IC 95 %: 24.67-26.67; CV 2.0 %)
+[APROBADA] Pobreza monetaria nacional (personas residentes, facpob07) cercana a 25.7 % (complementaria)
+           25.63 % (IC 95 %: 24.63-26.63); estimador alternativo
+[APROBADA] La ponderacion importa: el promedio simple difiere del ponderado (complementaria)
+           promedio simple 23.13 % vs ponderado 25.63 % (el simple NO se usa)
+[APROBADA] Pobreza extrema cercana a 4.7 % (complementaria)
+           4.65 %
+[APROBADA] Pobreza urbana cercana a 23.4 %
+           23.41 %
+[APROBADA] Pobreza rural cercana a 35.5 %
+           35.45 %
+[APROBADA] Modulo 01 (Características de la vivienda y del hogar) unido a nivel hogar sin duplicar filas
+           1031-Modulo01/enaho01-2025-100.dta: 325 variables; 100.0 % de las personas con dato
+[APROBADA] Modulo 03 (Educación) unido a nivel persona sin duplicar filas
+           1031-Modulo03/enaho01a-2025-300.dta: 486 variables; 96.9 % de las personas con dato
+[APROBADA] Modulo 04 (Salud) unido a nivel persona sin duplicar filas
+           1031-Modulo04/enaho01a-2025-400.dta: 875 variables; 100.0 % de las personas con dato
+[APROBADA] Modulo 05 (Empleo e ingresos) unido a nivel persona sin duplicar filas
+           1031-Modulo05/enaho01a-2025-500.dta: 1405 variables; 78.5 % de las personas con dato
+[APROBADA] Modulo 37 (Programas sociales (miembros del hogar)) unido a nivel hogar sin duplicar filas
+           1031-Modulo37/enaho01-2025-700.dta: 35 variables; 100.0 % de las personas con dato
+[APROBADA] Modulo 85 (Gobernabilidad, democracia y transparencia) unido a nivel persona sin duplicar filas
+           1031-Modulo85/enaho01b-2025-1.dta: 236 variables; 31.5 % de las personas con dato
+
+Resumen: 21 de 21 verificaciones aprobadas.
+RESULTADO: TODAS LAS VALIDACIONES ESENCIALES APROBADAS

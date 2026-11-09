@@ -1,0 +1,337 @@
+anio,modulo,variable,etiqueta,valores
+2025,01,anio,año de la encuesta,
+2025,01,mes,mes de ejecucion de la encuesta,
+2025,01,conglome,numero de conglomerado,
+2025,01,vivienda,numero de seleccion de vivienda,
+2025,01,hogar,numero secuencial del hogar,
+2025,01,ubigeo,ubicacion geografica,
+2025,01,dominio,dominio geografico,1=costa norte; 2=costa centro; 3=costa sur; 4=sierra norte; 5=sierra centro; 6=sierra sur; 7=selva; 8=lima metropolitana
+2025,01,estrato,estrato geografico,1=de 500 000 a mas habitantes; 2=de 100 000 a 499 999 habitantes; 3=de 50 000 a 99 999 habitantes; 4=de 20 000 a 49 999 habitantes; 5=de 2 000 a 19 999 habitantes; 6=de 500 a 1 999 habitantes; 7=area de empadronamiento rural (aer) compuesto; 8=area de empadronamiento rural (aer) simple
+2025,01,periodo,periodo de ejecucion de la encuesta,
+2025,01,tipenc,tipo de seleccion del conglomerado,1=seleccion automatica por computadora - area urbana; 3=seleccion por muestra panel; 4=seleccion automatica por computadora - area rural; 5=seleccion por conteo de la encuestadora en el area rural
+2025,01,fecent,fecha de resultado final de la encuesta ( mes/dia/año),
+2025,01,result,resultado final de la encuesta,1=completa; 2=incompleta; 3=rechazo; 4=ausente; 5=vivienda desocupada; 6=no se inicio la entrevista; 7=otro
+2025,01,panel,el hogar fue entrevistado el año pasado,1=si; 2=no
+2025,01,p22,"ademas de esta vivienda, existe otra vivienda en la que ud.o algun miembro de su",1=si; 2=no
+2025,01,p23,"en que distrito, provincia y departamento esta ubicada dicha vivienda",
+2025,01,p24a,las paredes exteriores de la vivienda tienen fachada: con tarrajeo,1=total; 2=parcial; 3=no esta tarrajeada; 4=no corresponde
+2025,01,p24b,las paredes exteriores de la vivienda tienen fachada: pintada,1=totalmente; 2=parcialmente; 3=sin pintar
+2025,01,p25_1,"la calle.., donde se ubica la vivienda tiene: pista afaltada",0=pase; 1=pista asfaltada
+2025,01,p25_2,"la calle.., donde se ubica la vivienda tiene: pista afirmada/tierra",0=pase; 1=pista afirmada/tierra
+2025,01,p25_3,"la calle.., donde se ubica la vivienda tiene: veredas",0=pase; 1=veredas
+2025,01,p25_4,"la calle..., donde se ubica la vivienda tiene: poste alumbrado publico",0=pase; 1=poste alumbrado publico
+2025,01,p25_5,"la calle., donde se ubica la vivienda tiene: ninguno",0=pase; 1=ninguno
+2025,01,p101,tipo de vivienda,1=casa independiente; 2=departamento en edificio; 3=vivienda en quinta; 4=vivienda en casa de vecindad ; 6=vivienda improvisada; 7=local no destinado para habitacion humana; 8=otro; 5=choza o cabaña
+2025,01,p102,el material predominante en las paredes exteriores es:,"1=ladrillo o bloque de cemento; 2=piedra o sillar con cal o cemento; 3=adobe; 4=tapia; 6=piedra con barro; 7=madera (pona, tornillo, etc); 8=triplay/calamina/estera; 9=otro material; 5=quincha (caña con barro)"
+2025,01,p103,el material predominante en los pisos es:,"1=parquet o madera pulida; 2=laminas asfalticas, vinilicos o similares; 3=losetas, terrazos o similares; 4=madera (pona, tornillo, etc); 5=cemento; 6=tierra; 7=otro material"
+2025,01,p103a,el material predominante en los techos es:,"1=concreto armado; 2=madera; 3=tejas; 4=planchas de calamina, fibra de cemento o similares; 6=triplay/estera/carrizo; 7=paja, hojas de palmera; 8=otro material; 5=caña o estera con torta de barro o cemento"
+2025,01,p104,"cuantas habitaciones en total tiene la vivienda, sin contar el baño,la cocina...",
+2025,01,p104a,cuantas habitaciones se usan para exclusivamente para dormir,
+2025,01,p104b1,la vivienda cuenta con licencia de construccion- se implementa a partir del mes ,1=si; 2=no; 3=no sabe
+2025,01,p104b2,la vivienda fue construida con asistencia tecnica de un ing. civil o arquitecto-,1=si; 2=no; 3=no sabe
+2025,01,p105a,la vivienda que ocupa su hogar es:,"1=alquilada; 2=propia, totalmente pagada; 3=propia, por invasion; 4=propia, comprandola a plazos; 5=cedida por el centro de trabajo; 6=cedida por otro hogar o institucion; 7=otra forma"
+2025,01,p105b,monto mensual por alquiler o compra de la vivienda,
+2025,01,p106,"si ud. alquilara esta vivienda, cuanto cree que le pagarian de alquiler mensual",
+2025,01,p106a,esta vivienda tiene titulo de propiedad,1=si; 2=no; 3=en tramite de titulacion
+2025,01,p106b,el titulo de la vivienda esta registrado en la sunarp,1=si; 2=no
+2025,01,p107b1,"en los ultimos 12 meses, ud. o ... ha obtenido algun credito: comprar casa, depa",1=si; 2=no
+2025,01,p107c11,el credito fue otorgado por: bco privado,
+2025,01,p107c12,el credito fue otorgado por: bco de la nacion,
+2025,01,p107c13,el credito fue otorgado por: caja municipal,
+2025,01,p107c14,el credito fue otorgado por: persona particular,
+2025,01,p107c16,el credito fue otorgado por: techo propio,
+2025,01,p107c17,el credito fue otorgado por: financiera de ahorro y credito,
+2025,01,p107c18,el credito fue otorgado por: otro,
+2025,01,p107c19,el credito fue otorgado por: cooperativa de ahorro y credito,
+2025,01,p107c110,el credito fue otorgado por: derrama magisterial,
+2025,01,p107d1,cual fue el monto total del credito recibido,
+2025,01,p107b2,"en los ultimos 12 meses, ud. o... ha obtenido algun credito.: comprar terreno pa",1=si; 2=no
+2025,01,p107c21,el credito fue otorgado por: bco privado ,
+2025,01,p107c22,el credito fue otorgado por: bco de la nacion,
+2025,01,p107c23,el credito fue otorgado por: caja municipal ,
+2025,01,p107c24,el credito fue otorgado por: persona particular,
+2025,01,p107c26,el credito fue otorgado por: techo propio ,
+2025,01,p107c27,el credito fue otorgado por: financiera de ahorro y credito,
+2025,01,p107c28,el credito fue otorgado por: otro,
+2025,01,p107c29,el credito fue otorgado por: cooperativa de ahorro y credito,
+2025,01,p107c210,el credito fue otorgado por: derrama magisterial,
+2025,01,p107d2,cual fue el monto total del credito recibido:,
+2025,01,p107b3,"en los ultimos 12 meses, ud. o ... ha obtenido algun credito.: mejoramiento y/o ",1=si; 2=no
+2025,01,p107c31,el credito fue otorgado por: bco privado,
+2025,01,p107c32,el credito fue otorgado por: bco de la nacion,
+2025,01,p107c33,el credito fue otorgado por: caja municipal,
+2025,01,p107c34,el credito fue otorgado por: persona particular,
+2025,01,p107c36,el credito fue otorgado por: techo propio,
+2025,01,p107c37,el credito fue otorgado por: financiera de ahorro y credito,
+2025,01,p107c38,el credito fue otorgado por: otro,
+2025,01,p107c39,el credito fue otorgado por: cooperativa de ahorro y credito,
+2025,01,p107c310,el credito fue otorgado por: derrama magisterial,
+2025,01,p107d3,cual fue el monto total del credito recibido:,
+2025,01,p107b4,"en los ultimos 12 meses, ud. o ... ha obtenido algun credito.: construccion de v",1=si; 2=no
+2025,01,p107c41,el credito fue otorgado por: bco privado,
+2025,01,p107c42,el credito fue otorgado por: bco de la nacion,
+2025,01,p107c43,el credito fue otorgado por: caja municipal ,
+2025,01,p107c44,el credito fue otorgado por: persona particular,
+2025,01,p107c46,el credito fue otorgado por: techo propio,
+2025,01,p107c47,el credito fue otorgado por: financiera de ahorro y credito,
+2025,01,p107c48,el credito fue otorgado por: otro ,
+2025,01,p107c49,el credito fue otorgado por: cooperativa de ahorro y credito,
+2025,01,p107c410,el credito fue otorgado por: derrama magisterial,
+2025,01,p107d4,cual fue el monto total del credito recibido,
+2025,01,p110,"el agua que utilizan en el hogar,procede principalmente de:","1=red publica, dentro de la vivienda; 2=red publica, fuera de la vivienda pero dentro del edificio; 3=pilon o pileta de uso publico; 4=camion-cisterna u otro similar; 5=pozo (agua subterranea); 6=manantial o puquio; 7=otra; 8=rio, acequia, lago, laguna"
+2025,01,p110a1,el agua es potable,1=si; 2=no
+2025,01,p110a,nivel de cloro residual del agua (variable recodificada p110a_modificada),1=seguro (mayor o igual a 0.5 mg/lt); 2=inadecuada dosificacion de cloro (de 0.1 mg/lt a menos de 0.5 mg/lt); 3=sin cloro (0.0 mg/lt)
+2025,01,p110a_modificada,nivel de cloro residual del agua (transcripcion de valores de kit comparador),
+2025,01,p110c,el hogar tiene acceso al servicio de agua todos los dias de la semana,1=si; 2=no
+2025,01,p110c1,cuantas horas al dia,
+2025,01,p110c2,cuantos dias a la semana tiene este servicio,
+2025,01,p110c3,cuantas horas al dia,
+2025,01,p110d,la muestra de agua fue extraida por,1=el funcionario de la encuesta; 2=el informante
+2025,01,p110e,la muestra del agua se extrajo del,"2=cilindro de metal; 3=balde o batea de plastico; 4=tanque (sin filtro); 5=tanque (con filtro); 6=bidon, botella, etc.; 7=otro; 1=grifo o caño"
+2025,01,p111a,el baño o servicio higienico que tiene su hogar esta conectado a:,"3=letrina (con tratamiento); 4=pozo septico, tanque septico o biodigestor; 5=pozo ciego o negro; 6=rio, acequia, canal o similar; 7=otra; 9=campo abierto o al aire libre; 1=red publica de desagüe dentro de la vivienda; 2=red publica de desagüe fuera de la vivienda pero dentro del edificio"
+2025,01,p1121,tipo de alumbrado del hogar: electricidad,0=pase; 1=electricidad
+2025,01,p1123,tipo de alumbrado del hogar: petroleo/gas,0=pase; 1=petroleo/gas(lampara)
+2025,01,p1124,tipo de alumbrado del hogar: vela,0=pase; 1=vela
+2025,01,p1125,tipo de alumbrado del hogar: generador,0=pase; 1=generador
+2025,01,p1126,tipo de alumbrado del hogar: otro,0=pase; 1=otro
+2025,01,p1127,no utiliza alumbrado en el hogar,0=pase; 1=no utiliza alumbrado en el hogar
+2025,01,p112a,el servicio electrico de su hogar es:,1=con medidor de uso exclusivo para la vivienda; 2=con medidor de uso colectivo ; 3=otro
+2025,01,p1131,combustible que usan en el hogar para cocinar sus alim.: electricidad,0=pase; 1=electricidad
+2025,01,p1132,combustible que usan en el hogar para cocinar sus alim.: gas glp,0=pase; 1=gas glp
+2025,01,p1133,combustible que usan en el hogar para cocinar sus alim.: gas natural,0=pase; 1=gas natural
+2025,01,p1135,combustible que usan en el hogar para cocinar sus alim.: carbon,0=pase; 1=carbon
+2025,01,p1136,combustible que usan en el hogar para cocinar sus alim.: leña,0=pase; 1=leña
+2025,01,p1139,"combustible que usan en el hogar para cocinar sus alim.: bosta, estiercol","0=pase; 1=bosta, estiercol"
+2025,01,p1137,combustible que usan en el hogar para cocinar sus alim.: otro,"0=pase; 1=otro(residuos agricolas, etc)."
+2025,01,p1138,no cocinan,0=pase; 1=no cocinan
+2025,01,p113a,combustible que usan en el hogar para cocinar: mayor frecuencia,"1=electricidad; 2=gas glp; 3=gas natural; 5=carbon; 7=otro; 8=no cocinan; 9=bosta, estiercol; 6=leña"
+2025,01,p1141,su hogar tiene: telefono (fijo),0=pase; 1=telefono(fijo)
+2025,01,p1142,su hogar tiene: telefono celular,0=pase; 1=telefono celular
+2025,01,p1143,su hogar tiene: conexion a tv por cable o satelital ,0=pase; 1=conexion a tv por  cable o satelital
+2025,01,p1144,su hogar tiene: conexion a internet,0=pase; 1=conexion a internet
+2025,01,p1145,"el hogar no tiene: telefono fijo, celular, tv cable, internet",0=pase; 1=no tiene
+2025,01,p1146,su hogar tiene: television digital terrestre,0=pase; 1=television digital terrestre
+2025,01,p114b1,conexion a internet a traves de: conexion fija,0=pase; 1=conexion fija
+2025,01,p114b2,conexion a internet a traves de: conexion movil post pago control,0=pase; 1=conexion movil post pago control
+2025,01,p114b3,conexion a internet a traves de: conexion movil prepago,0=pase; 1=conexion movil prepago
+2025,01,p1171_01,el ultimo gasto mensual por cons. de: agua,0=pase; 1=agua
+2025,01,p1171_02,el ultimo gasto mensual por cons. de: electricidad,0=pase; 1=electricidad
+2025,01,p1171_04,el ultimo gasto mensual por cons. de: gas glp,0=pase; 1=gas glp
+2025,01,p1171_05,el ultimo gasto mensual por cons. de: gas natural,0=pase; 1=gas natural
+2025,01,p1171_06,el ultimo gasto mensual por cons. de: vela,0=pase; 1=vela
+2025,01,p1171_07,el ultimo gasto mensual por cons. de: carbon,0=pase; 1=carbon
+2025,01,p1171_08,el ultimo gasto mensual por cons. de: leña,0=pase; 1=leña
+2025,01,p1171_09,el ultimo gasto mensual por cons. de: petroleo,0=pase; 1=petroleo
+2025,01,p1171_10,el ultimo gasto mensual por cons. de: gasolina,0=pase; 1=gasolina
+2025,01,p1171_11,el ultimo gasto mensual por cons. de: telefono,0=pase; 1=telefono fijo
+2025,01,p1171_12,el ultimo gasto mensual por cons. de: celular,0=pase; 1=celular
+2025,01,p1171_13,el ultimo gasto mensual por cons. de: tv cable o satelital,0=pase; 1=tv cable o satelital
+2025,01,p1171_14,el ultimo gasto mensual por cons. de: internet,0=pase; 1=internet
+2025,01,p1171_15,el ultimo gasto mensual por cons. de: otro,0=pase; 1=otro
+2025,01,p1171_16,"el ultimo gasto mensual por cons. de: bosta, estiercol","0=pase; 1=bosta, estiercol"
+2025,01,p1171_17,el ultimo gasto.. : internet (portatil),0=pase; 1=internet (portatil)
+2025,01,p1172_01,"el ultimo gasto mensual por cons. de: agua, pagado por algun miembro de este hog",
+2025,01,p1172_02,"el ultimo gasto mensual por cons. de: electricidad, pagado por algun  miembro de",
+2025,01,p1172_04,"el ultimo gasto mensual por cons. de: gas glp, pagado por algun  miembro de este",
+2025,01,p1172_05,"el ultimo gasto mensual por cons. de: gas natural , pagado por algun miembro de ",
+2025,01,p1172_06,"el ultimo gasto mensual por cons. de: vela, pagado por algun miembro de este hog",
+2025,01,p1172_07,"el ultimo gasto mensual por cons. de: carbon, pagado por algun  miembro de este ",
+2025,01,p1172_08,"el ultimo gasto mensual por cons. de: leña, pagado por algun  miembro de este ho",
+2025,01,p1172_09,"el ultimo gasto mensual por cons. de: petroleo, pagado por algun  miembro de est",
+2025,01,p1172_10,"el ultimo gasto mensual por cons. de: gasolina, pagado por algun  miembro de est",
+2025,01,p1172_11,"el ultimo gasto mensual por cons. de: telefono fijo, pagado por algun miembro de",
+2025,01,p1172_12,"el ultimo gasto mensual por cons. de: celular, pagado por algun miembro de este ",
+2025,01,p1172_13,"el ultimo gasto mensual por cons. de: tv cable o satelital, pagado por algun  mi",
+2025,01,p1172_14,"el ultimo gasto mensual por cons. de: internet, pagado por algun miembro de este",
+2025,01,p1172_15,"el ultimo gasto mensual por cons. de: otro, pagado por  algun  miembro de este h",
+2025,01,p1172_16,"el ultimo gasto mensual por cons. de: bosta, estiercol, pagado por algun  miembr",
+2025,01,p1172_17,"el ultimo gasto mensual por consumo de: internet (portatil), ¿pagado por un miem",
+2025,01,p1173_01,"el ultimo gasto mensual por cons. de: agua, donado o regalado por algun miembro ",
+2025,01,p1173_02,"el ultimo gasto mensual por cons. de: electricidad, donado o regalado por algun ",
+2025,01,p1173_04,"el ultimo gasto mensual por cons. de: gas glp, donado o regalado por algun miemb",
+2025,01,p1173_05,"el ultimo gasto mensual por cons. de: gas natural, donado o regalado por algun m",
+2025,01,p1173_06,"el ultimo gasto mensual por cons. de: vela, donado o regalado por algun miembro ",
+2025,01,p1173_07,"el ultimo gasto mensual por cons. de: carbon, donado o regalado por algun miembr",
+2025,01,p1173_08,"el ultimo gasto mensual por cons. de: leña, donado o regalado por algun miembro ",
+2025,01,p1173_09,"el ultimo gasto mensual por cons. de: petroleo, donado o regalado por algun miem",
+2025,01,p1173_10,"el ultimo gasto mensual por cons. de: gasolina, donado o regalado por algun miem",
+2025,01,p1173_11,"el ultimo gasto mensual por cons. de: telefono fijo, donado o regalado por algun",
+2025,01,p1173_12,"el ultimo gasto mensual por cons. de: celular, donado o regalado por algun miemb",
+2025,01,p1173_13,"el ultimo gasto mensual por cons. de: tv cable o satelital, donado o regalado po",
+2025,01,p1173_14,"el ultimo gasto mensual por cons. de: internet, donado o regalado por algun miem",
+2025,01,p1173_15,"el ultimo gasto mensual por cons. de: otro, donado o regalado por algun miembro ",
+2025,01,p1173_16,"el ultimo gasto mensual por cons. de: bosta, estiercol, donado o regalado por al",
+2025,01,p1173_17,"el ultimo gasto mensual por consumo de: internet (portatil), ¿donado o regalado ",
+2025,01,p1174_01,"el ultimo gasto mensual por cons. de: agua, autocons./autosuministro",
+2025,01,p1174_02,"el ultimo gasto mensual por cons. de: electricidad, autocons./autosuministro",
+2025,01,p1174_04,"el ultimo gasto mensual por cons. de: gas glp, autocons./autosuministro",
+2025,01,p1174_05,"el ultimo gasto mensual por cons. de: gas natural, autocons./autosuministro",
+2025,01,p1174_06,"el ultimo gasto mensual por cons. de: vela, autocons./autosuministro",
+2025,01,p1174_07,"el ultimo gasto mensual por cons. de: carbon, autocons./autosuministro",
+2025,01,p1174_08,"el ultimo gasto mensual por cons. de: leña, autocons./autosuministro",
+2025,01,p1174_09,"el ultimo gasto mensual por cons. de: petroleo, autocons./autosuministro",
+2025,01,p1174_10,"el ultimo gasto mensual por cons. de: gasolina, autocons./autosuministro",
+2025,01,p1174_11,"el ultimo gasto mensual por cons. de: telefono, autocons./autosuministro",
+2025,01,p1174_12,"el ultimo gasto mensual por cons. de: celular, autocons./autosuministro",
+2025,01,p1174_13,"el ultimo gasto mensual por cons. de: tv cable o satelital, autocons./autosumini",
+2025,01,p1174_14,"el ultimo gasto mensual por cons. de: internet, autocons./autosuministro",
+2025,01,p1174_15,"el ultimo gasto mensual por cons. de: otro, autocons./autosuministro",
+2025,01,p1174_16,"el ultimo gasto mensual por cons. de: bosta,estiercol, autocons./autosuministro",
+2025,01,p1174_17,"el ultimo gasto mensual por consumo de: internet (portatil), ¿autoconsumo o auto",
+2025,01,p1175_01,el ultimo gasto mensual por cons. de: agua,0=pase; 1=incluido en el alquiler; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_02,el ultimo gasto mensual por cons. de: electricidad,0=pase; 1=incluido en el alquiler; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_04,el ultimo gasto mensual por cons. de: gas glp,0=pase; 2=no gasto; 3=no sabe/no responde; 4=incluido ene le alquiler
+2025,01,p1175_05,el ultimo gasto mensual por cons. de: gas natural,0=pase; 1=incluido en el alquiler; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_06,el ultimo gasto mensual por cons. de: vela,0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_07,el ultimo gasto mensual por cons. de: carbon,0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_08,el ultimo gasto mensual por cons. de: leña,0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_09,el ultimo gasto mensual por cons. de: petroleo,0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_10,el ultimo gasto mensual por cons. de: gasolina,0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_11,el ultimo gasto mensual por cons. de:telefono fijo,0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_12,el ultimo gasto mensual por cons. de: celular,0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_13,el ultimo gasto mensual por cons. de: tv cable o satelital,0=pase; 1=incluido en el alquiler; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_14,el ultimo gasto mensual por cons. de: internet,0=pase; 1=incluido en el alquiler; 2=no gasto; 3=no sabe/no responde; 4=incluido en el celular
+2025,01,p1175_15,el ultimo gasto mensual por cons. de: otro,0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_16,"el ultimo gasto mensual por cons. de: bosta, estiercol",0=pase; 2=no gasto; 3=no sabe/no responde
+2025,01,p1175_17,el ultimo gasto..: internet (portatil),0=pase; 3=no sabe/no responde; 1=incluído en el alquiler; 2=no gastó
+2025,01,p117t2,total gasto mensual (s/.) pagado por algun miembro del hogar,
+2025,01,p117t3,total gasto mensual (s/.) donado por algun miembro de otro hogar,
+2025,01,p117t4,total gasto mensual (s/.) por autocons. o autosuministro,
+2025,01,t110,(re-codificado ) el abastecimiento de agua en su hogar procede de:,"1=red publica, dentro de la vivienda; 2=red publica, fuera de la vivienda pero dentro del edificio; 3=pilon o pileta de uso publico; 4=camion - cisterna u otro similar; 5=pozo (agua subterranea); 6=manantial o puquio; 7=otra; 8=rio, acequia, lago, laguna; 9=agua potable del vecino"
+2025,01,p200i,codigo de informante del capitulo 200,
+2025,01,p600i,codigo de informante de los gastos del hogar,
+2025,01,p600d1,dia - periodo de referencia para los gastos del hogar (inicio),
+2025,01,p600m1,mes - periodo de referencia para los gastos del hogar (inicio),
+2025,01,p600a1,año - periodo de referencia para los gastos del hogar (inicio),
+2025,01,p600d2,dia - periodo de referencia para los gastos del hogar (termino),
+2025,01,p600m2,mes - periodo de referencia para los gastos del hogar (termino),
+2025,01,p600a2,año - periodo de referencia para los gastos del hogar (termino),
+2025,01,p612i1,"en los ultimos 12 meses, el hogar ha vendido: bienes raices(vivienda, terrenos, ",1=si; 2=no
+2025,01,p612i11,"en los ultimos 12 meses, el hogar ha vendido: valor vendido de las bienes raices",
+2025,01,p612i2,"en los ultimos 12 meses, el hogar ha vendido: equipos del hogar(auto, tv, cocina",1=si; 2=no
+2025,01,p612i22,"en los ultimos 12 meses, el hogar ha vendido: valor vendido de los equipos de ho",
+2025,01,p700i,codigo de informante del capitulo 700,
+2025,01,p710i,codigo de informante del capitulo 700a,
+2025,01,p800i,codigo de informante del capitulo  800,
+2025,01,p110i,n° de la persona informante del cap. calidad bacteriologica del agua,
+2025,01,ticuest01,origen de cuestionario,1=cuestionario en hojas; 2=cuestionario en tablet
+2025,01,d105b,(defl.) monto mensual por alquiler o compra de la vivienda,
+2025,01,d106,(defl.) cuanto cree que le pagarian de alquiler mensual,
+2025,01,d107d1,"(deflactado) en los ultimos 12 meses, ud. o ... ha obtenido algun credito.: comp",
+2025,01,d107d2,(defl.) en los ultimos 12 meses..ud. o algun miembro de su hogar ha obtenido alg,
+2025,01,d107d3,(defl.) en los ultimos 12 meses..ud. o algun miembro de su hogar ha obtenido alg,
+2025,01,d107d4,(defl.) en los ultimos 12 meses..ud. o algun miembro de su hogar ha obtenido alg,
+2025,01,d1172_01,"(defl.) el ultimo gasto mensual..de: agua, pagado por  miembro de este hogar",
+2025,01,d1173_01,"(defl.) el ultimo gasto mensual..de: agua, donado o regalado por algun miembro d",
+2025,01,d1174_01,"(defl.) el ultimo gasto mensual..de: agua, por autocons./autosuministro",
+2025,01,d1172_02,"(defl.) el ultimo gasto mensual..de: electricidad, pagado por algun miembro de e",
+2025,01,d1173_02,"(defl.) el ultimo gasto mensual..de: electricidad, donado o regalado por algun m",
+2025,01,d1174_02,"(defl.) el ultimo gasto mensual..de: electricidad, por autocons./autosuministro",
+2025,01,d1172_04,"(defl.) el ultimo gasto mensual..de: gas glp, pagado por algun miembro de este h",
+2025,01,d1173_04,"(defl.) el ultimo gasto mensual..de: gas glp, donado o regalado por algun miembr",
+2025,01,d1174_04,"(defl.) el ultimo gasto mensual..de: gas glp, por autocons./autosuministro",
+2025,01,d1172_05,"(defl.) el ultimo gasto mensual..de: gas natural, pagado por algun miembro de es",
+2025,01,d1173_05,"(defl.) el ultimo gasto mensual..de: gas natural, donado o regalado por algun mi",
+2025,01,d1174_05,"(defl.) el ultimo gasto mensual..de: gas natural, por autocons./autosuministro",
+2025,01,d1172_06,"(defl.) el ultimo gasto mensual..de: vela, pagado por algun miembro de este hoga",
+2025,01,d1173_06,"(defl.) el ultimo gasto mensual..de: vela, donado o regalado por algun miembro d",
+2025,01,d1174_06,"(defl.) el ultimo gasto mensual..de: vela, por autocons./autosuministro",
+2025,01,d1172_07,"(defl.) el ultimo gasto mensual..de: carbon, pagado por algun miembro de este ho",
+2025,01,d1173_07,"(defl.) el ultimo gasto mensual..de: carbon, donado o regalado por algun miembro",
+2025,01,d1174_07,"(defl.) el ultimo gasto mensual..de: carbon, por autocons./autosuministro",
+2025,01,d1172_08,"(defl.) el ultimo gasto mensual..de: leña, pagado por algun miembro de este hoga",
+2025,01,d1173_08,"(defl.) el ultimo gasto mensual..de: leña, donado o regalado por algun miembro d",
+2025,01,d1174_08,"(defl.) el ultimo gasto mensual..de: leña, por autocons./autosuministro",
+2025,01,d1172_09,"(defl.) el ultimo gasto mensual..de: petroleo, pagado por algun miembro de este ",
+2025,01,d1173_09,"(defl.) el ultimo gasto mensual..de: petroleo, donado o regalado por algun miemb",
+2025,01,d1174_09,"(defl.) el ultimo gasto mensual..de: petroleo, por autocons./autosuministro",
+2025,01,d1172_10,"(defl.) el ultimo gasto mensual..de: gasolina, pagado por algun miembro de este ",
+2025,01,d1173_10,"(defl.) el ultimo gasto mensual..de: gasolina, donado o regalado por algun miemb",
+2025,01,d1174_10,"(defl.) el ultimo gasto mensual..de: gasolina, por autocons./autosuministro",
+2025,01,d1172_15,"(defl.) el ultimo gasto mensual..de: otro, pagado por algun miembro de este hoga",
+2025,01,d1173_15,"(defl.) el ultimo gasto mensual..de: otro, donado o regalado por algun miembro d",
+2025,01,d1174_15,"(defl.) el ultimo gasto mensual..de: otro, por autocons./autosuministro",
+2025,01,d1172_16,"(defl.) el ultimo gasto mensual..de: bosta, estiercol, pagado por algun miembro ",
+2025,01,d1173_16,"(defl.) el ultimo gasto mensual..de: bosta, estiercol, donado o regalado por alg",
+2025,01,d1174_16,"(defl.) el ultimo gasto mensual..de: bosta, estiercol, por autocons./autosuminis",
+2025,01,d612i11,"en los ultimos 12 meses, el hogar ha vendido: valor vendido de las bienes raices",
+2025,01,d1172_11,"(defl.) el ultimo gasto mensual..de: telefono fijo, pagado por algun miembro de ",
+2025,01,d1173_11,"(defl.) el ultimo gasto mensual..de: telefono fijo, donado o regalado por algun ",
+2025,01,d1174_11,"(defl.) el ultimo gasto mensual..de: telefono fijo, por autocons./autosuministro",
+2025,01,d1172_12,"(defl.) el ultimo gasto mensual..de: celular, pagado por algun miembro de este h",
+2025,01,d1173_12,"(defl.) el ultimo gasto mensual..de: celular, donado o regalado por algun miembr",
+2025,01,d1174_12,"(defl.) el ultimo gasto mensual..de: celular, por autocons./autosuministro",
+2025,01,d1172_13,"(defl.) el ultimo gasto mensual..de: tv cable o satelital, pagado por algun miem",
+2025,01,d1173_13,"(defl.) el ultimo gasto mensual..de: tv cable o satelital, donado o regalado por",
+2025,01,d1174_13,"(defl.) el ultimo gasto mensual..de: tv cable o satelital, por autocons./autosum",
+2025,01,d1172_14,"(defl.) el ultimo gasto mensual..de: internet, pagado por algun miembro de este ",
+2025,01,d1173_14,"(defl.) el ultimo gasto mensual..de: internet, donado o regalado por algun miemb",
+2025,01,d1174_14,"(defl.) el ultimo gasto mensual..de: internet, por autocons./autosuministro",
+2025,01,d1172_17,"(defl.) el ultimo gasto mensual.. de: internet(portatil), pagado",
+2025,01,d1173_17,"(defl.) el ultimo gasto mensual.. de: internet(portatil), donado",
+2025,01,d1174_17,"(defl.) el ultimo gasto mensual.. de: internet(portatil), por autocons.",
+2025,01,d612i22,"en los ultimos 12 meses, el hogar ha vendido: valor vendido de los equipos de ho",
+2025,01,i105b,(imp.) cual es el monto mensual de alquiler / venta del hogar,
+2025,01,i106,(imp.) cuanto cree que le pagarian de alquiler mensual,
+2025,01,i1172_01,"(imp.) el ultimo gasto mensual por cons. de: agua, pagado por algun miembro de e",
+2025,01,i1172_02,"(imp.) el ultimo gasto mensual por cons. de: electricidad, pagado por algun miem",
+2025,01,i1172_04,"(imp.) el ultimo gasto mensual por cons. de: gas glp, pagado por algun miembro d",
+2025,01,i1172_05,"(imp.) el ultimo gasto mensual por cons. de: gas natural, pagado por algun miemb",
+2025,01,i1172_06,"(imp.) el ultimo gasto mensual por cons. de: vela, pagado por algun miembro de e",
+2025,01,i1172_07,"(imp.) el ultimo gasto mensual por cons. de: carbon, pagado por algun miembro de",
+2025,01,i1172_08,"(imp.) el ultimo gasto mensual por cons. de: leña, pagado por algun miembro de e",
+2025,01,i1172_09,"(imp.) el ultimo gasto mensual por cons. de: petroleo, pagado por algun miembro ",
+2025,01,i1172_10,"(imp.) el ultimo gasto mensual por cons. de: gasolina, pagado por algun miembro ",
+2025,01,i1172_11,"(imp.) el ultimo gasto mensual por cons. de: telefono fijo, pagado por algunmiem",
+2025,01,i1172_12,"(imp.) el ultimo gasto mensual por cons. de: celular, pagado por algun miembro d",
+2025,01,i1172_13,"(imp.) el ultimo gasto mensual por cons. de: tv cable o satelital, pagado por al",
+2025,01,i1172_14,"(imp.) el ultimo gasto mensual por cons. de: internet, pagado por algun miembro ",
+2025,01,i1172_17,"(imp.) el último gasto mensual.. de: internet(portatil), pagado",
+2025,01,i1172_15,"(imp.) el ultimo gasto mensual por cons. de: otro, pagado por algun miembro de e",
+2025,01,i1172_16,"(imp.) el ultimo gasto mensual por cons. de: bosta, estiercol, pagado por algun ",
+2025,01,i1173_01,"(imp.) el ultimo gasto mensual por cons. de: agua, donado o regalado por algun m",
+2025,01,i1174_01,"(imp.) el ultimo gasto mensual por cons. de: agua, por autocons./autosuministro",
+2025,01,i1173_02,"(imp.) el ultimo gasto mensual por cons. de: electricidad, donado o regalado por",
+2025,01,i1174_02,"(imp.) el ultimo gasto mensual por cons. de: electricidad, por autocons./autosum",
+2025,01,i1173_04,"(imp.) el ultimo gasto mensual por cons. de: gas glp, donado o regalado por algu",
+2025,01,i1174_04,"(imp.) el ultimo gasto mensual por cons. de: gas glp, por autocons./autosuminist",
+2025,01,i1173_05,"(imp.) el ultimo gasto mensual por cons. de: gas natural , donado o regalado por",
+2025,01,i1174_05,"(imp.) el ultimo gasto mensual por cons. de: gas natural, por autocons./autosumi",
+2025,01,i1173_06,"(imp.) el ultimo gasto mensual por cons. de: vela, donado o regalado por algun m",
+2025,01,i1174_06,"(imp.) el ultimo gasto mensual por cons. de: vela, por autocons./autosuministro",
+2025,01,i1173_07,"(imp.) el ultimo gasto mensual por cons. de: carbon, donado o regalado por algun",
+2025,01,i1174_07,"(imp.) el ultimo gasto mensual por cons. de: carbon, por autocons./autosuministr",
+2025,01,i1173_08,"(imp.) el ultimo gasto mensual por cons. de: leña, donado o regalado por algun m",
+2025,01,i1174_08,"(imp.) el ultimo gasto mensual por cons. de: leña, por autocons./autosuministro",
+2025,01,i1173_09,"(imp.) el ultimo gasto mensual por cons. de: petroleo, donado o regalado por alg",
+2025,01,i1174_09,"(imp.) el ultimo gasto mensual por cons. de: petroleo, por autocons./autosuminis",
+2025,01,i1173_10,"(imp.) el ultimo gasto mensual por cons. de: gasolina, donado o regalado por alg",
+2025,01,i1174_10,"(imp.) el ultimo gasto mensual por cons. de: gasolina, por autocons./autosuminis",
+2025,01,i1173_11,"(imp.) el ultimo gasto mensual por cons. de: telefono fijo, donado o regalado po",
+2025,01,i1174_11,"(imp.) el ultimo gasto mensual por cons. de: telefono fijo, por autocons./autosu",
+2025,01,i1173_12,"(imp.) el ultimo gasto mensual por cons. de: celular, donado o regalado por algu",
+2025,01,i1174_12,"(imp.) el ultimo gasto mensual por cons. de: celular, por autocons./autosuminist",
+2025,01,i1173_13,"(imp.) el ultimo gasto mensual por cons. de: tv cable o satelital, donado o rega",
+2025,01,i1174_13,"(imp.) el ultimo gasto mensual por cons. de: tv cable o satelital, por autocons.",
+2025,01,i1173_14,"(imp.) el ultimo gasto mensual por cons. de: internet, donado o regalado por alg",
+2025,01,i1174_14,"(imp.) el ultimo gasto mensual por cons. de: internet, por autocons./autosuminis",
+2025,01,i1173_15,"(imp.) el ultimo gasto mensual por cons. de: otro, donado o regalado por algun m",
+2025,01,i1174_15,"(imp.) el ultimo gasto mensual por cons. de: otro, por autocons./autosuministro",
+2025,01,i1173_16,"(imp.) el ultimo gasto mensual por cons. de: bosta, estiercol, donado o regalado",
+2025,01,i1174_16,"(imp.) el ultimo gasto mensual por cons. de: bosta, estiercol, por autocons./aut",
+2025,01,i1173_17,"(imputado) el último gasto mensual.. de: internet(portatil), donado por",
+2025,01,i1174_17,"(imputado) el último gasto mensual.. de: internet(portatil), por autocons.",
+2025,01,t111a,recodificada  el baño o servicio higienico que tiene su hogar,"3=letrina (con tratamiento); 4=pozo septico, tanque septico o biodigestor; 5=pozo ciego o negro; 6=rio, acequia, canal o similar; 7=otra; 9=campo abierto o al aire libre; 10=letrina (sin tratamiento); 11=letrina (tipo compostera); 1=red publica de desagüe dentro de la vivienda; 2=red publica de desagüe fuera de la vivienda pero dentro del edificio"
+2025,01,nbi1,vivienda inadecuada (necesidad basica insatisfecha 1),0=vivienda adecuada; 1=vivienda inadecuada
+2025,01,nbi2,vivienda con hacinamiento (necesidad basica insatisfecha 2),0=vivienda sin hacinamiento; 1=vivienda con hacinamiento
+2025,01,nbi3,hogares con vivienda sin ss.hh. (necesidad basica insatisfecha 3),0=hogares con vivienda con servicios higienicos; 1=hogares con vivienda sin servicios higienicos
+2025,01,nbi4,hogares con niños que no asisten a la escuela (necesidad basica insatisfecha 4),0=hogares con niños que asisten a la escuela; 1=hogares con niños que no asisten a la escuela
+2025,01,nbi5,hogares con alta dependencia economica (necesidad basica insatisfecha 5),0=hogares sin alta dependencia economica; 1=hogares con alta dependencia economica
+2025,01,factor07,factor de expansion anual. proyecciones cpv-2007,
+2025,01,codccpp,codigo del centro poblado,
+2025,01,nomccpp,nombre del centro poblado,
+2025,01,nconglome,numero de conglomerado (proveniente del marco),
+2025,01,sub_conglome,sub conglome,
+2025,01,longitud,longitud,
+2025,01,latitud,latitud,
+2025,01,altitud,altitud,

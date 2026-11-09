@@ -1,0 +1,885 @@
+anio,modulo,variable,etiqueta,valores
+2025,04,anio,Año de la encuesta,
+2025,04,mes,Mes de ejecucion de la encuesta,
+2025,04,conglome,Numero de conglomerado,
+2025,04,vivienda,Numero de seleccion de vivienda,
+2025,04,hogar,Numero secuencial del Hogar,
+2025,04,codperso,Codigo de la persona,
+2025,04,ubigeo,Ubicacion geografica,
+2025,04,dominio,Dominio geografico,1=Costa Norte; 2=Costa Centro; 3=Costa Sur; 4=Sierra Norte; 5=Sierra Centro; 6=Sierra Sur; 7=Selva; 8=Lima Metropolitana
+2025,04,estrato,Estrato geografico,1=De 500 000 a mas habitantes; 2=De 100 000 a 499 999 habitantes; 3=De 50 000 a 99 999 habitantes; 4=De 20 000 a 49 999 habitantes; 5=De 2 000 a 19 999 habitantes; 6=De 500 a 1 999 habitantes; 7=Area de Empadronamiento Rural (AER) Compuesto; 8=Area de Empadronamiento Rural (AER) Simple
+2025,04,codinfor,Codigo de informante del capitulo 400,
+2025,04,p400n,Numero de persona,
+2025,04,p400i,Codigo de informante,0=Omision
+2025,04,p400a1,"En que dia, mes y año nacio - Dia",
+2025,04,p400a2,"En que dia, mes y año nacio - Mes",
+2025,04,p400a3,"En que dia, mes y año nacio - Año",
+2025,04,p401c,Tiene DNI,1=Si; 2=No; 3=No sabe
+2025,04,p401d1,Razones por que no tiene DNI: No tiene partida de nacimiento,0=Pase; 1=No tiene partida de nacimiento
+2025,04,p401d2,Razones por que no tiene DNI: No lo considera importante,0=Pase; 2=No lo considera importante
+2025,04,p401d3,Razones por que no tiene DNI: No conoce los requisitos,0=Pase; 3=No conoce los requisitos
+2025,04,p401d4,Razones por que no tiene DN: No sabe donde acudir para tramitar su DNI,0=Pase; 4=No sabe donde acudir para tramitar su DNI
+2025,04,p401d5,Razones por que no tiene DNI: No existen oficinas del RENIEC cerca de su domicilio,0=Pase; 5=No existen oficinas del RENIEC cerca de su domicilio
+2025,04,p401d6,Razones por que no tiene DNI: No cuenta con los recursos economicos para tramitarlo,0=Pase; 6=No cuenta con los recursos economicos para tramitarlo
+2025,04,p401d7,Razones por que no tiene DNI: Esta en tramite por primera vez,0=Pase; 7=Esta en tramite por primera vez
+2025,04,p401d8,Razones por que no tiene DNI: Por errores en la partida de nacimiento,0=Pase; 8=Por errores en la partida de nacimiento
+2025,04,p401d9,Razones por que no tiene DNI: Otro,0=Pase; 9=Otro
+2025,04,p401f,"Hace 5 años, ... ¿Vivia en este distrito?",1=Si; 2=No; 3=Aun no habia nacido
+2025,04,p401g,"En que distrito, provincia y dpto vivia hace 5 años",
+2025,04,p401g1,"Cuando usted nacio, Vivia su madre en este distrito",1=Si; 2=No; 3=No sabe
+2025,04,p401g2,En que distrito y provincia vivia su madre,
+2025,04,p401h1,"Limitacion de forma permanente..: Moverse o caminar, para usar brazos o piernas",1=Si; 2=No
+2025,04,p401h2,"Limitacion de forma permanente..: Ver, aun usando anteojos",1=Si; 2=No
+2025,04,p401h3,"Limitacion de forma permanente.: Hablar o comunicarse, aun usando el lenguaje de señas",1=Si; 2=No
+2025,04,p401h4,"Limitacion de forma permanente.: Oir, aun usando audifonos",1=Si; 2=No
+2025,04,p401h5,Limitacion de forma permanente.:Entender o aprender (Concentrarse y recordar),1=Si; 2=No
+2025,04,p401h6,"Limitacion de forma permanente.: Relacionarse con los demas, por sus pensamientos, etc",1=Si; 2=No
+2025,04,p401,Padece de alguna enfermedad o malestar cronico,1=Si; 2=No
+2025,04,p4021,"En las ultimas 4 semanas, Presento Ud. algun: Sintoma o malestar (Tos, dolor de cabeza, fiebre, nauseas)","0=Pase; 1=Sintoma o malestar (tos, dolor de cabeza, fiebre, nausea)"
+2025,04,p4022,"En las ultimas 4 semanas, Presento Ud. alguna: Enfermedad (gripe, colitis, etc.)","0=Pase; 1=Enfermedad (gripe, colitis, etc)"
+2025,04,p4023,"En las ultimas 4 semanas, Presento Ud. alguna: Recaida de enfermedad cronica",0=Pase; 1=Recaida de enfermedad cronica
+2025,04,p4024,"En las ultimas 4 semanas,  Presento Ud. alguna: Accidente",0=Pase; 1=Accidente
+2025,04,p4025,"En las ultimas 4 semanas, Presento Ud. alguna: No tuvo enfermedad, sintoma, recaida, accidente","0=Pase; 1=No tuvo enfermedad, sintoma, recaida, accidente"
+2025,04,p4026,"En las ultimas 4 semanas,  Presento Ud. algun: Sintoma del COVID-19",0=Pase; 1=Sintoma del COVID-19
+2025,04,p4031,A donde acudio para consultar por esta enfermedad..: Puesto de salud MINSA,0=Pase; 1=Puesto de salud MINSA
+2025,04,p4032,A donde acudio para consultar por esta enfermedad..: Centro de salud MINSA,0=Pase; 1=Centro de salud MINSA
+2025,04,p4033,A donde acudio para consultar por esta enfermedad..: Centro o puesto de salud CLAS,0=Pase; 1=Centro o puesto de salud CLAS
+2025,04,p4034,"A donde acudio para consultar por esta enfermedad..: Posta, policlinico, EsSalud","0=Pase; 1=Posta, policlinico EsSalud"
+2025,04,p4035,A donde acudio para consultar por esta enfermedad..: Hospital MINSA,0=Pase; 1=Hospital MINSA
+2025,04,p4036,A donde acudio para consultar por esta enfermedad..: Hospital del seguro (EsSalud),0=Pase; 1=Hospital del Seguro (EsSalud)
+2025,04,p4037,A donde acudio para consultar por esta enfermedad..: Hospital de las FF.AA. y/o PNP,"0=Pase; 1=Hospital de las FF.AA, y/o PNP"
+2025,04,p4038,A donde acudio para consultar por esta enfermedad..: Consultorio medico particular,0=Pase; 1=Consultorio medico particular
+2025,04,p4039,A donde acudio para consultar por esta enfermedad..: Clinica particular,0=Pase; 1=Clinica particular
+2025,04,p40310,A donde acudio para consultar por esta enfermedad..: Farmacia o botica,0=Pase; 1=Farmacia o botica
+2025,04,p40311,A donde acudio para consultar por esta enfermedad..: En su domicilio (del paciente),0=Pase; 1=En su domicilio (del paciente)
+2025,04,p40313,A donde acudio para consultar por esta enfermedad..: Otro,0=Pase; 1=Otro
+2025,04,p40314,A donde acudio para consultar por esta enfermedad..: No busco atencion,0=Pase; 1=No busco atencion
+2025,04,p4041,Quien le atendio durante la consulta: Medico,0=Pase; 1=Medico
+2025,04,p4042,Quien le atendio durante la consulta: Dentista/Odontologo,0=Pase; 1=Dentista/Odontologo
+2025,04,p4043,Quien le atendio durante la consulta: Obstetriz,0=Pase; 1=Obstetriz
+2025,04,p4044,Quien le atendio durante la consulta:  Enfermera(o),0=Pase; 1=Enfermero(a)
+2025,04,p4045,Quien le atendio durante la consulta: Sanitario(a) (auxiliar tecnico en salud),0=Pase; 1=Sanitario(a) (auxiliar tecnico en salud)
+2025,04,p4046,Quien le atendio durante la consulta: Promotor(a),0=Pase; 1=Promotor(a)
+2025,04,p4047,¿Quien le atendio durante la consulta? Otro (especifique),0=Pase; 1=Otro
+2025,04,p4091,Cuales son las razones por que no acudio a un centro de salud:  No tuvo dinero,0=Pase; 1=No tuvo dinero
+2025,04,p4092,Cuales son las razones por que no acudio a un CS: Se encuentra lejos,0=Pase; 1=Se encuentra lejos
+2025,04,p4093,Cuales son las razones por que no acudio a un CS: Demoran mucho en atender,0=Pase; 1=Demoran mucho en atender
+2025,04,p4094,Cuales son las razones por que no acudio a un CS: No confia en los medicos,0=Pase; 1=No confia en los medicos
+2025,04,p4095,Cuales son las razones por que no acudio a un CS No era grave / no fue necesario,0=Pase; 1=No era grave/ No fue necesario
+2025,04,p4096,Cuales son las razones por que no acudio a un CS: Prefiere curarse con remedios caseros,0=Pase; 1=Prefiere curarse con remedios caseros
+2025,04,p4097,Cuales son las razones por que no acudio a un CS: No tiene seguro,0=Pase; 1=No tiene seguro
+2025,04,p4098,Cuales son las razones por que no acudio a un CS Se auto receto o repitio receta anterior,0=Pase; 1=Se auto receto o repitio receta anterior
+2025,04,p4099,Cuales son las razones por que no acudio a un CS: Falta de tiempo,0=Pase; 1=Falta de tiempo
+2025,04,p40910,Cuales son las razones por que no acudio a un CS: Por el maltrato del personal de salud,0=Pase; 1=Por el maltrato del personal de salud
+2025,04,p40911,Cuales son las razones por que no acudio a un CS: Otro,0=Pase; 1=Otro
+2025,04,p413b1,"En los ultimos 3 meses, Ha efectuado consulta por: Control de crecimiento del niño sano/control integral del niño",1=Si; 2=No; 3=No corresponde
+2025,04,p413b1a,Como lo obtuvo: El control de crecimiento del niño sano/control integral del niño,1=Prog. social; 2=Forma particular
+2025,04,p413b2,"En los ultimos 3 meses, Ha efectuado consulta: Prog. de Vacuna (inmunizaciones)",1=Si; 2=No
+2025,04,p413b2a,Como lo obtuvo:  El Prog. de Vacuna (inmunizaciones),1=Prog. social; 2=Forma particular
+2025,04,p413d1,"En los ultimos 12 meses, Ha efectuado consulta por: Planificacion familiar",1=Si; 2=No; 3=No corresponde
+2025,04,p413d1a,Como lo obtuvo: La Planificacion familiar (Mujeres de 12 a 49 años de edad),1=Prog. social; 2=Forma particular
+2025,04,p413d2,"En los ultimos 12 meses, Ha efectuado consulta por: Suplemento de hierro",1=Si; 2=No; 3=No corresponde
+2025,04,p413d2a,Como lo obtuvo: El suplemento de hierro,1=Prog. social; 2=En forma particular
+2025,04,p414n_01,"En las ultimas 4 semanas, Ud. recibio: Consulta",1=Consulta
+2025,04,p414n_02,"En las ultimas 4 semanas, Ud. recibio: Medicinas/Insumos",2=Medicinas/Insumos
+2025,04,p414n_03,"En las ultimas 4 semanas, Ud. recibio: Analisis",3=Analisis
+2025,04,p414n_04,"En las ultimas 4 semanas, Ud. recibio: Rayos X, Tomografia, etc","4=Rayos X, Tomografia.."
+2025,04,p414n_05,"En las ultimas 4 semanas, Ud. recibio: Otro Examen (Hemodialisis, etc)",5=Otro Examen (Hemodialisis..)
+2025,04,p414n_06,"En los ultimos 3 meses, Ud. recibio: Servicio dental",6=Servicio dental
+2025,04,p414n_07,"En los ultimos 3 meses, Ud. recibio: Servicio oftalmologico",7=Servicio Oftalmologico
+2025,04,p414n_08,"En los ultimos 3 meses, Ud. realizo: Compra de Lentes",8=Compra de Lentes
+2025,04,p414n_09,"En los ultimos 3 meses, Ud. recibio: Vacuna",9=Vacuna
+2025,04,p414n_10,"En los ultimos 3 meses, Ud. recibio: Control de salud de los niños",10=Control de Salud de los Niños
+2025,04,p414n_11,"En los ultimos 3 meses, Ud. recibio: Anticonceptivos",11=Anticonceptivos
+2025,04,p414n_12,"En los ultimos 3 meses, Ud. recibio: Otros Gastos","12=Otro Gasto (ortopedia, termometro..)"
+2025,04,p414n_13,"En los ultimos 12 meses, Ud. recibio: Hospitalizacion",13=Hospitalizacion
+2025,04,p414n_14,"En los ultimos 12 meses, Ud. recibio: Intervencion Quirurgica",14=Intervencion quirurgica
+2025,04,p414n_15,"En los ultimos 12 meses, Ud. recibio: Control por embarazo",15=Control por embarazo
+2025,04,p414n_16,"En los ultimos 12 meses, Ud. recibio: Atenciones de parto",16=Atencion de parto
+2025,04,p414_01,"En las ultimas 4 semanas, Ud. recibio: Consulta",1=Si; 2=No
+2025,04,p414_02,"En las ultimas 4 semanas, Ud. recibio: Medicinas/insumos",1=Si; 2=No
+2025,04,p414_03,"En las ultimas 4 semanas, Ud. recibio: Analisis",1=Si; 2=No
+2025,04,p414_04,"En las ultimas 4 semanas, Ud. recibio: Rayos X, Tomografia, etc",1=Si; 2=No
+2025,04,p414_05,"En las ultimas 4 semanas, Ud. recibio: Otro Examen (Hemodialisis, etc.)",1=Si; 2=No
+2025,04,p414_06,"En los ultimos 3 meses, Ud. recibio: Servicio dental",1=Si; 2=No
+2025,04,p414_07,"En los ultimos 3 meses, Ud. recibio: Servicio Oftalmologico",1=Si; 2=No
+2025,04,p414_08,"En los ultimos 3 meses, Ud. recibio: Compra de Lentes",1=Si; 2=No
+2025,04,p414_09,"En los ultimos 3 meses, Ud. recibio: Vacuna",1=Si; 2=No
+2025,04,p414_10,"En los ultimos 3 meses, Ud. recibio: Control de Salud de los Niños",1=Si; 2=No
+2025,04,p414_11,"En los ultimos 3 meses, Ud. recibio : Anticonceptivos",1=Si; 2=No
+2025,04,p414_12,"En los ultimos 3 meses, Ud. recibio: Otros Gastos (ortopedia, termometro, etc.)",1=Si; 2=No
+2025,04,p414_13,"En los ultimos 12 meses, Ud. recibio: Hospitalizacion",1=Si; 2=No
+2025,04,p414_14,"En los ultimos 12 meses, Ud. recibio: Intervencion Quirurgica",1=Si; 2=No
+2025,04,p414_15,"En los ultimos 12 meses, Ud. recibio: Control por embarazo",1=Si; 2=No
+2025,04,p414_16,"En los ultimos 12 meses, Ud. recibio: Atenciones de parto",1=Si; 2=No
+2025,04,p4151_01,El gasto realizado fue: Pagado por algun miembro de este hogar: Consulta,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_02,El gasto realizado fue: Pagado por algun miembro de este hogar: Medicinas/Insumos,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_03,El gasto realizado fue: Pagado por algun miembro de este hogar: Analisis,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_04,"El gasto realizado fue: Pagado por algun miembro de este hogar: Rayos X, Tomografia, etc",0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_05,"El gasto realizado fue: Pagado por algun miembro de este hogar: Otro Examen (Hemodialisis, etc.)",0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_06,El gasto realizado fue: Pagado por algun miembro de este hogar: Servicio dental,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_07,El gasto realizado fue: Pagado por algun miembro de este hogar: Servicio Oftalmologico,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_08,El gasto realizado fue: Pagado por algun miembro de este hogar: Compra de Lentes,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_09,El gasto realizado fue: Pagado por algun miembro de este hogar: Vacuna,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_10,El gasto realizado fue: Pagado por algun miembro de este hogar: Control de Salud de los Niños,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_11,El gasto realizado fue: Pagado por algun miembro de este hogar: Anticonceptivos,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_12,El gasto realizado fue: Pagado por algun miembro de este hogar: Otros Gastos,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_13,El gasto realizado fue: Pagado por algun miembro de este hogar: Hospitalizacion,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_14,El gasto realizado fue: Pagado por algun miembro de este hogar: Intervencion Quirurgica,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_15,El gasto realizado fue: Pagado por algun miembro de este hogar: Control por embarazo,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4151_16,El gasto realizado fue: Pagado por algun miembro de este hogar: Atenciones de parto,0=Pase; 1=Pagado por algun miembro de este hogar
+2025,04,p4152_01,El gasto realizado fue: Autoconsumo: Consulta,0=Pase; 1=Autoconsumo
+2025,04,p4152_02,El gasto realizado fue: Autoconsumo: Medicinas/Insumos,0=Pase; 1=Autoconsumo
+2025,04,p4152_03,El gasto realizado fue: Autoconsumo: Analisis,0=Pase; 1=Autoconsumo
+2025,04,p4152_04,"El gasto realizado fue: Autoconsumo: Rayos X, Tomografia, etc",0=Pase; 1=Autoconsumo
+2025,04,p4152_05,El gasto realizado fue: Autoconsumo: Otro Examen (Hemodialisis...),0=Pase; 1=Autoconsumo
+2025,04,p4152_06,El gasto realizado fue: Autoconsumo: Servicio dental,0=Pase; 1=Autoconsumo
+2025,04,p4152_07,El gasto realizado fue: Autoconsumo: Servicio Oftalmologico,0=Pase; 1=Autoconsumo
+2025,04,p4152_08,El gasto realizado fue: Autoconsumo: Compra de Lentes,0=Pase; 1=Autoconsumo
+2025,04,p4152_09,El gasto realizado fue: Autoconsumo: Vacuna,0=Pase; 1=Autoconsumo
+2025,04,p4152_10,El gasto realizado fue: Autoconsumo: Control de Salud de los Niños,0=Pase; 1=Autoconsumo
+2025,04,p4152_11,El gasto realizado fue: Autoconsumo: Anticonceptivos,0=Pase; 1=Autoconsumo
+2025,04,p4152_12,"El gasto realizado fue: Autoconsumo: Otros Gastos (ortopedia, termometro..)",0=Pase; 1=Autoconsumo
+2025,04,p4152_13,El gasto realizado fue: Autoconsumo: Hospitalizacion,0=Pase; 1=Autoconsumo
+2025,04,p4152_14,El gasto realizado fue: Autoconsumo: Intervencion Quirurgica,0=Pase; 1=Autoconsumo
+2025,04,p4152_15,El gasto realizado fue: Autoconsumo: Control por embarazo,0=Pase; 1=Autoconsumo
+2025,04,p4152_16,El gasto realizado fue: Autoconsumo: Atenciones de parto,0=Pase; 1=Autoconsumo
+2025,04,p4153_01,El gasto realizado fue: Autosuministro: Consulta,0=Pase; 1=Autosuministro
+2025,04,p4153_02,El gasto realizado fue: Autosuministro Medicinas/Insumos,0=Pase; 1=Autosuministro
+2025,04,p4153_03,El gasto realizado fue: Autosuministro: Analisis,0=Pase; 1=Autosuministro
+2025,04,p4153_04,"El gasto realizado fue: Autosuministro: Rayos X, tomografia, etc",0=Pase; 1=Autosuministro
+2025,04,p4153_05,El gasto realizado fue: Autosuministro: Otro Examen (Hemodialisis..),0=Pase; 1=Autosuministro
+2025,04,p4153_06,El gasto realizado fue: Autosuministro: Servicio dental,0=Pase; 1=Autosuministro
+2025,04,p4153_07,El gasto realizado fue: Autosuministro: Servicio oftalmologico,0=Pase; 1=Autosuministro
+2025,04,p4153_08,El gasto realizado fue: Autosuministro: Compra de Lentes,0=Pase; 1=Autosuministro
+2025,04,p4153_09,El gasto realizado fue: Autosuministro:  Vacuna,0=Pase; 1=Autosuministro
+2025,04,p4153_10,El gasto realizado fue: Autosuministro: Control de salud de los niños,0=Pase; 1=Autosuministro
+2025,04,p4153_11,El gasto realizado fue: Autosuministro: Anticonceptivos,0=Pase; 1=Autosuministro
+2025,04,p4153_12,"El gasto realizado fue: Autosuministro: Otros Gastos (ortopedia, termometro, etc.)",0=Pase; 1=Autosuministro
+2025,04,p4153_13,El gasto realizado fue: Autosuministro: Hospitalizacion,0=Pase; 1=Autosuministro
+2025,04,p4153_14,El gasto realizado fue: Autosuministro: Intervencion quirurgica,0=Pase; 1=Autosuministro
+2025,04,p4153_15,El gasto realizado fue: Autosuministro: Control por embarazo,0=Pase; 1=Autosuministro
+2025,04,p4153_16,El gasto realizado fue: Autosuministro : Atenciones de parto,0=Pase; 1=Autosuministro
+2025,04,p4154_01,El gasto realizado fue: Regalado o pagado por algun miembro...: Consulta,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_02,El gasto realizado fue: Regalado o pagado por algun miembro...: Medicinas/Insumos,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_03,El gasto realizado fue: Regalado o pagado por algun miembro...: Analisis,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_04,"El gasto realizado fue: Regalado o pagado por algun miembro...: Rayos X, Tomografia, etc",0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_05,"El gasto realizado fue: Regalado o pagado por algun miembro...: Otro Examen (Hemodialisis, etc.)",0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_06,El gasto realizado fue: Regalado o pagado por algun miembro...: Servicio dental,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_07,El gasto realizado fue: Regalado o pagado por algun miembro...: Servicio Oftalmologico,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_08,El gasto realizado fue: Regalado o pagado por algun miembro...: Compra de Lentes,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_09,El gasto realizado fue: Regalado o pagado por algun miembro...: Vacuna,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_10,El gasto realizado fue: Regalado o pagado por algun miembro...: Control de Salud de los Niños,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_11,El gasto realizado fue: Regalado o pagado por algun miembro...: Anticonceptivos,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_12,"El gasto realizado fue: Regalado o pagado por algun miembro...: Otros Gastos (ortopedia, termometro, etc.)",0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_13,El gasto realizado fue: Regalado o pagado por algun miembro...: Hospitalizacion,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_14,El gasto realizado fue: Regalado o pagado por algun miembro...: Intervencion Quirurgica,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_15,El gasto realizado fue: Regalado o pagado por algun miembro...: Control por embarazo,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4154_16,El gasto realizado fue: Regalado o pagado por algun miembro...: Atenciones de parto,0=Pase; 1=Regalado o pagado por algun  miembro de otro hogar
+2025,04,p4155_01,El gasto realizado fue: Donado Prog. Social (SIS): Consulta,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_02,El gasto realizado fue: Donado Prog. Social (SIS): Medicinas/Insumos,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_03,El gasto realizado fue: Donado Prog. Social (SIS): Analisis,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_04,"El gasto realizado fue: Donado Prog. Social (SIS): Rayos X, Tomografia, etc",0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_05,"El gasto realizado fue: Donado Prog. Social (SIS): Otro Examen (Hemodialisis, etc.)",0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_06,El gasto realizado fue: Donado Prog. Social (SIS): Servicio dental,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_07,El gasto realizado fue: Donado Prog. Social (SIS): Servicio Oftalmologico,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_08,El gasto realizado fue: Donado Prog. Social (SIS): Compra de Lentes,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_09,El gasto realizado fue: Donado Prog. Social (SIS): Vacuna,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_10,El gasto realizado fue: Donado Prog. Social (SIS): Control de Salud de los Niños,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_11,El gasto realizado fue: Donado Prog. Social (SIS): Anticonceptivos,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_12,"El gasto realizado fue: Donado Prog. Social (SIS): Otros Gastos (ortopedia, termometro, etc.)",0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_13,El gasto realizado fue: Donado Prog. Social (SIS): Hospitalizacion,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_14,El gasto realizado fue: Donado Prog. Social (SIS): Intervencion Quirurgica,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_15,El gasto realizado fue: Donado Prog. Social (SIS): Control por embarazo,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4155_16,El gasto realizado fue: Donado Prog. Social (SIS): Atencion de parto,0=Pase; 1=Donado Prog. Social (SIS)
+2025,04,p4156_01,El gasto realizado fue: Donado por alguna Inst.privada: Consulta,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_02,El gasto realizado fue: Donado por alguna Inst.privada: Medicinas/Insumos,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_03,El gasto realizado fue: Donado por alguna Inst.privada: Analisis,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_04,"El gasto realizado fue: Donado por alguna Inst.privada: Rayos X, Tomografia, etc",0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_05,"El gasto realizado fue: Donado por alguna Inst.privada: Otro Examen (Hemodialisis, etc.)",0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_06,El gasto realizado fue: Donado por alguna Inst.privada: Servicio dental,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_07,El gasto realizado fue: Donado por alguna Inst.privada: Servicio Oftalmologico,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_08,El gasto realizado fue: Donado por alguna Inst.privada: Compra de lentes,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_09,El gasto realizado fue: Donado por alguna Inst.privada: Vacuna,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_10,El gasto realizado fue: Donado por alguna Inst.privada: Control de salud de los niños,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_11,El gasto realizado fue: Donado por alguna Inst.privada: Anticonceptivos,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_12,"El gasto realizado fue: Donado por alguna Inst.privada: Otros Gastos (ortopedia, termometro, etc.)",0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_13,El gasto realizado fue: Donado por alguna Inst.privada: Hospitalizacion,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_14,El gasto realizado fue: Donado por alguna Inst.privada: Intervencion Quirurgica,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_15,El gasto realizado fue: Donado por alguna Inst.privada: Control por embarazo,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4156_16,El gasto realizado fue: Donado por alguna Inst.privada: Atenciones de parto,0=Pase; 1=Donado por alguna Inst.privada
+2025,04,p4157_01,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Consulta,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_02,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Medicinas/Insumos,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_03,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Analisis,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_04,"El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Rayos X, Tomografia, etc",0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_05,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Otro Examen (Hemodialisis...),0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_06,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Servicio dental,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_07,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Servicio Oftalmologico,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_08,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Compra de Lentes,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_09,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Vacuna,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_10,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Control de salud de los niños,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_11,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Anticonceptivos,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_12,"El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Otros gastos (ortopedia, termometro, etc.)",0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_13,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Hospitalizacion,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_14,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Intervencion Quirurgica,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_15,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Control por embarazo,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4157_16,El gasto realizado fue: Fue cubierto por EsSalud/FF.AA./PNP: Atenciones de parto,0=Pase; 1=Cubierto por el EsSalud/FF.AA./PNP
+2025,04,p4158_01,El gasto realizado fue: Otro: Consulta,0=Pase; 1=Otro
+2025,04,p4158_02,El gasto realizado fue: Otro: Medicinas/Insumos,0=Pase; 1=Otro
+2025,04,p4158_03,El gasto realizado fue: Otro: Analisis,0=Pase; 1=Otro
+2025,04,p4158_04,"El gasto realizado fue: Otro: Rayos X, Tomografia, etc",0=Pase; 1=Otro
+2025,04,p4158_05,"El gasto realizado fue: Otro: Otro Examen (Hemodialisis, etc.)",0=Pase; 1=Otro
+2025,04,p4158_06,El gasto realizado fue: Otro: Servicio dental,0=Pase; 1=Otro
+2025,04,p4158_07,El gasto realizado fue: Otro: Servicio oftalmologico,0=Pase; 1=Otro
+2025,04,p4158_08,El gasto realizado fue: Otro: Compra de lentes,0=Pase; 1=Otro
+2025,04,p4158_09,El gasto realizado fue: Otro: Vacuna,0=Pase; 1=Otro
+2025,04,p4158_10,El gasto realizado fue: Otro: Control de salud de los niños,0=Pase; 1=Otro
+2025,04,p4158_11,El gasto realizado fue: Otro: Anticonceptivos,0=Pase; 1=Otro
+2025,04,p4158_12,"El gasto realizado fue: Otro: Otros gastos (ortopedia, termometro, etc.)",0=Pase; 1=Otro
+2025,04,p4158_13,El gasto realizado fue: Otro: Hospitalizacion,0=Pase; 1=Otro
+2025,04,p4158_14,El gasto realizado fue: Otro: Intervencion quirurgica,0=Pase; 1=Otro
+2025,04,p4158_15,El gasto realizado fue: Otro: Control por embarazo,0=Pase; 1=Otro
+2025,04,p4158_16,El gasto realizado fue: Otro: Atenciones de parto,0=Pase; 1=Otro
+2025,04,p4159_01,El gasto realizado fue: No sabe/no responde: Consulta,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_02,El gasto realizado fue: No sabe/no responde: Medicinas/Insumos,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_03,El gasto realizado fue: No sabe/no responde: Analisis,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_04,"El gasto realizado fue: No sabe/no responde: Rayos X, tomografia, etc",0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_05,"El gasto realizado fue: No sabe/no responde: Otro Examen (Hemodialisis, etc.)",0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_06,El gasto realizado fue: No sabe/no responde: Servicio dental,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_07,El gasto realizado fue: No sabe/no responde: Servicio Oftalmologico,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_08,El gasto realizado fue: No sabe/no responde: Compra de lentes,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_09,El gasto realizado fue: No sabe/no responde:  Vacuna,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_10,El gasto realizado fue: No sabe/no responde: Control de salud de los niños,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_11,El gasto realizado fue: No sabe/no responde: Anticonceptivos,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_12,"El gasto realizado fue: No sabe/no responde: Otros gastos (ortopedia, termometro, etc.)",0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_13,El gasto realizado fue: No sabe/no responde: Hospitalizacion,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_14,El gasto realizado fue: No sabe/no responde: Intervencion quirurgica,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_15,El gasto realizado fue: No sabe/no responde: Control por embarazo,0=Pase; 1=No Sabe / No Responde
+2025,04,p4159_16,El gasto realizado fue: No sabe/no responde: Atenciones de parto,0=Pase; 1=No Sabe / No Responde
+2025,04,p4151001,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151002,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151003,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151004,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151005,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151006,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151007,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151008,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151009,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151010,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151011,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151012,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151013,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151014,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151015,No gasto,0=Pase; 1=No Gasto
+2025,04,p4151016,No gasto,0=Pase; 1=No Gasto
+2025,04,p41510_01,El gasto realizado fue: Donado por alguna Inst.del estado: Consulta,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_02,El gasto realizado fue: Donado por alguna Inst.del estado: Medicinas/Insumos,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_03,El gasto realizado fue: Donado por alguna Inst.del estado: Analisis,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_04,"El gasto realizado fue: Donado por alguna Inst.del estado: Rayos X, tomografia, etc",0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_05,"El gasto realizado fue: Donado por alguna Inst.del estado: Otro Examen (Hemodialisis, etc.)",0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_06,El gasto realizado fue: Donado por alguna Inst.del estado: Servicio dental,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_07,El gasto realizado fue: Donado por alguna Inst.del estado: Servicio Oftalmologico,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_08,El gasto realizado fue: Donado por alguna Inst.del estado: Compra de lentes,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_09,El gasto realizado fue: Donado por alguna Inst.del estado:  Vacuna,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_10,El gasto realizado fue: Donado por alguna Inst.del estado: Control de salud de los niños,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_11,El gasto realizado fue: Donado por alguna Inst.del estado: Anticonceptivos,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_12,"El gasto realizado fue: Donado por alguna Inst.del estado: Otros gastos (ortopedia, termometro, etc.)",0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_13,El gasto realizado fue: Donado por alguna Inst.del estado: Hospitalizacion,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_14,El gasto realizado fue: Donado por alguna Inst.del estado: Intervencion quirurgica,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_15,El gasto realizado fue: Donado por alguna Inst.del estado: Control por embarazo,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41510_16,El gasto realizado fue: Donado por alguna Inst.del estado: Atenciones de parto,0=Pase; 1=Donado por alguna Inst.del estado
+2025,04,p41511_01,El gasto realizado fue: Fue cubierto por Seguro  Privado: Consulta,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_02,El gasto realizado fue: Fue cubierto por seguro privado: Medicinas/Insumos,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_03,El gasto realizado fue: Fue cubierto por seguro privado: Analisis,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_04,"El gasto realizado fue: Fue cubierto por seguro privado: Rayos X, tomografia, etc",0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_05,"El gasto realizado fue: Fue cubierto por seguro privado: Otro Examen (Hemodialisis, etc.)",0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_06,El gasto realizado fue: Fue cubierto por seguro privado: Servicio dental,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_07,El gasto realizado fue: Fue cubierto por seguro privado: Servicio Oftalmologico,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_08,El gasto realizado fue: Fue cubierto por seguro privado: Compra de lentes,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_09,El gasto realizado fue: Fue cubierto por seguro privado:  Vacuna,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_10,El gasto realizado fue: Fue cubierto por seguro privado: Control de salud de los niños,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_11,El gasto realizado fue: Fue cubierto por seguro privado: Anticonceptivos,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_12,"El gasto realizado fue: Fue cubierto por seguro privado: Otros gastos (ortopedia, termometro, etc.)",0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_13,El gasto realizado fue: Fue cubierto por seguro privado: Hospitalizacion,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_14,El gasto realizado fue: Fue cubierto por seguro privado: Intervencion quirurgica,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_15,El gasto realizado fue: Fue cubierto por seguro privado: Control por embarazo,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41511_16,El gasto realizado fue: Fue cubierto por seguro privado: Atenciones de parto,0=Pase; 1=Fue cubierto por seguro privado
+2025,04,p41601,Cuanto fue el monto total por la compra..: Consulta,
+2025,04,p41602,Cuanto fue el monto total por la compra..: Medicinas/Insumos,
+2025,04,p41603,Cuanto fue el monto total por la compra..: Analisis,
+2025,04,p41604,"Cuanto fue el monto total por la compra..: Rayos X, Tomografia, etc",
+2025,04,p41605,"Cuanto fue el monto total por la compra..: Otro Examen (Hemodialisis, etc.)",
+2025,04,p41606,Cuanto fue el monto total por la compra..: Servicio dental,
+2025,04,p41607,Cuanto fue el monto total por la compra..: Servicio oftalmologico,
+2025,04,p41608,Cuanto fue el monto total por la compra..: Compra de lentes,
+2025,04,p41609,Cuanto fue el monto total por la compra..: Vacuna,
+2025,04,p41610,Cuanto fue el monto total por la compra..: Control de salud de los niños,
+2025,04,p41611,Cuanto fue el monto total por la compra..: Anticonceptivos,
+2025,04,p41612,Cuanto fue el monto total por la compra..: Otros Gastos,
+2025,04,p41613,Cuanto fue el monto total por la compra..: Hospitalizacion,
+2025,04,p41614,Cuanto fue el monto total por la compra..: Intervencion quirurgica,
+2025,04,p41615,Cuanto fue el monto total por la compra..: Control por embarazo,
+2025,04,p41616,Cuanto fue el monto total por la compra..: Atenciones de parto,
+2025,04,p417_01,Donde compro...: Consulta,
+2025,04,p417_02,Donde compro...  Medicinas/Insumos,"1=Establecimientos MINSA; 2=Establecimientos EsSalud; 3=Hospital de las FF.AA. y Policia Nacional; 4=Botiquin comunal; 5=Farmacia o botica; 6=Clinica particular; 7=Consultorio particular; 8=CLAS; 9=ONG; 10=Optica; 11=Bodega; 12=Casa de huesero, curandero; 13=Ambulante; 14=Otro"
+2025,04,p417_03,Donde compro...: Analisis,
+2025,04,p417_04,"Donde compro...: Rayos X, tomografia, etc",
+2025,04,p417_05,"Donde compro...: Otro Examen (Hemodialisis, etc.)",
+2025,04,p417_06,Donde compro...: Servicio dental,
+2025,04,p417_07,Donde compro...: Servicio oftalmologico,
+2025,04,p417_08,Donde compro...: Compra de lentes,"1=Establecimientos MINSA; 2=Establecimientos EsSalud; 3=Hospital de las FF.AA. y Policia Nacional; 4=Botiquin comunal; 5=Farmacia o botica; 6=Clinica particular; 7=Consultorio particular; 8=CLAS; 9=ONG; 10=Optica; 11=Bodega; 12=Casa de huesero, curandero; 13=Ambulante; 14=Otro"
+2025,04,p417_09,Donde compro...: Vacuna,
+2025,04,p417_10,Donde compro...: Control de salud de los niños,
+2025,04,p417_11,Donde compro...: Anticonceptivos,"1=Establecimientos MINSA; 2=Establecimientos EsSalud; 3=Hospital de las FF.AA. y Policia Nacional; 4=Botiquin comunal; 5=Farmacia o botica; 6=Clinica particular; 7=Consultorio particular; 8=CLAS; 9=ONG; 10=Optica; 11=Bodega; 12=Casa de huesero, curandero; 13=Ambulante; 14=Otro"
+2025,04,p417_12,"Donde compro...: Otros Gastos (ortopedia, termometro, etc.)","1=Establecimientos MINSA; 2=Establecimientos EsSalud; 3=Hospital de las FF.AA. y Policia Nacional; 4=Botiquin comunal; 5=Farmacia o botica; 6=Clinica particular; 7=Consultorio particular; 8=CLAS; 9=ONG; 10=Optica; 11=Bodega; 12=Casa de huesero, curandero; 13=Ambulante; 14=Otro"
+2025,04,p417_13,Donde compro...: Hospitalizacion,"1=Establecimientos MINSA; 2=Establecimientos EsSalud; 3=Hospital de las FF.AA. y Policia Nacional; 4=Botiquin comunal; 5=Farmacia o botica; 6=Clinica particular; 7=Consultorio particular; 8=CLAS; 9=ONG; 10=Optica; 11=Bodega; 12=Casa de huesero, curandero; 13=Ambulante; 14=Otro"
+2025,04,p417_14,Donde compro...: Intervencion quirurgica,"1=Establecimientos MINSA; 2=Establecimientos EsSalud; 3=Hospital de las FF.AA. y Policia Nacional; 4=Botiquin comunal; 5=Farmacia o botica; 6=Clinica particular; 7=Consultorio particular; 8=CLAS; 9=ONG; 10=Optica; 11=Bodega; 12=Casa de huesero, curandero; 13=Ambulante; 14=Otro"
+2025,04,p417_15,Donde compro...: Control por embarazo,
+2025,04,p417_16,Donde compro...: Atenciones de parto,
+2025,04,p418201,Cuanto cree que le costaria si tuviera que pagar - Autoconsumo-Consulta,
+2025,04,p418202,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Medicina,
+2025,04,p418203,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Analisis,
+2025,04,p418204,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Rayos X,
+2025,04,p418205,Cuanto cree que le costaria si tuviera que pagar - Autoconsumo-Otro Examen,
+2025,04,p418206,Cuanto cree que le costaria si tuviera que pagar - Autoconsumo-Servicio dental,
+2025,04,p418207,Cuanto cree que le costaria si tuviera que pagar - Autoconsumo-Servicio Oftalmologico,
+2025,04,p418208,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Compra de lentes,
+2025,04,p418209,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Vacuna,
+2025,04,p418210,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Control de salud de los niños,
+2025,04,p418211,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Anticonceptivos,
+2025,04,p418212,"Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p418213,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Hospitalizacion,
+2025,04,p418214,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Intervencion quirurgica,
+2025,04,p418215,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Control por embarazo,
+2025,04,p418216,Cuanto cree que le costaria si tuviera que pagar- Autoconsumo-Atenciones de parto,
+2025,04,p418301,Cuanto cree que le costaria si tuviera que pagar - Autosuministro-Consulta,
+2025,04,p418302,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Medicina,
+2025,04,p418303,Cuanto cree que le costaria si tuviera que pagar- Autosumnistro-Analisis,
+2025,04,p418304,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Rayos X,
+2025,04,p418305,Cuanto cree que le costaria si tuviera que pagar - Autosuministro-Otro Examen,
+2025,04,p418306,Cuanto cree que le costaria si tuviera que pagar por este servicio o producto,
+2025,04,p418307,Cuanto cree que le costaria si tuviera que pagar por este servicio o producto,
+2025,04,p418308,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Compra de lentes,
+2025,04,p418309,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Vacuna,
+2025,04,p418310,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Control de salud de los niños,
+2025,04,p418311,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Anticonceptivos,
+2025,04,p418312,"Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p418313,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Hospitalizacion,
+2025,04,p418314,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Intervencion quirurgica,
+2025,04,p418315,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Control por embarazo,
+2025,04,p418316,Cuanto cree que le costaria si tuviera que pagar- Autosuministro-Atenciones de parto,
+2025,04,p418401,Cuanto cree que le costaria si tuviera que pagar  - Regalado por miembro de otro hogar-Consulta,
+2025,04,p418402,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Medicina,
+2025,04,p418403,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Analisis,
+2025,04,p418404,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Rayos X,
+2025,04,p418405,Cuanto cree que le costaria si tuviera que pagar - Regalado por miembro de otro hogar-Otro Examen,
+2025,04,p418406,Cuanto cree que le costaria si tuviera que pagar por este servicio o producto,
+2025,04,p418407,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Servicio Oftalmologico,
+2025,04,p418408,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Compra de lentes,
+2025,04,p418409,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Vacuna,
+2025,04,p418410,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Control de salud de los niños,
+2025,04,p418411,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Anticonceptivos,
+2025,04,p418412,"Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p418413,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Hospitalizacion,
+2025,04,p418414,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Intervencion quirurgica,
+2025,04,p418415,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Control por embarazo,
+2025,04,p418416,Cuanto cree que le costaria si tuviera que pagar- Regalado por miembro de otro hogar-Atenciones de parto,
+2025,04,p418501,Cuanto cree que le costaria si tuviera que pagar - Donado Prog. Social (SIS)-Consulta,
+2025,04,p418502,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Medicina,
+2025,04,p418503,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Analisis,
+2025,04,p418504,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Rayos X,
+2025,04,p418505,Cuanto cree que le costaria si tuviera que pagar - Donado Prog. Social (SIS)-Otro Examen,
+2025,04,p418506,Cuanto cree que le costaria si tuviera que pagar por este servicio o producto,
+2025,04,p418507,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Servicio Oftalmologico,
+2025,04,p418508,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Compra de lentes,
+2025,04,p418509,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Vacuna,
+2025,04,p418510,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Control de salud de los niños,
+2025,04,p418511,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Anticonceptivos,
+2025,04,p418512,"Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.del estado o Prog. social (SIS)-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p418513,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Hospitalizacion,
+2025,04,p418514,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Intervencion quirurgica,
+2025,04,p418515,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Control por embarazo,
+2025,04,p418516,Cuanto cree que le costaria si tuviera que pagar- Donado Prog. Social (SIS)-Atenciones de parto,
+2025,04,p418601,Cuanto cree que le costaria si tuviera que pagar - Donado por Inst.privada-Consulta,
+2025,04,p418602,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Medicina,
+2025,04,p418603,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Analisis,
+2025,04,p418604,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Rayos X,
+2025,04,p418605,Cuanto cree que le costara si tuviera que pagar - Donado por Inst.privada-Otro Examen,
+2025,04,p418606,Cuanto cree que le costaria si tuviera que pagar por este servicio o producto,
+2025,04,p418607,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Servicio Oftalmologico,
+2025,04,p418608,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Compra de lentes,
+2025,04,p418609,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Vacuna,
+2025,04,p418610,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Control de salud de los niños,
+2025,04,p418611,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Anticonceptivos,
+2025,04,p418612,"Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p418613,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Hospitalizacion,
+2025,04,p418614,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Intervencion quirurgica,
+2025,04,p418615,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Control por embarazo,
+2025,04,p418616,Cuanto cree que le costaria si tuviera que pagar- Donado por Inst.privada-Atenciones de parto,
+2025,04,p418701,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Consulta,
+2025,04,p418702,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Medicina,
+2025,04,p418703,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Analisis,
+2025,04,p418704,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Rayos X,
+2025,04,p418705,Cuanto cree que le costaria si tuviera que pagar - Fue cubierto por EsSalud/FF.AA./PNP-Otro Examen,
+2025,04,p418706,Cuanto cree que le costaria si tuviera que pagar por este servicio o producto,
+2025,04,p418707,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Servicio Oftalmologico,
+2025,04,p418708,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Compra de lentes,
+2025,04,p418709,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Vacuna,
+2025,04,p418710,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Control de salud de los niños,
+2025,04,p418711,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Anticonceptivos,
+2025,04,p418712,"Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p418713,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Hospitalizacion,
+2025,04,p418714,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Intervencion quirurgica,
+2025,04,p418715,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Control por embarazo,
+2025,04,p418716,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por EsSalud/FF.AA./PNP-Atenciones de parto,
+2025,04,p418801,Cuanto cree que le costaria si tuviera que pagar - Otro-Consulta,
+2025,04,p418802,Cuanto cree que le costaria si tuviera que pagar- Otro-Medicina,
+2025,04,p418803,Cuanto cree que le costaria si tuviera que pagar- Otro-Analisis,
+2025,04,p418804,Cuanto cree que le costaria si tuviera que pagar- Otro-Rayos X,
+2025,04,p418805,Cuanto cree que le costaria si tuviera que pagar - Otro-Otro Examen,
+2025,04,p418806,Cuanto cree que le costaria si tuviera que pagar por este servicio o producto,
+2025,04,p418807,Cuanto cree que le costaria si tuviera que pagar- Otro-Servicio-Oftalmologico,
+2025,04,p418808,Cuanto cree que le costaria si tuviera que pagar- Otro-Compra de lentes,
+2025,04,p418809,Cuanto cree que le costaria si tuviera que pagar- Otro-Vacuna,
+2025,04,p418810,Cuanto cree que le costaria si tuviera que pagar- Otro-Control de salud de los niños,
+2025,04,p418811,Cuanto cree que le costaria si tuviera que pagar- Otro-Anticonceptivos,
+2025,04,p418812,"Cuanto cree que le costaria si tuviera que pagar- Otro-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p418813,Cuanto cree que le costaria si tuviera que pagar- Otro-Hospitalizacion,
+2025,04,p418814,Cuanto cree que le costaria si tuviera que pagar- Otro-Intervencion quirurgica,
+2025,04,p418815,Cuanto cree que le costaria si tuviera que pagar- Otro-Control por embarazo,
+2025,04,p418816,Cuanto cree que le costaria si tuviera que pagar- Otro-Atenciones de parto,
+2025,04,p4181001,Cuanto cree que le costaria si tuviera que pagar - Donado por alguna Inst.del estado-Consulta,
+2025,04,p4181002,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Medicina,
+2025,04,p4181003,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Analisis,
+2025,04,p4181004,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Rayos X,
+2025,04,p4181005,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Otro Examen,
+2025,04,p4181006,Cuanto cree que le costaria si tuviera que pagar - Donado por alguna Inst.del estado-Servicio dental,
+2025,04,p4181007,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Oftalmologico,
+2025,04,p4181008,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Compra de lentes,
+2025,04,p4181009,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Vacuna,
+2025,04,p4181010,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Control de salud de los niños,
+2025,04,p4181011,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Anticonceptivos,
+2025,04,p4181012,"Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p4181013,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Hospitalizacion,
+2025,04,p4181014,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Intervencion quirurgica,
+2025,04,p4181015,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Control por embarazo,
+2025,04,p4181016,Cuanto cree que le costaria si tuviera que pagar- Donado por alguna Inst.del estado-Atenciones de parto,
+2025,04,p4181101,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Consulta,
+2025,04,p4181102,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Medicina,
+2025,04,p4181103,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Analisis,
+2025,04,p4181104,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Rayos X,
+2025,04,p4181105,Cuanto cree que le costaria si tuviera que pagar - Fue cubierto por Seguro Privado-Otro Examen,
+2025,04,p4181106,Cuanto cree que le costaria si tuviera que pagar - Fue cubierto por Seguro Privado-Servicio dental,
+2025,04,p4181107,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Oftalmologico,
+2025,04,p4181108,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Compra de lentes,
+2025,04,p4181109,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Vacuna,
+2025,04,p4181110,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Control de salud de los niños,
+2025,04,p4181111,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Anticonceptivos,
+2025,04,p4181112,"Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p4181113,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Privado-Hospitalizacion,
+2025,04,p4181114,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Intervencion quirurgica,
+2025,04,p4181115,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro Atención de parto,
+2025,04,p4181116,Cuanto cree que le costaria si tuviera que pagar- Fue cubierto por Seguro-Atenciones de parto,
+2025,04,p41801,Cuanto cree que le costaria si tuviera que pagar - Total-Consulta,
+2025,04,p41802,Cuanto cree que le costaria si tuviera que pagar - Total-Medicina,
+2025,04,p41803,Cuanto cree que le costaria si tuviera que pagar - Total-Analisis,
+2025,04,p41804,Cuanto cree que le costaria si tuviera que pagar- Total-Rayos X,
+2025,04,p41805,Cuanto cree que le costaria si tuviera que pagar por. - Total-Otro Examen,
+2025,04,p41806,Cuanto cree que le costaria si tuviera que pagar - Total-Servicio dental,
+2025,04,p41807,Cuanto cree que le costaria si tuviera que pagar - Total-Servicio Oftalmologico,
+2025,04,p41808,Cuanto cree que le costaria si tuviera que pagar- Total-Compra de lentes,
+2025,04,p41809,Cuanto cree que le costaria si tuviera que pagar- Total-Vacuna,
+2025,04,p41810,Cuanto cree que le costaria si tuviera que pagar- Total-Control de salud de los niños,
+2025,04,p41811,Cuanto cree que le costaria si tuviera que pagar- Total-Anticonceptivos,
+2025,04,p41812,"Cuanto cree que le costaria si tuviera que pagar- Total-Otros gastos (ortopedia, termometro, etc.)",
+2025,04,p41813,Cuanto cree que le costaria si tuviera que pagar- Total-Hospitalizacion,
+2025,04,p41814,Cuanto cree que le costaria si tuviera que pagar- Total-Intervencion quirurgica,
+2025,04,p41815,Cuanto cree que le costaria si tuviera que pagar- Total-Control por embarazo,
+2025,04,p41816,Cuanto cree que le costaria si tuviera que pagar- Total-Atenciones de parto,
+2025,04,p4191,El sistema de prestacion de seguro de salud al cual  esta afiliado..: EsSalud,1=EsSalud; 2=No
+2025,04,p4192,El sistema de prestacion de seguro de salud al cual  esta afiliado..: Seguro privado de salud,1=Seguro Privado de Salud; 2=No
+2025,04,p4193,El sistema de prestacion de seguro de salud al cual  esta afiliado.: Entidad prestadora de salud,1=Entidad Prestadora de Salud; 2=No
+2025,04,p4194,El sistema de prestacion de seguro de salud al cual  esta afiliado.: Seguro de FF.AA / PNP,1=Seguro FF.AA./PNP; 2=No
+2025,04,p4195,El sistema de prestacion de seguro de salud al cual esta afiliado.: Seguro integral de salud (SIS),1=Seguro Integral de Salud (SIS); 2=No
+2025,04,p4196,El sistema de prestacion de seguro de salud al cual  esta afiliado.: Seguro universitario,1=Seguro Universitario; 2=No
+2025,04,p4197,El sistema de prestacion de seguro de salud al cual  esta afiliado.: Seguro escolar privado,1=Seguro Escolar Privado; 2=No
+2025,04,p4198,El sistema de prestacion de seguro de salud al cual esta afiliado.: Otro,1=Otro; 2=No
+2025,04,p419a1,Quien aporta las cuotas por estar afiliado: EsSalud,1=Su centro de Trabajo; 2=Ud. mismo; 3=Es jubilado; 4=Un familiar
+2025,04,p419a2,Quien aporta las cuotas por estar afiliado: Seguro privado de salud,1=Su centro de Trabajo; 2=Ud. mismo; 3=Es jubilado; 4=Un familiar
+2025,04,p419a3,Quien aporta las cuotas por estar afiliado: Entidad prestadora de salud,1=Su centro de Trabajo; 2=Ud. mismo; 3=Es jubilado; 4=Un familiar
+2025,04,p419a4,Quien aporta las cuotas por estar afiliado: Seguro de FF.AA. / Policiales,1=Su centro de Trabajo; 2=Ud. mismo; 3=Es jubilado; 4=Un familiar
+2025,04,p419a5,Quien aporta las cuotas por estar afiliado: Seguro Integral de Salud (SIS),1=Su centro de Trabajo; 2=Ud. mismo; 4=Un familiar; 5=No paga
+2025,04,p419a6,Quien aporta las cuotas por estar afiliado: Seguro universitario,2=Ud. mismo; 4=Un familiar
+2025,04,p419a7,Quien aporta las cuotas por estar afiliado: Seguro escolar privado,2=Ud. mismo; 4=Un familiar
+2025,04,p419a8,Quien aporta las cuotas por estar afiliado: Otro,1=Su centro de Trabajo; 2=Ud. mismo; 3=Es jubilado; 4=Un familiar; 5=No paga
+2025,04,p420a,"El centro o establecimiento de salud donde generalmente acude, Esta ubicado:",1=Aqui en este distrito; 2=En otro distrito; 3=No acude a establecimiento de salud
+2025,04,p420b,El centro o establecimiento de salud donde generalmente acude Esta ubicado: Distrito,
+2025,04,p203,Cual es la relacion de parentesco con el jefe(a) del hogar,0=Panel; 1=Jefe/Jefa; 2=Esposo(a)/compañero(a); 3=Hijo(a)/Hijastro(a); 4=Yerno/Nuera; 5=Nieto(a); 6=Padres/Suegros; 7=Otros parientes; 8=Trabajador Hogar; 9=Pensionista; 10=Otros no parientes; 11=Hermano(a)
+2025,04,p204,Es miembro del hogar,1=Si; 2=No
+2025,04,p205,Se encuentra ausente del hogar 30 dias o mas,1=Si; 2=No
+2025,04,p206,Esta presente en el hogar 30 dias o mas,1=Si; 2=No
+2025,04,p207,Sexo,1=Hombre; 2=Mujer
+2025,04,p208a,Que edad tiene en años cumplidos,
+2025,04,p208b,Que edad tiene en años cumplidos (meses),
+2025,04,p209,Cual es su estado civil o conyugal,1=Conviviente; 2=Casado(a); 3=Viudo(a); 4=Divorciado(a); 5=Separado(a); 6=Soltero(a)
+2025,04,p301a,Cual es el ultimo año o grado de estudios y nivel que aprobo - Nivel,1=Sin Nivel; 2=Inicial; 3=Primaria Incompleta; 4=Primaria Completa; 5=Secundaria Incompleta; 6=Secundaria Completa; 7=Superior No Universitaria Incompleta; 8=Superior No Universitaria Completa; 9=Superior Universitaria Incompleta; 10=Superior Universitaria Completa; 11=Maestria/Doctorado; 12=Basica especial
+2025,04,imputado,Conglomerado - (Imputacion Hot-Deck),
+2025,04,ticuest01a,Origen de cuestionario,1=Cuestionario en hojas; 2=Cuestionario en Tablet
+2025,04,d41601,(Deflactado) Cuanto fue el monto total por la compra... Consulta,
+2025,04,d41602,(Deflactado) Cuanto fue el monto total por la compra... Medicinas/Insumos,
+2025,04,d41603,(Deflactado) Cuanto fue el monto total por la compra... Analisis,
+2025,04,d41604,"(Deflactado) Cuanto fue el monto total por la compra... Rayos X, Tomografia, etc",
+2025,04,d41605,"(Deflactado) Cuanto fue el monto total por la compra... Otro Examen (Hemodialisis, etc.)",
+2025,04,d41606,(Deflactado) Cuanto fue el monto total por la compra... Servicio dental,
+2025,04,d41607,(Deflactado) Cuanto fue el monto total por la compra... Servicio Oftalmologico,
+2025,04,d41608,(Deflactado) Cuanto fue el monto total por la compra... Compra de Lentes,
+2025,04,d41609,(Deflactado) Cuanto fue el monto total por la compra... Vacuna,
+2025,04,d41610,(Deflactado) Cuanto fue el monto total por la compra... Control de Salud de los Niños,
+2025,04,d41611,(Deflactado) Cuanto fue el monto total por la compra o servicio  Anticonceptivos,
+2025,04,d41612,"(Deflactado) Cuanto fue el monto total por la compra... Otros Gastos (ortopedia, termometro, etc.)",
+2025,04,d41613,(Deflactado) Cuanto fue el monto total por la compra... Hospitalizacion,
+2025,04,d41614,(Deflactado) Cuanto fue el monto total por la compra... Intervencion Quirurgica,
+2025,04,d41615,(Deflactado) Cuanto fue el monto total por la compra... Control por embarazo,
+2025,04,d41616,(Deflactado) Cuanto fue el monto total por la compra... Atenciones de parto,
+2025,04,d418201,(Deflactado) Monto estimado por el hogar - Autoconsumo Consulta,
+2025,04,d418301,(Deflactado) Monto estimado por el hogar - Autosuministro Consulta,
+2025,04,d418401,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Consulta,
+2025,04,d418501,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Consulta,
+2025,04,d418601,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Consulta,
+2025,04,d418701,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNPConsulta,
+2025,04,d418801,(Deflactado) Monto estimado por el hogar - Otro Consulta,
+2025,04,d4181001,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Consulta,
+2025,04,d4181101,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Consulta,
+2025,04,d418202,(Deflactado) Monto estimado por el hogar - Autoconsumo Medicina,
+2025,04,d418302,(Deflactado) Monto estimado por el hogar - Autosuministro Medicina,
+2025,04,d418402,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Medicina,
+2025,04,d418502,(Deflactado) Monto estimado por el hogar - Donado por Prog. Social (SIS) Medicina,
+2025,04,d418602,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Medicina,
+2025,04,d418702,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Medicina,
+2025,04,d418802,(Deflactado) Monto estimado por el hogar - Otro Medicina,
+2025,04,d4181002,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Medicina,
+2025,04,d4181102,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Medicina,
+2025,04,d418203,(Deflactado) Monto estimado por el hogar - Autoconsumo Analisis,
+2025,04,d418303,(Deflactado) Monto estimado por el hogar - Autosuministro Analisis,
+2025,04,d418403,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Analisis,
+2025,04,d418503,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Analisis,
+2025,04,d418603,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Analisis,
+2025,04,d418703,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Analisis,
+2025,04,d418803,(Deflactado) Monto estimado por el hogar - Otro Analisis,
+2025,04,d4181003,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Analisis,
+2025,04,d4181103,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Analisis,
+2025,04,d418204,(Deflactado) Monto estimado por el hogar - Autoconsumo Rayos X,
+2025,04,d418304,(Deflactado) Monto estimado por el hogar - Autosuministro Rayos X,
+2025,04,d418404,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Rayos X,
+2025,04,d418504,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Rayos X,
+2025,04,d418604,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Rayos X,
+2025,04,d418704,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Rayos X,
+2025,04,d418804,(Deflactado) Monto estimado por el hogar - Otro Rayos 'X',
+2025,04,d4181004,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Rayos X,
+2025,04,d4181104,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Rayos X,
+2025,04,d418205,(Deflactado) Monto estimado por el hogar - Autoconsumo Otro Examen,
+2025,04,d418305,(Deflactado) Monto estimado por el hogar - Autosuministro Otro Examen,
+2025,04,d418405,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Otro Examen,
+2025,04,d418505,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Otro Examen,
+2025,04,d418605,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Otro Examen,
+2025,04,d418705,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Otro Examen,
+2025,04,d418805,(Deflactado) Monto estimado por el hogar – Cubierto por otro  Otro Examen,
+2025,04,d4181005,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Otro Examen,
+2025,04,d4181105,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Otro Examen,
+2025,04,d41801,(Deflactado) Cuanto cree que le costaria si tuviera que pagar por..) Consulta,
+2025,04,d41802,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Medicinas/Insumos,
+2025,04,d41803,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Analisis,
+2025,04,d41804,"(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Rayos X, Tomografia, etc",
+2025,04,d41805,"(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Otro Examen (Hemodialisis, etc.)",
+2025,04,d418206,(Deflactado) Monto estimado por el hogar - Autoconsumo Servicio dental,
+2025,04,d418306,(Deflactado) Monto estimado por el hogar - Autosuministro Servicio dental,
+2025,04,d418406,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Servicio dental,
+2025,04,d418506,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Servicio dental,
+2025,04,d418606,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Servicio dental,
+2025,04,d418706,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Servicio dental,
+2025,04,d418806,(Deflactado) Monto estimado por el hogar - Otro Servicio dental,
+2025,04,d4181006,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Servicio dental,
+2025,04,d4181106,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Servicio dental,
+2025,04,d418207,(Deflactado) Monto estimado por el hogar - Autoconsumo Servicio Oftalmologico,
+2025,04,d418307,(Deflactado) Monto estimado por el hogar - Autosuministro Servicio Oftalmologico,
+2025,04,d418407,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Servicio Oftalmologico,
+2025,04,d418507,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Servicio Oftalmologico,
+2025,04,d418607,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Servicio Oftalmologico,
+2025,04,d418707,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Servicio Oftalmologico,
+2025,04,d418807,(Deflactado) Monto estimado por el hogar - Otro Servicio Oftalmologico,
+2025,04,d4181007,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Servicio Oftalmologico,
+2025,04,d4181107,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Servicio Oftalmologico,
+2025,04,d418208,(Deflactado) Monto estimado por el hogar - Autoconsumo Compra de lentes,
+2025,04,d418308,(Deflactado) Monto estimado por el hogar - Autosuministro Compra de lentes,
+2025,04,d418408,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Compra de lentes,
+2025,04,d418508,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Compra de lentes,
+2025,04,d418608,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Compra de lentes,
+2025,04,d418708,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Compra de lentes,
+2025,04,d418808,(Deflactado) Monto estimado por el hogar - Otro Compra de lentes,
+2025,04,d4181008,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Compra de lentes,
+2025,04,d4181108,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Compra de lentes,
+2025,04,d418209,(Deflactado) Monto estimado por el hogar - Autoconsumo Vacuna,
+2025,04,d418309,(Deflactado) Monto estimado por el hogar - Autosuministro Vacuna,
+2025,04,d418409,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Vacuna,
+2025,04,d418509,(Deflactado) Monto estimado por el hogar - Donado Pograma Social (SIS) Vacuna,
+2025,04,d418609,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Vacuna,
+2025,04,d418709,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Vacuna,
+2025,04,d418809,(Deflactado) Monto estimado por el hogar -  Otro Vacuna,
+2025,04,d4181009,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Vacuna,
+2025,04,d4181109,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Vacuna,
+2025,04,d418210,(Deflactado) Monto estimado por el hogar - Autoconsumo Control de salud de los niños,
+2025,04,d418310,(Deflactado) Monto estimado por el hogar - Autosuministro Control de salud de los niños,
+2025,04,d418410,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Control de salud de los niños,
+2025,04,d418510,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Control de salud de los niños,
+2025,04,d418610,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Control de salud de los niños,
+2025,04,d418710,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Control de salud de los niños,
+2025,04,d418810,(Deflactado) Monto estimado por el hogar -  Otro Control de salud de los niños,
+2025,04,d4181010,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Control de salud de los niños,
+2025,04,d4181110,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Control de salud de los niños,
+2025,04,d418211,(Deflactado) Monto estimado por el hogar - Autoconsumo Anticonceptivos,
+2025,04,d418311,(Deflactado) Monto estimado por el hogar - Autosuministro Anticonceptivos,
+2025,04,d418411,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Anticonceptivos,
+2025,04,d418511,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Anticonceptivos,
+2025,04,d418611,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Anticonceptivos,
+2025,04,d418711,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Anticonceptivos,
+2025,04,d418811,(Deflactado) Monto estimado por el hogar - Otro Anticonceptivos,
+2025,04,d4181011,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Anticonceptivos,
+2025,04,d4181111,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Anticonceptivos,
+2025,04,d418212,(Deflactado) Monto estimado por el hogar - Autoconsumo Otros gastos,
+2025,04,d418312,(Deflactado) Monto estimado por el hogar - Autosuministro Otros gastos,
+2025,04,d418412,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Otros gastos,
+2025,04,d418512,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Otros gastos,
+2025,04,d418612,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Otros gastos,
+2025,04,d418712,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Otros gastos,
+2025,04,d418812,(Deflactado) Monto estimado por el hogar - Otro Otros gastos,
+2025,04,d4181012,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Otros gastos,
+2025,04,d4181112,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Otros gastos,
+2025,04,d41806,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Servicio dental,
+2025,04,d41807,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Servicio Oftalmologico,
+2025,04,d41808,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Compra de Lentes,
+2025,04,d41809,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Vacuna,
+2025,04,d41810,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Control de Salud de los Niños,
+2025,04,d41811,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Anticonceptivos,
+2025,04,d41812,"(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Otros Gastos (ortopedia, termometro, etc.)",
+2025,04,d418213,(Deflactado) Monto estimado por el hogar - Autoconsumo Hospitalizacion,
+2025,04,d418313,(Deflactado) Monto estimado por el hogar - Autosuministro Hospitalizacion,
+2025,04,d418413,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Hospitalizacion,
+2025,04,d418513,(Deflactado) Monto estimado por el hogar - Donado Prog. social (SIS)  Hospitalizacion,
+2025,04,d418613,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Hospitalizacion,
+2025,04,d418713,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Hospitalizacion,
+2025,04,d418813,(Deflactado) Monto estimado por el hogar - Otro Hospitalizacion,
+2025,04,d4181013,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Hospitalizacion,
+2025,04,d4181113,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Hospitalizacion,
+2025,04,d418214,(Deflactado) Monto estimado por el hogar - Autoconsumo Intervencion quirurgica,
+2025,04,d418314,(Deflactado) Monto estimado por el hogar - Autosuministro Intervencion quirurgica,
+2025,04,d418414,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Intervencion quirurgica,
+2025,04,d418514,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Intervencion quirurgica,
+2025,04,d418614,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Intervencion quirurgica,
+2025,04,d418714,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Intervencion quirurgica,
+2025,04,d418814,(Deflactado) Monto estimado por el hogar - Otro Intervencion quirurgica,
+2025,04,d4181014,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Intervencion quirurgica,
+2025,04,d4181114,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Intervencion quirurgica,
+2025,04,d418215,(Deflactado) Monto estimado por el hogar - Autoconsumo Control por embarazo,
+2025,04,d418315,(Deflactado) Monto estimado por el hogar - Autosuministro Control por embarazo,
+2025,04,d418415,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Control por embarazo,
+2025,04,d418515,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Control por embarazo,
+2025,04,d418615,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Control por embarazo,
+2025,04,d418715,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Control por embarazo,
+2025,04,d418815,(Deflactado) Monto estimado por el hogar - Otro Control por embarazo,
+2025,04,d4181015,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Control por embarazo,
+2025,04,d4181115,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Control por embarazo,
+2025,04,d418216,(Deflactado) Monto estimado por el hogar - Autoconsumo Atenciones de parto,
+2025,04,d418316,(Deflactado) Monto estimado por el hogar - Autosuministro Atenciones de parto,
+2025,04,d418416,(Deflactado) Monto estimado por el hogar - Regalado por miembro de otro hogar Atenciones de parto,
+2025,04,d418516,(Deflactado) Monto estimado por el hogar - Donado Prog. Social (SIS) Atenciones de parto,
+2025,04,d418616,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.privada Atenciones de parto,
+2025,04,d418716,(Deflactado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Atenciones de parto,
+2025,04,d418816,(Deflactado) Monto estimado por el hogar - Otro Atenciones de parto,
+2025,04,d4181016,(Deflactado) Monto estimado por el hogar - Donado por alguna Inst.del estado Atenciones de parto,
+2025,04,d4181116,(Deflactado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Atenciones de parto,
+2025,04,d41813,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Hospitalizacion,
+2025,04,d41814,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Intervencion Quirurgica,
+2025,04,d41815,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Control por embarazo,
+2025,04,d41816,(Deflactado) Cuanto cree que le costaria si tuviera que pagar-Atenciones de parto,
+2025,04,blibre25,Bien Libre,
+2025,04,t41581_2,Gasto realizado en Medicinas fue cubierto por Otro medio Recodificado,
+2025,04,t41582_2,Bienes de libre disponibilidad utilizado como medicinas,
+2025,04,i41601,(Imputado) Cuanto fue el monto total por la compra..: Consulta,
+2025,04,i41603,(Imputado) Cuanto fue el monto total por la compra..: Analisis,
+2025,04,i41604,"(Imputado) Cuanto fue el monto total por la compra..: Rayos X, Tomografia, etc",
+2025,04,i41605,"(Imputado) Cuanto fue el monto total por la compra..: Otro Examen (Hemodialisis, etc.)",
+2025,04,i41602,(Imputado) Cuanto fue el monto total por la compra..: Medicinas/Insumos,
+2025,04,i41606,(Imputado) Cuanto fue el monto total por la compra..: Servicio dental,
+2025,04,i41607,(Imputado) Cuanto fue el monto total por la compra..: Servicio Oftalmologico,
+2025,04,i41608,(Imputado) Cuanto fue el monto total por la compra..: Compra de Lentes,
+2025,04,i41609,(Imputado) Cuanto fue el monto total por la compra..: Vacuna,
+2025,04,i41610,(Imputado) Cuanto fue el monto total por la compra..: Control de Salud de los Niños,
+2025,04,i41611,(Imputado) Cuanto fue el monto total por la compra..: Anticonceptivos,
+2025,04,i41612,"(Imputado) Cuanto fue el monto total por la compra..: Otros Gastos (ortopedia, termometro, etc.)",
+2025,04,i41613,(Imputado) Cuanto fue el monto total por la compra..: Hospitalizacion,
+2025,04,i41614,(Imputado) Cuanto fue el monto total por la compra..: Intervencion Quirurgica,
+2025,04,i41615,(Imputado) Cuanto fue el monto total por la compra..: Control por embarazo,
+2025,04,i41616,(Imputado) Cuanto fue el monto total por la compra..: Atenciones de parto,
+2025,04,i418201,(Imputado) Monto estimado por el hogar - Autoconsumo Consulta,
+2025,04,i418203,(Imputado) Monto estimado por el hogar - Autoconsumo Analisis,
+2025,04,i418204,(Imputado) Monto estimado por el hogar - Autoconsumo Rayos X,
+2025,04,i418205,(Imputado) Monto estimado por el hogar - Autoconsumo Otro Examen,
+2025,04,i418301,(Imputado) Monto estimado por el hogar - Autosuministro Consulta,
+2025,04,i418303,(Imputado) Monto estimado por el hogar - Autosuministro Analisis,
+2025,04,i418304,(Imputado) Monto estimado por el hogar - Autosuministro Rayos X,
+2025,04,i418305,(Imputado) Monto estimado por el hogar - Autosuministro Otro Examen,
+2025,04,i418401,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Consulta,
+2025,04,i418403,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Analisis,
+2025,04,i418404,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Rayos X,
+2025,04,i418405,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Otro Examen,
+2025,04,i418501,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Consulta,
+2025,04,i418503,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Analisis,
+2025,04,i418504,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Rayos X,
+2025,04,i418505,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Otro Examen,
+2025,04,i418601,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Consulta,
+2025,04,i418603,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Analisis,
+2025,04,i418604,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Rayos X,
+2025,04,i418605,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Otro Examen,
+2025,04,i418701,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Consulta,
+2025,04,i418703,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Analisis,
+2025,04,i418704,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Rayos X,
+2025,04,i418705,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Otro Examen,
+2025,04,i418801,(Imputado) Monto estimado por el hogar - Otro Consulta,
+2025,04,i418803,(Imputado) Monto estimado por el hogar - Otro Analisis,
+2025,04,i418804,(Imputado) Monto estimado por el hogar - Otro Rayos X,
+2025,04,i418805,(Imputado) Monto estimado por el hogar – Cubierto por otro  Otro Examen,
+2025,04,i4181001,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Consulta,
+2025,04,i4181003,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Analisis,
+2025,04,i4181004,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Rayos X,
+2025,04,i4181005,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Otro Examen,
+2025,04,i4181101,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Consulta,
+2025,04,i4181103,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Analisis,
+2025,04,i4181104,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Rayos X,
+2025,04,i4181105,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Otro Examen,
+2025,04,i418202,(Imputado) Monto estimado por el hogar - Autoconsumo Medicina,
+2025,04,i418302,(Imputado) Monto estimado por el hogar - Autosuministro Medicina,
+2025,04,i418402,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Medicina,
+2025,04,i418502,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Medicina,
+2025,04,i418602,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Medicina,
+2025,04,i418702,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Medicina,
+2025,04,i418802,(Imputado) Monto estimado por el hogar - Otro Medicina,
+2025,04,i4181002,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Medicina,
+2025,04,i4181102,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Medicina,
+2025,04,i418206,(Imputado) Monto estimado por el hogar - Autoconsumo Servicio dental,
+2025,04,i418207,(Imputado) Monto estimado por el hogar - Autoconsumo Servicio Oftalmologico,
+2025,04,i418208,(Imputado) Monto estimado por el hogar - Autoconsumo Compra de lentes,
+2025,04,i418209,(Imputado) Monto estimado por el hogar - Autoconsumo Vacuna,
+2025,04,i418210,(Imputado) Monto estimado por el hogar - Autoconsumo Control de salud de los niños,
+2025,04,i418211,(Imputado) Monto estimado por el hogar - Autoconsumo Anticonceptivos,
+2025,04,i418212,(Imputado) Monto estimado por el hogar - Autoconsumo Otros gastos,
+2025,04,i418306,(Imputado) Monto estimado por el hogar - Autosuministro Servicio dental,
+2025,04,i418307,(Imputado) Monto estimado por el hogar - Autosuministro Servicio Oftalmologico,
+2025,04,i418308,(Imputado) Monto estimado por el hogar - Autosuministro Compra de lentes,
+2025,04,i418309,(Imputado) Monto estimado por el hogar - Autosuministro Vacuna,
+2025,04,i418310,(Imputado) Monto estimado por el hogar - Autosuministro Control de salud de los niños,
+2025,04,i418311,(Imputado) Monto estimado por el hogar - Autosuministro Anticonceptivos,
+2025,04,i418312,(Imputado) Monto estimado por el hogar - Autosuministro Otros gastos,
+2025,04,i418406,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Servicio dental,
+2025,04,i418407,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Servicio Oftalmologico,
+2025,04,i418408,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Compra de lentes,
+2025,04,i418409,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Vacuna,
+2025,04,i418410,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Control de salud de los niños,
+2025,04,i418411,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Anticonceptivos,
+2025,04,i418412,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Otros gastos,
+2025,04,i418506,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Servicio dental,
+2025,04,i418507,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Servicio Oftalmologico,
+2025,04,i418508,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Compra de lentes,
+2025,04,i418509,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Vacuna,
+2025,04,i418510,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Control de salud de los niños,
+2025,04,i418511,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Anticonceptivos,
+2025,04,i418512,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Otros gastos,
+2025,04,i418606,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Servicio dental,
+2025,04,i418607,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Servicio Oftalmologico,
+2025,04,i418608,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Compra de lentes,
+2025,04,i418609,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Vacuna,
+2025,04,i418610,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Control de salud de los niños,
+2025,04,i418611,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Anticonceptivos,
+2025,04,i418612,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Otros gastos,
+2025,04,i418706,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Servicio dental,
+2025,04,i418707,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Servicio Oftalmologico,
+2025,04,i418708,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Compra de lentes,
+2025,04,i418709,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Vacuna,
+2025,04,i418710,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Control de salud de los niños,
+2025,04,i418711,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Anticonceptivos,
+2025,04,i418712,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Otros gastos,
+2025,04,i418806,(Imputado) Monto estimado por el hogar - Otro Servicio dental,
+2025,04,i418807,(Imputado) Monto estimado por el hogar - Otro Servicio Oftalmologico,
+2025,04,i418808,(Imputado) Monto estimado por el hogar - Otro Compra de lentes,
+2025,04,i418809,(Imputado) Monto estimado por el hogar - Otro Vacuna,
+2025,04,i418810,(Imputado) Monto estimado por el hogar - Otro Control de salud de los niños,
+2025,04,i418811,(Imputado) Monto estimado por el hogar - Otro Anticonceptivos,
+2025,04,i418812,(Imputado) Monto estimado por el hogar - Otro Otros gastos,
+2025,04,i4181006,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Servicio dental,
+2025,04,i4181007,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Oftalmologico,
+2025,04,i4181008,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Compra de lentes,
+2025,04,i4181009,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Vacuna,
+2025,04,i4181010,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Control de salud de los niños,
+2025,04,i4181011,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Anticonceptivos,
+2025,04,i4181012,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Otros gastos,
+2025,04,i4181106,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Servicio dental,
+2025,04,i4181107,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Oftalmologico,
+2025,04,i4181108,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Compra de lentes,
+2025,04,i4181109,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Vacuna,
+2025,04,i4181110,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Control de salud de los niños,
+2025,04,i4181111,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Anticonceptivos,
+2025,04,i4181112,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Otros gastos,
+2025,04,i418213,(Imputado) Monto estimado por el hogar - Autoconsumo Hospitalizacion,
+2025,04,i418313,(Imputado) Monto estimado por el hogar - Autosuministro Hospitalizacion,
+2025,04,i418413,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Hospitalizacion,
+2025,04,i418513,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Hospitalizacion,
+2025,04,i418613,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Hospitalizacion,
+2025,04,i418713,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Hospitalizacion,
+2025,04,i418813,(Imputado) Monto estimado por el hogar - Otro Hospitalizacion,
+2025,04,i4181013,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Hospitalizacion,
+2025,04,i4181113,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Hospitalizacion,
+2025,04,i418214,(Imputado) Monto estimado por el hogar - Autoconsumo Intervencion quirurgica,
+2025,04,i418314,(Imputado) Monto estimado por el hogar - Autosuministro Intervencion quirurgica,
+2025,04,i418414,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Intervencion quirurgica,
+2025,04,i418514,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Intervencion quirurgica,
+2025,04,i418614,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Intervencion quirurgica,
+2025,04,i418714,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Intervencion quirurgica,
+2025,04,i418814,(Imputado) Monto estimado por el hogar - Otro Intervencion quirurgica,
+2025,04,i4181014,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Intervencion quirurgica,
+2025,04,i4181114,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Intervencion quirurgica,
+2025,04,i418215,(Imputado) Monto estimado por el hogar - Autoconsumo Control por embarazo,
+2025,04,i418216,(Imputado) Monto estimado por el hogar - Autoconsumo Atenciones de parto,
+2025,04,i418315,(Imputado) Monto estimado por el hogar - Autosuministro Control por embarazo,
+2025,04,i418316,(Imputado) Monto estimado por el hogar - Autosuministro Atenciones de parto,
+2025,04,i418415,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Control por embarazo,
+2025,04,i418416,(Imputado) Monto estimado por el hogar - Regalado por miembro de otro hogar Atenciones de parto,
+2025,04,i418515,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Control por embarazo,
+2025,04,i418516,(Imputado) Monto estimado por el hogar - Donado Prog. Social (SIS) Atenciones de parto,
+2025,04,i418615,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Control por embarazo,
+2025,04,i418616,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.privada Atenciones de parto,
+2025,04,i418715,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Control por embarazo,
+2025,04,i418716,(Imputado) Monto estimado por el hogar - Fue cubierto por EsSalud/FF.AA./PNP Atenciones de parto,
+2025,04,i418815,(Imputado) Monto estimado por el hogar - Otro Control por embarazo,
+2025,04,i418816,(Imputado) Monto estimado por el hogar - Otro Atenciones de parto,
+2025,04,i4181015,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Control por embarazo,
+2025,04,i4181016,(Imputado) Monto estimado por el hogar - Donado por alguna Inst.del estado Atenciones de parto,
+2025,04,i4181115,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Control por embarazo,
+2025,04,i4181116,(Imputado) Monto estimado por el hogar - Fue cubierto por Seguro Privado Atenciones de parto,
+2025,04,i41801,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Consulta,
+2025,04,i41802,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Medicinas/Insumos,
+2025,04,i41803,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Analisis,
+2025,04,i41804,"(Imputado) Cuanto cree que le costaria si tuviera que pagar-Rayos X, Tomografia, etc",
+2025,04,i41805,"(Imputado) Cuanto cree que le costaria si tuviera que pagar-Otro Examen (Hemodialisis, etc.)",
+2025,04,i41806,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Servicio dental,
+2025,04,i41807,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Servicio Oftalmologico,
+2025,04,i41808,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Compra de Lentes,
+2025,04,i41809,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Vacuna,
+2025,04,i41810,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Control de Salud de los Niños,
+2025,04,i41811,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Anticonceptivos,
+2025,04,i41812,"(Imputado) Cuanto cree que le costaria si tuviera que pagar-Otros Gastos (ortopedia, termometro, etc.)",
+2025,04,i41813,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Hospitalizacion,
+2025,04,i41814,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Intervencion Quirurgica,
+2025,04,i41815,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Control por embarazo,
+2025,04,i41816,(Imputado) Cuanto cree que le costaria si tuviera que pagar-Atenciones de parto,
+2025,04,factor07,Factor de expansion anual proyecciones CPV-2007,
+2025,04,nconglome,Numero de conglomerado (proveniente del marco),
+2025,04,sub_conglome,Numero de subconglomerado (proveniente del marco),

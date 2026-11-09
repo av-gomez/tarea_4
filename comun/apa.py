@@ -1,13 +1,18 @@
-"""Estilo APA 7 compartido por todo el sistema (Skills de ENAHO, servidor MCP del BCRP e informe).
+"""Sistema visual único del proyecto (Skills de ENAHO, servidor MCP del BCRP, informes y tablero).
 
-Una sola fuente de verdad para tipografía, colores, numeración y notas, de modo que cada figura,
-mapa y tabla producida por cualquier componente tenga la misma presentación:
+Una sola fuente de verdad para tipografía, colores, marcas y tablas, de modo que cada figura, mapa y tabla
+tenga la misma apariencia, sin importar qué componente la produjo.
 
-- Tipografía Times New Roman (serif de respaldo si no está instalada).
-- Figuras: número en negrita ("Figura 1"), título en cursiva debajo y nota al pie que empieza con
-  "Nota." en cursiva, con la fuente de los datos (APA 7, secc. 7.4).
-- Tablas: solo líneas horizontales (encabezado y cierre), número en negrita y título en cursiva.
-- Colores de un solo tono (legibles en escala de grises), sin arcoíris.
+Tipografía: la sans del sistema (Segoe UI / system-ui), la misma con la que GitHub y los navegadores
+muestran el Markdown y el HTML del proyecto; así el texto de las figuras coincide con el del informe.
+
+Paleta (validada con el validador de daltonismo de la skill dataviz, modo claro, todos los pares):
+  - Categórica, en orden fijo: azul #2a78d6, naranja #eb6834, aguamarina #1baf7a (máximo tres series).
+  - Secuencial (magnitud, p. ej. tasa de pobreza): un solo tono azul, de claro a oscuro.
+  - Divergente (cambio): azul (baja) <-> rojo (sube), con gris neutro en el centro.
+Formato APA 7: el número ("Figura n", en negrita), el título (en cursiva) y la nota ("Nota." con la fuente)
+van en el Markdown o HTML, con la misma tipografía; las imágenes quedan limpias. Con ENCABEZADO = True (o
+--encabezado en los scripts) se incrustan en la imagen para usarla sola.
 """
 from __future__ import annotations
 
@@ -19,61 +24,105 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
+from matplotlib.colors import LinearSegmentedColormap, ListedColormap  # noqa: E402
 
-FUENTE = "Times New Roman"
-AZUL = "#1f4e79"
-AZUL_CLARO = "#9dc3e6"
-GRIS = "#595959"
-GRIS_CLARO = "#bfbfbf"
-PALETA = [AZUL, "#7f7f7f", AZUL_CLARO, "#262626", "#c9c9c9"]
-CMAP = "Blues"
+ENCABEZADO = False
+
+# --- tipografía ------------------------------------------------------------------------------------------
+FUENTES = ["Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "DejaVu Sans"]
+FUENTE_CSS = 'system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif'
+FUENTE = FUENTES[0]
+
+# --- tinta y superficies -----------------------------------------------------------------------------------
+SUPERFICIE = "#fcfcfb"
+TINTA = "#0b0b0b"
+TINTA_2 = "#52514e"
+TINTA_3 = "#898781"
+REJILLA = "#e1e0d9"
+EJE = "#c3c2b7"
+
+# --- categórica (orden fijo) ------------------------------------------------------------------------------
+AZUL, NARANJA, AGUA = "#2a78d6", "#eb6834", "#1baf7a"
+CATEGORICA = [AZUL, NARANJA, AGUA]
+GRIS_NEUTRO = "#b9b8b1"           # contexto / "resto" (no es una serie)
+
+# --- secuencial azul (100 -> 700) y divergente ------------------------------------------------------------
+RAMPA_AZUL = ["#cde2fb", "#b7d3f6", "#9ec5f4", "#86b6ef", "#6da7ec", "#5598e7", "#3987e5", "#2a78d6",
+              "#256abf", "#1c5cab", "#184f95", "#104281", "#0d366b"]
+CMAP = LinearSegmentedColormap.from_list("pobreza", ["#eef5fd", *RAMPA_AZUL])
+CMAP_DIVERGENTE = LinearSegmentedColormap.from_list(
+    "cambio", ["#104281", "#3987e5", "#9ec5f4", "#f0efec", "#f4a7a6", "#e34948", "#9e2a2a"])
+
+# Compatibilidad con nombres anteriores
+AZUL_CLARO, GRIS, GRIS_CLARO = "#9ec5f4", TINTA_2, GRIS_NEUTRO
+PALETA = CATEGORICA
 DPI = 200
 
-FUENTE_ENAHO = "Instituto Nacional de Estadística e Informática [INEI] (2025), Encuesta Nacional de Hogares 2024"
+FUENTE_ENAHO = "Instituto Nacional de Estadística e Informática [INEI], Encuesta Nacional de Hogares"
 FUENTE_BCRP = "Banco Central de Reserva del Perú [BCRP] (2026), Series estadísticas"
 
 REFERENCIAS_APA = {
-    "enaho": ("Instituto Nacional de Estadística e Informática. (2025). *Encuesta Nacional de Hogares sobre "
-              "Condiciones de Vida y Pobreza 2024* [Base de datos: módulos 02 y 34]. "
+    "enaho": ("Instituto Nacional de Estadística e Informática. (2020-2026). *Encuesta Nacional de Hogares sobre "
+              "Condiciones de Vida y Pobreza, 2019-2025* [Bases de datos]. "
               "https://proyectos.inei.gob.pe/microdatos/"),
     "bcrp": ("Banco Central de Reserva del Perú. (2026). *BCRPData: Series estadísticas* [Base de datos]. "
              "https://estadisticas.bcrp.gob.pe/estadisticas/series/"),
     "geo": ("D2CML. (2024). *Límites departamentales del Perú* [Archivo GeoJSON]. GitHub. "
             "https://github.com/d2cml-ai/Data-Science-Python"),
-    "pobreza_inei": ("Instituto Nacional de Estadística e Informática. (2025). *Perú: Evolución de la pobreza "
-                     "monetaria 2015-2024. Informe técnico*. INEI."),
+    "pobreza_inei": ("Instituto Nacional de Estadística e Informática. (2026). *Perú: Evolución de la pobreza "
+                     "monetaria 2016-2025. Informe técnico*. INEI."),
 }
 
 
 def aplicar_estilo() -> None:
-    """Configura matplotlib con la tipografía y la gráfica sobria que pide APA 7."""
+    """Configura matplotlib: sans del sistema, marcas finas, rejilla recesiva, sin marcos innecesarios."""
     plt.rcParams.update({
-        "font.family": "serif",
-        "font.serif": [FUENTE, "Times", "DejaVu Serif"],
-        "mathtext.fontset": "stix",
-        "font.size": 11,
+        "font.family": "sans-serif",
+        "font.sans-serif": FUENTES,
+        "font.size": 10.5,
+        "text.color": TINTA,
+        "axes.labelcolor": TINTA_2,
         "axes.titlesize": 12,
-        "axes.labelsize": 11,
-        "xtick.labelsize": 10,
-        "ytick.labelsize": 10,
-        "legend.fontsize": 10,
-        "legend.frameon": False,
+        "axes.titleweight": "semibold",
+        "axes.titlelocation": "left",
+        "axes.labelsize": 10,
+        "axes.edgecolor": EJE,
+        "axes.linewidth": 0.8,
         "axes.spines.top": False,
         "axes.spines.right": False,
-        "axes.edgecolor": "#404040",
-        "axes.linewidth": 0.8,
-        "axes.grid": False,
-        "axes.prop_cycle": matplotlib.cycler(color=PALETA),
-        "figure.dpi": 100,
+        "axes.spines.left": False,
+        "axes.grid": True,
+        "axes.grid.axis": "y",
+        "axes.axisbelow": True,
+        "grid.color": REJILLA,
+        "grid.linewidth": 0.7,
+        "xtick.color": TINTA_3,
+        "ytick.color": TINTA_3,
+        "xtick.labelcolor": TINTA_2,
+        "ytick.labelcolor": TINTA_2,
+        "xtick.labelsize": 9.5,
+        "ytick.labelsize": 9.5,
+        "ytick.major.size": 0,
+        "legend.fontsize": 9.5,
+        "legend.frameon": False,
+        "lines.linewidth": 2.0,
+        "lines.solid_capstyle": "round",
+        "axes.prop_cycle": matplotlib.cycler(color=CATEGORICA),
+        "figure.facecolor": SUPERFICIE,
+        "axes.facecolor": SUPERFICIE,
+        "savefig.facecolor": SUPERFICIE,
         "savefig.dpi": DPI,
         "savefig.bbox": "tight",
-        "figure.facecolor": "white",
     })
 
 
 def encabezar(fig, numero: int | str, titulo: str, nota: str, ancho_nota: int = 120,
               arriba: float = 0.84, abajo: float = 0.2, izquierda: float | None = None) -> None:
-    """Número (negrita) y título (cursiva) arriba; nota APA abajo. Reserva márgenes para que no se solapen."""
+    """Con ENCABEZADO activo escribe número, título y nota APA en la imagen; si no, solo ajusta márgenes."""
+    if not ENCABEZADO:
+        if izquierda is not None:
+            fig.subplots_adjust(left=izquierda)
+        return
     ajustes = {"top": arriba, "bottom": abajo}
     if izquierda is not None:
         ajustes["left"] = izquierda
@@ -82,16 +131,34 @@ def encabezar(fig, numero: int | str, titulo: str, nota: str, ancho_nota: int = 
     fig.text(0.02, 1 - 0.12 / alto, f"Figura {numero}", fontweight="bold", fontsize=12, ha="left", va="top")
     fig.text(0.02, 1 - 0.42 / alto, titulo, fontstyle="italic", fontsize=12, ha="left", va="top")
     lineas = textwrap.wrap("Nota. " + nota.replace("$", r"\$"), ancho_nota)
-    lineas[0] = lineas[0].replace("Nota.", r"$\it{Nota.}$", 1)
-    fig.text(0.02, 0.1 / alto, "\n".join(lineas), fontsize=9, ha="left", va="bottom", color="#262626")
+    fig.text(0.02, 0.1 / alto, "\n".join(lineas), fontsize=8.5, ha="left", va="bottom", color=TINTA_2)
 
 
 def guardar(fig, ruta: str | Path) -> Path:
     ruta = Path(ruta)
     ruta.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(ruta, dpi=DPI, bbox_inches="tight", pad_inches=0.15)
+    fig.savefig(ruta, dpi=DPI, bbox_inches="tight", pad_inches=0.12)
     plt.close(fig)
     return ruta
+
+
+def etiqueta_directa(ax, x, y, texto, color=TINTA, **kw):
+    """Etiqueta directa al final de una serie (texto en tinta, no en el color de la serie)."""
+    ax.annotate(texto, (x, y), xytext=(6, 0), textcoords="offset points", va="center", fontsize=9.5,
+                color=color, **kw)
+
+
+def leyenda_marcador(ax, items, **kw):
+    """Leyenda con marcadores circulares (identidad nunca solo por color: siempre con texto)."""
+    from matplotlib.lines import Line2D
+    h = [Line2D([0], [0], marker="o", linestyle="", markersize=7, markerfacecolor=c, markeredgecolor=SUPERFICIE,
+                label=t) for t, c in items]
+    return ax.legend(handles=h, **kw)
+
+
+def pie_figura_md(numero, titulo: str, ruta: str, nota: str) -> str:
+    """Bloque APA 7 para Markdown: número en negrita, título en cursiva, imagen y nota."""
+    return f"**Figura {numero}**\n\n*{titulo}*\n\n![Figura {numero}. {titulo}]({ruta})\n\n*Nota.* {nota}\n"
 
 
 def tabla_markdown(df, numero: int | str, titulo: str, nota: str, decimales: int = 1) -> str:
@@ -108,23 +175,40 @@ def tabla_markdown(df, numero: int | str, titulo: str, nota: str, decimales: int
     return "\n".join([f"**Tabla {numero}**", "", f"*{titulo}*", "", cab, sep, *filas, "", f"*Nota.* {nota}", ""])
 
 
-CSS_APA = """
-body { font-family: 'Times New Roman', Times, serif; font-size: 12pt; line-height: 1.6; color: #111;
-       background: #fff; max-width: 980px; margin: 0 auto; padding: 24px 16px; }
-h1 { font-size: 16pt; text-align: center; font-weight: bold; }
-h2 { font-size: 13pt; font-weight: bold; text-align: center; margin-top: 2em; }
-h3 { font-size: 12pt; font-weight: bold; text-align: left; }
-table.apa { border-collapse: collapse; margin: 0.5em 0 0.3em; width: 100%; font-size: 11pt; }
-table.apa thead th { border-top: 1.5px solid #000; border-bottom: 1px solid #000; padding: 4px 8px;
-       text-align: center; font-weight: normal; }
-table.apa td { padding: 3px 8px; text-align: right; }
-table.apa td:first-child, table.apa th:first-child { text-align: left; }
-table.apa tbody tr:last-child td { border-bottom: 1.5px solid #000; }
-.apa-num { font-weight: bold; margin: 1.4em 0 0; }
-.apa-tit { font-style: italic; margin: 0 0 0.4em; }
-.apa-nota { font-size: 10.5pt; margin-top: 0.2em; }
-figure { margin: 1.5em 0; } figure img { max-width: 100%; height: auto; }
-.referencias p { padding-left: 2em; text-indent: -2em; margin: 0.3em 0; }
+CSS_APA = f"""
+:root {{ --surface:{SUPERFICIE}; --page:#f9f9f7; --ink:{TINTA}; --ink2:{TINTA_2}; --ink3:{TINTA_3};
+        --grid:{REJILLA}; --axis:{EJE}; --s1:{AZUL}; --s2:{NARANJA}; --s3:{AGUA}; }}
+@media (prefers-color-scheme: dark) {{ :root:not([data-theme="light"]) {{ --surface:#1a1a19; --page:#0d0d0d;
+        --ink:#f0efec; --ink2:#c3c2b7; --ink3:#898781; --grid:#2c2c2a; --axis:#383835; }}
+  :root:not([data-theme="light"]) figure img {{ background:#fcfcfb; border-radius:8px; }} }}
+:root[data-theme="dark"] {{ --surface:#1a1a19; --page:#0d0d0d; --ink:#f0efec; --ink2:#c3c2b7; --ink3:#898781;
+        --grid:#2c2c2a; --axis:#383835; }}
+* {{ box-sizing: border-box; }}
+body {{ font-family:{FUENTE_CSS}; font-size:16px; line-height:1.6; color:var(--ink); background:var(--page);
+       max-width:1040px; margin:0 auto; padding:32px 16px 64px; }}
+h1 {{ font-size:2rem; line-height:1.2; letter-spacing:-0.01em; margin:0.2em 0 0.3em; }}
+h2 {{ font-size:1.35rem; margin-top:2.2em; padding-top:0.6em; border-top:1px solid var(--grid); }}
+h3 {{ font-size:1.08rem; margin-top:1.6em; }}
+p, li {{ color:var(--ink); }} a {{ color:var(--s1); }}
+.lead {{ font-size:1.12rem; color:var(--ink2); }}
+table.apa {{ border-collapse:collapse; margin:0.5em 0 0.3em; width:100%; font-size:0.92rem;
+            font-variant-numeric:tabular-nums; }}
+table.apa thead th {{ border-top:1.5px solid var(--ink); border-bottom:1px solid var(--ink); padding:6px 10px;
+            text-align:right; font-weight:600; color:var(--ink2); }}
+table.apa td {{ padding:5px 10px; text-align:right; border-bottom:1px solid var(--grid); }}
+table.apa td:first-child, table.apa th:first-child {{ text-align:left; }}
+table.apa tbody tr:last-child td {{ border-bottom:1.5px solid var(--ink); }}
+.tabla-scroll {{ overflow-x:auto; }}
+.apa-num {{ font-weight:700; margin:1.6em 0 0; }}
+.apa-tit {{ font-style:italic; margin:0 0 0.5em; }}
+.apa-nota {{ font-size:0.86rem; color:var(--ink2); margin-top:0.3em; }}
+figure {{ margin:1.6em 0; }} img {{ max-width:100%; height:auto; border-radius:6px; }}
+code {{ font-size:0.88em; background:color-mix(in srgb, var(--ink) 6%, transparent); padding:1px 5px;
+        border-radius:4px; }}
+pre {{ background:color-mix(in srgb, var(--ink) 5%, transparent); padding:12px; border-radius:8px; overflow-x:auto; }}
+blockquote {{ margin:1em 0; padding:0.6em 1em; border-left:3px solid var(--s1);
+             background:color-mix(in srgb, var(--s1) 6%, transparent); border-radius:0 8px 8px 0; }}
+.referencias p {{ padding-left:2em; text-indent:-2em; margin:0.4em 0; }}
 """
 
 
@@ -143,5 +227,6 @@ def tabla_html(df, numero: int | str, titulo: str, nota: str, decimales: int = 1
                 celdas.append(f"<td>{html.escape(str(v))}</td>")
         cuerpo.append("<tr>" + "".join(celdas) + "</tr>")
     return (f'<p class="apa-num">Tabla {numero}</p><p class="apa-tit">{html.escape(titulo)}</p>'
-            f'<table class="apa"><thead><tr>{cab}</tr></thead><tbody>{"".join(cuerpo)}</tbody></table>'
+            f'<div class="tabla-scroll"><table class="apa"><thead><tr>{cab}</tr></thead>'
+            f'<tbody>{"".join(cuerpo)}</tbody></table></div>'
             f'<p class="apa-nota"><em>Nota.</em> {html.escape(nota)}</p>')

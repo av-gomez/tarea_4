@@ -12,6 +12,7 @@ Claude Code se autentica con la sesión del usuario y las APIs del BCRP e INEI s
 | `mcp/` | `robustez_datos_inexistentes.md` | El agente consulta un periodo sin datos y una serie inexistente e informa el error sin inventar cifras |
 | `skills/` | `demo_mapa_lenguaje_natural.md` | "Haz un mapa de la pobreza monetaria por departamento con ENAHO 2024": activa `mapeando-enaho`, detecta que falta la base y ejecuta `limpiando-enaho` |
 | `skills/` | `demo_invocacion_directa_graficando.md` | Invocación individual `/graficando-enaho sexo 6` |
+| `integracion/` | `ejecucion_multianual.md` | Ejecución ampliada 2019-2025: 4 herramientas MCP, Skills `informando-investigacion`, `limpiando-enaho` y `explorando-enaho` (más los scripts de gráficos y mapas), informe con 11 figuras y 18 cifras verificadas |
 | `integracion/` | `ejecucion_integrada.md` | Ejecución definitiva: 4 herramientas MCP y 4 Skills en una misma ejecución, desde cero hasta el informe |
 | `integracion/ejecucion_1/` | `ejecucion_integrada.md`, `productos/` | Primera ejecución y sus productos; motivó dos correcciones (búsqueda de la serie del PBI y numeración de figuras) |
 | `evaluacion/` | `<pregunta>_modo<A|B>.md` | Las 20 llamadas del experimento comparativo, con herramientas usadas y respuesta |

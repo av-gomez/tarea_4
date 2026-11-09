@@ -1,0 +1,5 @@
+Elabora el informe final ampliado del proyecto (reemplaza informes/informe_final.md) para responder:
+
+¿Cómo evolucionaron la pobreza monetaria y sus brechas territoriales y sociales en el Perú entre 2019 y 2025, y cómo se compara esa trayectoria con la inflación y la actividad económica del mismo periodo?
+
+Usa las herramientas del proyecto y sigue la skill informando-investigacion: el servidor MCP del BCRP (inflación PN01273PM 2019-01 a 2025-12 guardada con graficar_serie como bcrp_inflacion.png, y crecimiento del PBI PM04923AA 2019-2025 con resumen_anual o serie), limpiando-enaho para 2019-2025, explorando-enaho para las brechas entre pobres y no pobres (tablas/indicador_*.csv ya calculadas para agua, desagüe, EsSalud, SIS, secundaria completa y ocupación; puedes agregar otras), graficando-enaho (visualizar.py: waffle, evolucion, distribucion, macro, calor, pendiente, perfil) y mapeando-enaho (mapas_series.py mosaico y cambio). Incluye al menos cinco hallazgos sustentados, tablas APA, resumen ejecutivo, interpretación, limitaciones y reproducibilidad. Verifica al menos 6 cifras de ambas fuentes y publica el HTML, el tablero y el portal.

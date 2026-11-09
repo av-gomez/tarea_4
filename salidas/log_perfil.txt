@@ -1,0 +1,55 @@
+2019: 687-Modulo01/enaho01-2019-100.dta (nivel hogar), 120,052 filas, 0 sin dato excluidas, ponderador facpob07
+2025: 1031-Modulo01/enaho01-2025-100.dta (nivel hogar), 106,135 filas, 0 sin dato excluidas, ponderador facpob07
+ anio  categoria   valor  ic95_inf  ic95_sup  cv_pct  n_muestral
+ 2019          0 90.4559   89.6204   91.2913  0.4712       94232
+ 2019          1 78.5832   76.4636   80.7029  1.3762       25820
+ 2025          0 88.2756   87.3216   89.2296  0.5514       81591
+ 2025          1 79.1148   77.1422   81.0874  1.2721       24544
+
+Guardado: tablas\indicador_agua_red_publica.csv. Fuente: INEI, ENAHO 2019, 2025, módulo 01 (Características de la vivienda y del hogar).
+2019: 687-Modulo01/enaho01-2019-100.dta (nivel hogar), 120,052 filas, 0 sin dato excluidas, ponderador facpob07
+2025: 1031-Modulo01/enaho01-2025-100.dta (nivel hogar), 106,135 filas, 0 sin dato excluidas, ponderador facpob07
+ anio  categoria   valor  ic95_inf  ic95_sup  cv_pct  n_muestral
+ 2019          0 79.5658   78.6031   80.5285  0.6173       94232
+ 2019          1 48.8898   46.6504   51.1292  2.3371       25820
+ 2025          0 76.0168   74.9154   77.1181  0.7392       81591
+ 2025          1 59.4573   57.2711   61.6434  1.8760       24544
+
+Guardado: tablas\indicador_desague_red_publica.csv. Fuente: INEI, ENAHO 2019, 2025, módulo 01 (Características de la vivienda y del hogar).
+2019: 687-Modulo04/enaho01a-2019-400.dta (nivel persona), 120,052 filas, 56 sin dato excluidas, ponderador facpob07
+2025: 1031-Modulo04/enaho01a-2025-400.dta (nivel persona), 106,135 filas, 90 sin dato excluidas, ponderador facpob07
+ anio  categoria   valor  ic95_inf  ic95_sup  cv_pct  n_muestral
+ 2019          0 31.7917   31.0255   32.5580  1.2298       94185
+ 2019          1  7.1565    6.1984    8.1147  6.8312       25811
+ 2025          0 29.3825   28.5680   30.1970  1.4143       81539
+ 2025          1 11.5524   10.4897   12.6150  4.6933       24506
+
+Guardado: tablas\indicador_afiliacion_essalud.csv. Fuente: INEI, ENAHO 2019, 2025, módulo 04 (Salud).
+2019: 687-Modulo04/enaho01a-2019-400.dta (nivel persona), 120,052 filas, 56 sin dato excluidas, ponderador facpob07
+2025: 1031-Modulo04/enaho01a-2025-400.dta (nivel persona), 106,135 filas, 90 sin dato excluidas, ponderador facpob07
+ anio  categoria   valor  ic95_inf  ic95_sup  cv_pct  n_muestral
+ 2019          0 40.7895   39.9633   41.6157  1.0335       94185
+ 2019          1 75.6996   74.1285   77.2707  1.0589       25811
+ 2025          0 60.4645   59.5521   61.3770  0.7699       81539
+ 2025          1 82.4439   81.1974   83.6904  0.7714       24506
+
+Guardado: tablas\indicador_afiliacion_sis.csv. Fuente: INEI, ENAHO 2019, 2025, módulo 04 (Salud).
+2019: 687-Modulo03/enaho01a-2019-300.dta (nivel persona), 69,745 filas, 17 sin dato excluidas, ponderador facpob07
+2025: 1031-Modulo03/enaho01a-2025-300.dta (nivel persona), 65,029 filas, 46 sin dato excluidas, ponderador facpob07
+ anio  categoria   valor  ic95_inf  ic95_sup  cv_pct  n_muestral
+ 2019          0 60.5333   59.8315   61.2351  0.5915       57398
+ 2019          1 28.5977   27.0841   30.1113  2.7004       12330
+ 2025          0 62.7279   61.9863   63.4694  0.6032       52372
+ 2025          1 44.5232   43.0305   46.0159  1.7106       12611
+
+Guardado: tablas\indicador_secundaria_completa_25mas.csv. Fuente: INEI, ENAHO 2019, 2025, módulo 03 (Educación).
+2019: 687-Modulo05/enaho01a-2019-500.dta (nivel persona), 90,677 filas, 0 sin dato excluidas, ponderador facpob07
+2025: 1031-Modulo05/enaho01a-2025-500.dta (nivel persona), 83,345 filas, 0 sin dato excluidas, ponderador facpob07
+ anio  categoria   valor  ic95_inf  ic95_sup  cv_pct  n_muestral
+ 2019          0 69.1926   68.7207   69.6644  0.3479       73899
+ 2019          1 67.8403   66.8121   68.8686  0.7733       16778
+ 2025          0 66.9888   66.4589   67.5188  0.4037       66313
+ 2025          1 59.9317   58.8741   60.9893  0.9004       17032
+
+Guardado: tablas\indicador_tasa_ocupacion_14mas.csv. Fuente: INEI, ENAHO 2019, 2025, módulo 05 (Empleo e ingresos).
+PERFIL_FIN

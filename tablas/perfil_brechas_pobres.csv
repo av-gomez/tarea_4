@@ -1,0 +1,25 @@
+anio,indicador,grupo,valor,ic95_inf,ic95_sup,cv_pct,modulo,variable
+2019,agua_red_publica,No pobres,90.4559,89.6204,91.2913,0.4712,1,p110
+2019,agua_red_publica,Pobres,78.5832,76.4636,80.7029,1.3762,1,p110
+2025,agua_red_publica,No pobres,88.2756,87.3216,89.2296,0.5514,1,p110
+2025,agua_red_publica,Pobres,79.1148,77.1422,81.0874,1.2721,1,p110
+2019,desague_red_publica,No pobres,79.5658,78.6031,80.5285,0.6173,1,p111a
+2019,desague_red_publica,Pobres,48.8898,46.6504,51.1292,2.3371,1,p111a
+2025,desague_red_publica,No pobres,76.0168,74.9154,77.1181,0.7392,1,p111a
+2025,desague_red_publica,Pobres,59.4573,57.2711,61.6434,1.876,1,p111a
+2019,afiliacion_essalud,No pobres,31.7917,31.0255,32.558,1.2298,4,p4191
+2019,afiliacion_essalud,Pobres,7.1565,6.1984,8.1147,6.8312,4,p4191
+2025,afiliacion_essalud,No pobres,29.3825,28.568,30.197,1.4143,4,p4191
+2025,afiliacion_essalud,Pobres,11.5524,10.4897,12.615,4.6933,4,p4191
+2019,afiliacion_sis,No pobres,40.7895,39.9633,41.6157,1.0335,4,p4195
+2019,afiliacion_sis,Pobres,75.6996,74.1285,77.2707,1.0589,4,p4195
+2025,afiliacion_sis,No pobres,60.4645,59.5521,61.377,0.7699,4,p4195
+2025,afiliacion_sis,Pobres,82.4439,81.1974,83.6904,0.7714,4,p4195
+2019,secundaria_completa_25mas,No pobres,60.5333,59.8315,61.2351,0.5915,3,p301a
+2019,secundaria_completa_25mas,Pobres,28.5977,27.0841,30.1113,2.7004,3,p301a
+2025,secundaria_completa_25mas,No pobres,62.7279,61.9863,63.4694,0.6032,3,p301a
+2025,secundaria_completa_25mas,Pobres,44.5232,43.0305,46.0159,1.7106,3,p301a
+2019,tasa_ocupacion_14mas,No pobres,69.1926,68.7207,69.6644,0.3479,5,ocu500
+2019,tasa_ocupacion_14mas,Pobres,67.8403,66.8121,68.8686,0.7733,5,ocu500
+2025,tasa_ocupacion_14mas,No pobres,66.9888,66.4589,67.5188,0.4037,5,ocu500
+2025,tasa_ocupacion_14mas,Pobres,59.9317,58.8741,60.9893,0.9004,5,ocu500

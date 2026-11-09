@@ -8,6 +8,7 @@ Cada fila de afirmaciones.csv describe una cifra del informe:
     f1,"La inflación de 2022 cerró en 8.5 %",bcrp,PN01273PM,2022-12,valor,8.46,0.01
     f2,"Inflación promedio de 2022",bcrp,PN01273PM,2022,promedio,7.88,0.01
     f3,"Pobreza rural",enaho,area,Rural,pobreza_monetaria,39.3,0.05
+    f4,"Pobreza nacional 2025",enaho,nacional,Perú,pobreza_monetaria@2025,25.7,0.05
 
 La verificación NO usa el servidor MCP ni la skill de limpieza, para que sea un control independiente:
   - bcrp: consulta directamente la API pública (https://estadisticas.bcrp.gob.pe/estadisticas/series/api)
@@ -70,14 +71,15 @@ def valor_bcrp(codigo: str, periodo: str, agregacion: str):
     return df.valor.iloc[0], url
 
 
-_SUMARIA = None
+_SUMARIAS: dict = {}
+CODIGOS_INEI = {2019: 687, 2020: 737, 2021: 759, 2022: 784, 2023: 906, 2024: 966, 2025: 1031}
 
 
-def sumaria() -> pd.DataFrame:
-    global _SUMARIA
-    if _SUMARIA is None:
-        with zipfile.ZipFile(RAIZ / "datos" / "966-Modulo34.zip") as z:
-            s = pd.read_stata(io.BytesIO(z.read("966-Modulo34/sumaria-2024.dta")), convert_categoricals=False)
+def sumaria(anio: int = 2024) -> pd.DataFrame:
+    if anio not in _SUMARIAS:
+        cod = CODIGOS_INEI[anio]
+        with zipfile.ZipFile(RAIZ / "datos" / f"{cod}-Modulo34.zip") as z:
+            s = pd.read_stata(io.BytesIO(z.read(f"{cod}-Modulo34/sumaria-{anio}.dta")), convert_categoricals=False)
         s["w"] = s.factor07 * s.mieperho
         s["dep"] = s.ubigeo.astype(str).str[:2]
         s["area"] = s.estrato.map(lambda e: "Urbana" if e <= 5 else "Rural")
@@ -86,12 +88,15 @@ def sumaria() -> pd.DataFrame:
         s["dominio_nombre"] = s.dominio.map({1: "Costa Norte", 2: "Costa Centro", 3: "Costa Sur",
                                              4: "Sierra Norte", 5: "Sierra Centro", 6: "Sierra Sur", 7: "Selva",
                                              8: "Lima Metropolitana"})
-        _SUMARIA = s
-    return _SUMARIA
+        _SUMARIAS[anio] = s
+    return _SUMARIAS[anio]
 
 
 def valor_enaho(desagregacion: str, categoria: str, indicador: str):
-    s = sumaria()
+    """indicador: pobreza_monetaria o pobreza_extrema, con año opcional: pobreza_monetaria@2025 (por defecto 2024)."""
+    indicador, _, anio = indicador.partition("@")
+    anio = int(anio) if anio else 2024
+    s = sumaria(anio)
     y = (s.pobreza <= 2) if indicador == "pobreza_monetaria" else (s.pobreza == 1)
     col = {"area": "area", "departamento": "dep", "region": "region", "region_natural": "region",
            "dominio": "dominio_nombre", "dominio_nombre": "dominio_nombre"}.get(desagregacion)
@@ -99,7 +104,7 @@ def valor_enaho(desagregacion: str, categoria: str, indicador: str):
         s[col].astype(str) == (str(categoria).zfill(2) if col == "dep" else str(categoria)))
     if not m.any():
         raise ValueError(f"Categoría no encontrada: {desagregacion}={categoria}")
-    return 100 * (s.w[m] * y[m]).sum() / s.w[m].sum(), "datos/966-Modulo34.zip: sumaria-2024.dta"
+    return 100 * (s.w[m] * y[m]).sum() / s.w[m].sum(), f"datos/{CODIGOS_INEI[anio]}-Modulo34.zip: sumaria-{anio}.dta"
 
 
 def main():
