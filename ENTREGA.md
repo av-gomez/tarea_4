@@ -1,6 +1,6 @@
 ### Tarea 4 – Individual
 
-**Estudiante:** [Nombre completo] (@av-gomez)
+**Estudiante:** Amanda Gomez (@av-gomez)
 
 **Pregunta de investigación:** ¿Cómo evolucionaron la inflación y la actividad económica del Perú entre 2019 y 2024, y qué brechas territoriales (entre departamentos y entre áreas urbana y rural) presentaba la pobreza monetaria al cierre de ese periodo, en 2024?
 
