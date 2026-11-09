@@ -72,6 +72,15 @@ def _sin_tildes(s):
     return unicodedata.normalize("NFD", str(s).lower()).encode("ascii", "ignore").decode()
 
 
+# Sinónimos: cada palabra de la consulta se acepta si aparece ella o alguna equivalente en el catálogo.
+SINONIMOS = {
+    "pbi": ["pbi", "producto bruto interno"], "var%": ["var%", "variacion", "variaciones"],
+    "variacion": ["variacion", "variaciones", "var%"], "inflacion": ["inflacion", "var% 12 meses"],
+    "anual": ["anual", "12 meses"], "dolar": ["dolar", "us$"], "tc": ["tipo de cambio"],
+    "crecimiento": ["variacion", "variaciones", "var%"], "real": ["real", "reales"],
+}
+
+
 @cache
 def catalogo():
     """El catálogo oficial: 17 mil series en unos 7 MB. Se baja una vez y queda en datos/."""
@@ -84,7 +93,7 @@ def catalogo():
     df = df.rename(columns={"Código de serie": "codigo", "Categoría de serie": "categoria", "Grupo de serie": "grupo",
                             "Nombre de serie": "nombre", "Frecuencia": "frecuencia",
                             "Fecha de actualización": "actualizada", "Fecha de inicio": "inicio"})
-    df["texto"] = (df.categoria + " " + df.grupo + " " + df.nombre).map(_sin_tildes)
+    df["texto"] = (df.categoria + " " + df.grupo + " " + df.nombre + " " + df.frecuencia).map(_sin_tildes)
     return df
 
 
@@ -110,7 +119,8 @@ def buscar_series(texto: str, frecuencia: str | None = None, limite: int = 10) -
     df = catalogo()
     m = pd.Series(True, index=df.index)
     for palabra in _sin_tildes(texto).split():
-        m &= df.texto.str.contains(re.escape(palabra))
+        alternativas = SINONIMOS.get(palabra, [palabra])
+        m &= df.texto.str.contains("|".join(re.escape(a) for a in alternativas))
     if frecuencia:
         m &= df.frecuencia.str.lower() == frecuencia.lower()
     # primero las series vigentes y, entre ellas, las de nombre más corto (las más generales)
@@ -361,7 +371,7 @@ def graficar_serie(codigos: list[str], desde: str, hasta: str, titulo: str, nume
     ax.set_ylabel(_unidad(nombres[0]))
     ax.legend(loc="upper left", fontsize=9)
     apa.encabezar(fig, numero_figura, titulo,
-                  f"Elaboración propia con las series {', '.join(nombres)} del BCRP, periodo {desde} a {hasta}. "
+                  f"Elaboración propia con datos del BCRP ({', '.join(nombres)}), periodo {desde} a {hasta}. "
                   f"Fuente: {apa.FUENTE_BCRP}.", abajo=0.17)
     nombre = archivo or f"bcrp_{'_'.join(nombres)}_{desde}_{hasta}.png"
     ruta = apa.guardar(fig, FIGURAS / Path(nombre).name)
@@ -391,6 +401,9 @@ def _unidad(codigo: str) -> str:
         return "Soles por dólar"
     if "millones" in n:
         return "Millones"
+    if "indice" in n:
+        m = re.search(r"indice ([^)]*=\s*100)", n)
+        return f"Índice ({m.group(1)})" if m else "Índice"
     return "Valor"
 
 

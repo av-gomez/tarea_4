@@ -117,6 +117,7 @@ def main():
                 v, src = valor_bcrp(r.codigo.strip(), r.periodo.strip(), (r.agregacion or "valor").strip())
             else:
                 v, src = valor_enaho(r.codigo.strip(), r.periodo.strip(), (r.agregacion or "").strip())
+            v = float(v)
             dif = float(r.valor_informe) - v
             ok = abs(dif) <= float(r.tolerancia)
             filas.append({"id": r.id, "afirmacion": r.afirmacion, "valor_informe": float(r.valor_informe),

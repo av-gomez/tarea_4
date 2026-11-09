@@ -36,6 +36,11 @@ apliquen y quede registro de la coordinación:
 3. `mapeando-enaho`: el mapa departamental.
 4. Toma las cifras de `salidas/indicadores.csv` con su IC 95 %; si los IC se superponen, no afirmes diferencia.
 
+**Numeración de figuras.** Decide primero el orden de las figuras del informe y pasa a cada script o herramienta
+su número (`--numero n` o `numero_figura`). No uses `--tipo todos` para el informe: renumeraría las figuras desde
+1. Cada PNG ya contiene número, título y nota APA, por lo que en el Markdown solo se inserta la imagen
+(`![Figura n](../figuras/archivo.png)`), sin repetir el pie.
+
 ## 4. Informe (`informes/informe_final.md`)
 
 Estructura obligatoria, en español y estilo APA 7 (encabezados de nivel 1 y 2, figuras y tablas numeradas con

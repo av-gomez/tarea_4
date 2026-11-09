@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.17, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\[usuario]\Documents\tarea_4\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\[usuario]\Documents\tarea_4
+configfile: pyproject.toml
+testpaths: mcp, tests
+plugins: anyio-4.16.0, platformdirs-4.14.5
+collecting ... collected 13 items
+
+mcp/test_server.py::test_buscar_encuentra_el_ipc PASSED                  [  7%]
+mcp/test_server.py::test_cuatro_herramientas_como_minimo PASSED          [ 15%]
+mcp/test_server.py::test_serie_mensual PASSED                            [ 23%]
+mcp/test_server.py::test_serie_diaria PASSED                             [ 30%]
+mcp/test_server.py::test_resumen_sin_cuentas_a_mano PASSED               [ 38%]
+mcp/test_server.py::test_codigo_inexistente_da_un_error_claro PASSED     [ 46%]
+mcp/test_server.py::test_un_recurso PASSED                               [ 53%]
+mcp/test_server.py::test_un_prompt PASSED                                [ 61%]
+mcp/test_server.py::test_resumen_anual_inflacion_de_diciembre PASSED     [ 69%]
+mcp/test_server.py::test_comparar_series_alinea_y_rechaza_frecuencias_distintas PASSED [ 76%]
+tests/test_skills.py::test_validacion_aprobada PASSED                    [ 84%]
+tests/test_skills.py::test_indicadores_ponderados PASSED                 [ 92%]
+tests/test_skills.py::test_mapa_une_25_departamentos_por_codigo PASSED   [100%]
+
+============================= 13 passed in 12.29s =============================
