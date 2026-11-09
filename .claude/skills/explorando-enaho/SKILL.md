@@ -1,6 +1,6 @@
 ---
 name: explorando-enaho
-description: Explora y usa cualquiera de los 29 módulos de la ENAHO del INEI (2019-2025) - vivienda, educación, salud, empleo e ingresos, gastos, programas sociales, gobernabilidad - buscando variables en el diccionario oficial y estimando indicadores ponderados con intervalos de confianza por año, área, departamento, sexo, edad o condición de pobreza. Úsala cuando pidan analizar educación, salud, seguro, empleo, informalidad, ingresos, servicios básicos, programas sociales u otra característica de hogares o personas con la ENAHO, o comparar pobres y no pobres.
+description: "Explora y usa cualquiera de los 29 módulos de la ENAHO del INEI (2019-2025) - vivienda, educación, salud, empleo e ingresos, gastos, programas sociales, gobernabilidad - buscando variables en el diccionario oficial y estimando indicadores ponderados con intervalos de confianza por año, área, departamento, sexo, edad o condición de pobreza. Úsala cuando pidan analizar educación, salud, seguro, empleo, informalidad, ingresos, servicios básicos, programas sociales u otra característica de hogares o personas con la ENAHO, o comparar pobres y no pobres."
 argument-hint: "[tema o variable] [años]"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: mapeando-enaho
-description: Construye un mapa coroplético APA 7 de la pobreza monetaria (o extrema) por departamento del Perú con la ENAHO 2019-2025 del INEI (un año, mosaico de todos los años con escala común o mapa de cambio), uniendo por código ubigeo con el GeoJSON departamental (25 unidades, Lima y Callao separados) y validando contra la referencia oficial. Úsala cuando pidan un mapa, una distribución territorial o geográfica, o diferencias entre departamentos o regiones del Perú.
+description: "Construye un mapa coroplético APA 7 de la pobreza monetaria (o extrema) por departamento del Perú con la ENAHO 2019-2025 del INEI (un año, mosaico de todos los años con escala común o mapa de cambio), uniendo por código ubigeo con el GeoJSON departamental (25 unidades, Lima y Callao separados) y validando contra la referencia oficial. Úsala cuando pidan un mapa, una distribución territorial o geográfica, o diferencias entre departamentos o regiones del Perú."
 argument-hint: "[pobreza_monetaria|pobreza_extrema] [numero de figura]"
 ---
 

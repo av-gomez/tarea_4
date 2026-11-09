@@ -1,6 +1,6 @@
 ---
 name: graficando-enaho
-description: Genera gráficos con el sistema visual del proyecto (APA 7) de la pobreza monetaria de la ENAHO 2019-2025 del INEI: tendencias con bandas de confianza, distribución del gasto frente a la línea de pobreza, mapas de calor por departamento y año, gráficos de pendiente, perfiles de brechas entre pobres y no pobres, waffle, panel inflación-pobreza y barras por área urbana y rural, sexo, grupo de edad, sexo del jefe de hogar, región natural, dominio o departamento, con estimaciones ponderadas e intervalos de confianza. Úsala cuando pidan graficar, visualizar o comparar la pobreza en el Perú entre grupos o regiones con la ENAHO.
+description: "Genera gráficos con el sistema visual del proyecto (APA 7) de la pobreza monetaria de la ENAHO 2019-2025 del INEI: tendencias con bandas de confianza, distribución del gasto frente a la línea de pobreza, mapas de calor por departamento y año, gráficos de pendiente, perfiles de brechas entre pobres y no pobres, waffle, panel inflación-pobreza y barras por área urbana y rural, sexo, grupo de edad, sexo del jefe de hogar, región natural, dominio o departamento, con estimaciones ponderadas e intervalos de confianza. Úsala cuando pidan graficar, visualizar o comparar la pobreza en el Perú entre grupos o regiones con la ENAHO."
 argument-hint: "[area|sexo|edad|sexo_jefe|region|dominio|departamento|extrema|todos] [numero de figura]"
 ---
 

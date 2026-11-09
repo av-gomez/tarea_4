@@ -1,6 +1,6 @@
 ---
 name: informando-investigacion
-description: Coordina una investigación socioeconómica del Perú que combina series macroeconómicas del BCRP (servidor MCP bcrp) con microdatos de la ENAHO 2019-2025 del INEI (skills limpiando-enaho, explorando-enaho, graficando-enaho y mapeando-enaho), y produce un informe académico en formato APA 7 con hallazgos, figuras, mapas, tablas, verificación independiente de cifras, versión HTML y tablero interactivo. Úsala cuando pidan investigar, analizar o redactar un informe sobre pobreza, inflación, actividad económica, empleo, educación, salud, servicios o desigualdad territorial en el Perú.
+description: "Coordina una investigación socioeconómica del Perú que combina series macroeconómicas del BCRP (servidor MCP bcrp) con microdatos de la ENAHO 2019-2025 del INEI (skills limpiando-enaho, explorando-enaho, graficando-enaho y mapeando-enaho), y produce un informe académico en formato APA 7 con hallazgos, figuras, mapas, tablas, verificación independiente de cifras, versión HTML y tablero interactivo. Úsala cuando pidan investigar, analizar o redactar un informe sobre pobreza, inflación, actividad económica, empleo, educación, salud, servicios o desigualdad territorial en el Perú."
 argument-hint: "[pregunta de investigación]"
 ---
 

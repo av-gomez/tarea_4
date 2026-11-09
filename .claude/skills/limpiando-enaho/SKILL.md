@@ -1,6 +1,6 @@
 ---
 name: limpiando-enaho
-description: Limpia, une y valida los módulos 34 (sumaria) y 02 (miembros) de la ENAHO 2019-2025 del INEI (un año o la serie completa, más cualquier otro módulo) y produce bases de personas y hogares con pobreza monetaria, departamento, área y factores de expansión, más indicadores ponderados con intervalos de confianza. Úsala cuando pidan limpiar o procesar la ENAHO, calcular la pobreza (nacional, urbana, rural, por departamento, sexo o edad), validar cifras del INEI, o cuando otra skill necesite salidas/personas_2024.parquet o salidas/indicadores.csv.
+description: "Limpia, une y valida los módulos 34 (sumaria) y 02 (miembros) de la ENAHO 2019-2025 del INEI (un año o la serie completa, más cualquier otro módulo) y produce bases de personas y hogares con pobreza monetaria, departamento, área y factores de expansión, más indicadores ponderados con intervalos de confianza. Úsala cuando pidan limpiar o procesar la ENAHO, calcular la pobreza (nacional, urbana, rural, por departamento, sexo o edad), validar cifras del INEI, o cuando otra skill necesite salidas/personas_2024.parquet o salidas/indicadores.csv."
 argument-hint: "[--anio 2025 | --anios 2019 ... 2025] [--modulos 03 05] [--forzar]"
 ---
 
