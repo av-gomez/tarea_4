@@ -1,0 +1,99 @@
+indicador,desagregacion,codigo,categoria,valor_pct,ee_pct,ic95_inf,ic95_sup,cv_pct,n_muestral,poblacion_expandida,ponderador,confiable_cv15,anio
+pobreza_monetaria,nacional,,Perú,29.046,0.494,28.077,30.015,1.702,33886,34107048,factor07*mieperho,True,2023
+pobreza_monetaria,area,,Rural,39.795,0.763,38.299,41.29,1.918,11778,6684302,factor07*mieperho,True,2023
+pobreza_monetaria,area,,Urbana,26.426,0.59,25.27,27.582,2.232,22108,27422746,factor07*mieperho,True,2023
+pobreza_monetaria,region_natural,,Costa,26.408,0.754,24.929,27.886,2.856,14556,19279976,factor07*mieperho,True,2023
+pobreza_monetaria,region_natural,,Selva,31.61,0.962,29.723,33.496,3.044,7160,4299472,factor07*mieperho,True,2023
+pobreza_monetaria,region_natural,,Sierra,32.831,0.73,31.4,34.262,2.224,12170,10527599,factor07*mieperho,True,2023
+pobreza_monetaria,dominio_nombre,,Costa Centro,16.718,1.078,14.605,18.832,6.45,3254,2290105,factor07*mieperho,True,2023
+pobreza_monetaria,dominio_nombre,,Costa Norte,26.453,1.019,24.457,28.449,3.85,4862,5040395,factor07*mieperho,True,2023
+pobreza_monetaria,dominio_nombre,,Costa Sur,20.937,1.638,17.726,24.147,7.824,2328,693485,factor07*mieperho,True,2023
+pobreza_monetaria,dominio_nombre,,Lima Metropolitana,28.696,1.17,26.403,30.988,4.076,4112,11255992,factor07*mieperho,True,2023
+pobreza_monetaria,dominio_nombre,,Selva,31.61,0.962,29.723,33.496,3.044,7160,4299472,factor07*mieperho,True,2023
+pobreza_monetaria,dominio_nombre,,Sierra Centro,34.04,0.96,32.159,35.92,2.819,5622,4033436,factor07*mieperho,True,2023
+pobreza_monetaria,dominio_nombre,,Sierra Norte,44.454,1.719,41.085,47.824,3.867,2022,1914317,factor07*mieperho,True,2023
+pobreza_monetaria,dominio_nombre,,Sierra Sur,26.907,1.248,24.461,29.354,4.639,4526,4579846,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,01,Amazonas,25.768,2.227,21.404,30.132,8.641,1253,437829,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,02,Áncash,24.963,1.794,21.446,28.48,7.188,1418,1205599,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,03,Apurímac,25.807,2.39,21.123,30.49,9.26,915,480225,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,04,Arequipa,13.867,1.438,11.049,16.686,10.37,1517,1407050,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,05,Ayacucho,39.397,2.247,34.993,43.801,5.704,1152,765695,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,06,Cajamarca,44.477,2.173,40.218,48.736,4.886,1451,1548715,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,07,Callao,34.151,2.451,29.346,38.956,7.178,1034,1127400,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,08,Cusco,21.746,1.86,18.1,25.392,8.555,1224,1408938,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,09,Huancavelica,39.518,2.453,34.711,44.325,6.207,1038,541351,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,10,Huánuco,39.187,2.033,35.203,43.172,5.187,1250,920847,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,11,Ica,6.91,1.155,4.647,9.173,16.711,1512,850218,factor07*mieperho,False,2023
+pobreza_monetaria,departamento,12,Junín,24.281,1.674,21.0,27.562,6.894,1507,1434828,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,13,La Libertad,31.607,1.721,28.233,34.98,5.446,1506,2072266,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,14,Lambayeque,17.869,1.586,14.761,20.978,8.875,1388,1332913,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,15,Lima,27.915,1.172,25.618,30.213,4.199,4535,11116078,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,16,Loreto,43.457,2.118,39.306,47.607,4.873,1385,1122562,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,17,Madre de Dios,16.583,2.821,11.055,22.112,17.009,606,163090,factor07*mieperho,False,2023
+pobreza_monetaria,departamento,18,Moquegua,13.14,1.872,9.471,16.809,14.246,963,195666,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,19,Pasco,41.723,2.666,36.498,46.948,6.389,884,324270,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,20,Piura,33.061,1.727,29.675,36.446,5.225,1620,1962742,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,21,Puno,41.626,2.649,36.434,46.817,6.363,1124,1576491,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,22,San Martín,22.613,1.833,19.019,26.206,8.108,1336,930309,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,23,Tacna,26.711,2.416,21.977,31.446,9.043,1299,376888,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,24,Tumbes,29.013,2.185,24.73,33.296,7.532,848,259115,factor07*mieperho,True,2023
+pobreza_monetaria,departamento,25,Ucayali,26.851,2.299,22.345,31.358,8.563,1121,545964,factor07*mieperho,True,2023
+pobreza_monetaria,sexo_jefe,,Hombre,30.182,0.59,29.026,31.338,1.954,21520,22198594,factor07*mieperho,True,2023
+pobreza_monetaria,sexo_jefe,,Mujer,27.034,0.769,25.526,28.542,2.845,12113,11587078,factor07*mieperho,True,2023
+pobreza_monetaria,sexo,,Hombre,28.909,0.518,27.894,29.925,1.792,53907,16372198,facpob07,True,2023
+pobreza_monetaria,sexo,,Mujer,29.13,0.522,28.107,30.152,1.791,56885,17440996,facpob07,True,2023
+pobreza_monetaria,grupo_edad,,0-13,39.565,0.7,38.192,40.938,1.77,25713,7496935,facpob07,True,2023
+pobreza_monetaria,grupo_edad,,14-17,34.599,0.871,32.893,36.306,2.516,8639,2537910,facpob07,True,2023
+pobreza_monetaria,grupo_edad,,18-29,26.198,0.679,24.866,27.529,2.593,17579,5665030,facpob07,True,2023
+pobreza_monetaria,grupo_edad,,30-44,30.023,0.671,28.707,31.339,2.236,21171,6654980,facpob07,True,2023
+pobreza_monetaria,grupo_edad,,45-59,22.175,0.568,21.063,23.288,2.56,19281,5959222,facpob07,True,2023
+pobreza_monetaria,grupo_edad,,60 y más,21.199,0.578,20.067,22.332,2.726,18409,5499119,facpob07,True,2023
+pobreza_extrema,nacional,,Perú,5.747,0.223,5.31,6.184,3.879,33886,34107048,factor07*mieperho,True,2023
+pobreza_extrema,area,,Rural,16.153,0.609,14.96,17.347,3.77,11778,6684302,factor07*mieperho,True,2023
+pobreza_extrema,area,,Urbana,3.211,0.229,2.762,3.66,7.13,22108,27422746,factor07*mieperho,True,2023
+pobreza_extrema,region_natural,,Costa,2.732,0.277,2.189,3.275,10.142,14556,19279976,factor07*mieperho,True,2023
+pobreza_extrema,region_natural,,Selva,7.986,0.618,6.774,9.197,7.74,7160,4299472,factor07*mieperho,True,2023
+pobreza_extrema,region_natural,,Sierra,10.355,0.431,9.511,11.2,4.16,12170,10527599,factor07*mieperho,True,2023
+pobreza_extrema,dominio_nombre,,Costa Centro,1.635,0.336,0.977,2.293,20.535,3254,2290105,factor07*mieperho,False,2023
+pobreza_extrema,dominio_nombre,,Costa Norte,2.382,0.337,1.722,3.042,14.129,4862,5040395,factor07*mieperho,True,2023
+pobreza_extrema,dominio_nombre,,Costa Sur,1.301,0.385,0.547,2.055,29.566,2328,693485,factor07*mieperho,False,2023
+pobreza_extrema,dominio_nombre,,Lima Metropolitana,3.2,0.444,2.331,4.07,13.862,4112,11255992,factor07*mieperho,True,2023
+pobreza_extrema,dominio_nombre,,Selva,7.986,0.618,6.774,9.197,7.74,7160,4299472,factor07*mieperho,True,2023
+pobreza_extrema,dominio_nombre,,Sierra Centro,9.775,0.599,8.602,10.949,6.126,5622,4033436,factor07*mieperho,True,2023
+pobreza_extrema,dominio_nombre,,Sierra Norte,19.71,1.355,17.054,22.366,6.875,2022,1914317,factor07*mieperho,True,2023
+pobreza_extrema,dominio_nombre,,Sierra Sur,6.956,0.604,5.773,8.139,8.677,4526,4579846,factor07*mieperho,True,2023
+pobreza_extrema,departamento,01,Amazonas,9.08,1.349,6.436,11.725,14.86,1253,437829,factor07*mieperho,True,2023
+pobreza_extrema,departamento,02,Áncash,5.616,0.816,4.017,7.215,14.527,1418,1205599,factor07*mieperho,True,2023
+pobreza_extrema,departamento,03,Apurímac,4.027,1.04,1.988,6.065,25.827,915,480225,factor07*mieperho,False,2023
+pobreza_extrema,departamento,04,Arequipa,1.866,0.425,1.034,2.698,22.747,1517,1407050,factor07*mieperho,False,2023
+pobreza_extrema,departamento,05,Ayacucho,11.078,1.522,8.094,14.062,13.743,1152,765695,factor07*mieperho,True,2023
+pobreza_extrema,departamento,06,Cajamarca,18.068,1.562,15.006,21.129,8.644,1451,1548715,factor07*mieperho,True,2023
+pobreza_extrema,departamento,07,Callao,3.093,0.837,1.452,4.735,27.074,1034,1127400,factor07*mieperho,False,2023
+pobreza_extrema,departamento,08,Cusco,4.094,0.809,2.508,5.679,19.765,1224,1408938,factor07*mieperho,False,2023
+pobreza_extrema,departamento,09,Huancavelica,13.876,1.665,10.613,17.14,12.0,1038,541351,factor07*mieperho,True,2023
+pobreza_extrema,departamento,10,Huánuco,11.772,1.622,8.593,14.951,13.777,1250,920847,factor07*mieperho,True,2023
+pobreza_extrema,departamento,11,Ica,0.028,0.028,-0.027,0.082,100.158,1512,850218,factor07*mieperho,False,2023
+pobreza_extrema,departamento,12,Junín,4.102,0.76,2.613,5.591,18.52,1507,1434828,factor07*mieperho,False,2023
+pobreza_extrema,departamento,13,La Libertad,6.968,0.943,5.12,8.816,13.533,1506,2072266,factor07*mieperho,True,2023
+pobreza_extrema,departamento,14,Lambayeque,0.828,0.338,0.164,1.491,40.89,1388,1332913,factor07*mieperho,False,2023
+pobreza_extrema,departamento,15,Lima,3.318,0.446,2.444,4.192,13.442,4535,11116078,factor07*mieperho,True,2023
+pobreza_extrema,departamento,16,Loreto,14.485,1.638,11.275,17.695,11.306,1385,1122562,factor07*mieperho,True,2023
+pobreza_extrema,departamento,17,Madre de Dios,2.659,1.204,0.298,5.02,45.301,606,163090,factor07*mieperho,False,2023
+pobreza_extrema,departamento,18,Moquegua,2.013,0.653,0.732,3.293,32.47,963,195666,factor07*mieperho,False,2023
+pobreza_extrema,departamento,19,Pasco,10.811,1.621,7.633,13.989,14.999,884,324270,factor07*mieperho,True,2023
+pobreza_extrema,departamento,20,Piura,4.725,0.714,3.326,6.124,15.106,1620,1962742,factor07*mieperho,False,2023
+pobreza_extrema,departamento,21,Puno,13.938,1.511,10.977,16.899,10.839,1124,1576491,factor07*mieperho,True,2023
+pobreza_extrema,departamento,22,San Martín,3.667,0.899,1.905,5.429,24.513,1336,930309,factor07*mieperho,False,2023
+pobreza_extrema,departamento,23,Tacna,1.874,0.502,0.89,2.858,26.787,1299,376888,factor07*mieperho,False,2023
+pobreza_extrema,departamento,24,Tumbes,0.594,0.43,-0.249,1.438,72.443,848,259115,factor07*mieperho,False,2023
+pobreza_extrema,departamento,25,Ucayali,4.036,1.006,2.065,6.008,24.923,1121,545964,factor07*mieperho,False,2023
+pobreza_extrema,sexo_jefe,,Hombre,6.5,0.282,5.947,7.053,4.338,21520,22198594,factor07*mieperho,True,2023
+pobreza_extrema,sexo_jefe,,Mujer,4.386,0.344,3.711,5.061,7.849,12113,11587078,factor07*mieperho,True,2023
+pobreza_extrema,sexo,,Hombre,5.779,0.239,5.312,6.247,4.127,53907,16372198,facpob07,True,2023
+pobreza_extrema,sexo,,Mujer,5.713,0.229,5.265,6.162,4.006,56885,17440996,facpob07,True,2023
+pobreza_extrema,grupo_edad,,0-13,8.726,0.393,7.955,9.497,4.508,25713,7496935,facpob07,True,2023
+pobreza_extrema,grupo_edad,,14-17,7.266,0.459,6.368,8.165,6.31,8639,2537910,facpob07,True,2023
+pobreza_extrema,grupo_edad,,18-29,4.283,0.265,3.765,4.802,6.175,17579,5665030,facpob07,True,2023
+pobreza_extrema,grupo_edad,,30-44,5.593,0.288,5.028,6.158,5.157,21171,6654980,facpob07,True,2023
+pobreza_extrema,grupo_edad,,45-59,4.175,0.243,3.7,4.651,5.811,19281,5959222,facpob07,True,2023
+pobreza_extrema,grupo_edad,,60 y más,4.371,0.244,3.892,4.849,5.584,18409,5499119,facpob07,True,2023

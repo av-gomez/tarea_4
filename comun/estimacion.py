@@ -37,6 +37,15 @@ def proporcion(df: pd.DataFrame, y: str, w: str = "facpob07", psu: str = "conglo
             "n_muestral": int(len(d)), "poblacion_expandida": float(W)}
 
 
+def media_ponderada(df: pd.DataFrame, y: str, w: str = "facpob07", psu: str = "conglome",
+                    estrato: str = "estrato_diseno") -> dict:
+    """Media ponderada (razón) con EE, IC 95 % y CV por la misma linealización que :func:`proporcion`."""
+    r = proporcion(df, y, w=w, psu=psu, estrato=estrato)
+    return {"valor": r["valor_pct"] / 100, "ee": r["ee_pct"] / 100, "ic95_inf": r["ic95_inf"] / 100,
+            "ic95_sup": r["ic95_sup"] / 100, "cv_pct": r["cv_pct"], "n_muestral": r["n_muestral"],
+            "poblacion_expandida": r["poblacion_expandida"]}
+
+
 def por_grupo(df: pd.DataFrame, y: str, grupo: str, **kw) -> pd.DataFrame:
     """Aplica :func:`proporcion` a cada categoría de ``grupo``."""
     filas = [{"categoria": k, **proporcion(g, y, **kw)} for k, g in df.groupby(grupo, observed=True)]

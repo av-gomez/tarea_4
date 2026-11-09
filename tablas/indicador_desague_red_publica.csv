@@ -1,0 +1,5 @@
+anio,indicador,desagregacion,categoria,valor,ee,ic95_inf,ic95_sup,cv_pct,n_muestral,poblacion_expandida,medida,modulo,variable,condicion,universo,ponderador,archivo_fuente,excluidos_sin_dato,codigos_no_validos,confiable_cv15
+2019,desague_red_publica,pobre,0,79.5658,0.4912,78.6031,80.5285,0.6173,94232,25930352.0,porcentaje,01,p111a,"in 1,2",,facpob07,687-Modulo01/enaho01-2019-100.dta,0,0,True
+2019,desague_red_publica,pobre,1,48.8898,1.1426,46.6504,51.1292,2.3371,25820,6550278.0,porcentaje,01,p111a,"in 1,2",,facpob07,687-Modulo01/enaho01-2019-100.dta,0,0,True
+2025,desague_red_publica,pobre,0,76.0168,0.5619,74.9154,77.1181,0.7392,81591,25642203.64516592,porcentaje,01,p111a,"in 1,2",,facpob07,1031-Modulo01/enaho01-2025-100.dta,0,0,True
+2025,desague_red_publica,pobre,1,59.4573,1.1154,57.2711,61.6434,1.876,24544,8837868.172268867,porcentaje,01,p111a,"in 1,2",,facpob07,1031-Modulo01/enaho01-2025-100.dta,0,0,True

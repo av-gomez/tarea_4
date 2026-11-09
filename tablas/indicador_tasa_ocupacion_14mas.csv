@@ -1,0 +1,5 @@
+anio,indicador,desagregacion,categoria,valor,ee,ic95_inf,ic95_sup,cv_pct,n_muestral,poblacion_expandida,medida,modulo,variable,condicion,universo,ponderador,archivo_fuente,excluidos_sin_dato,codigos_no_validos,confiable_cv15
+2019,tasa_ocupacion_14mas,pobre,0,69.1926,0.2407,68.7207,69.6644,0.3479,73899,20608224.0,porcentaje,05,ocu500,==1,edad >= 14,facpob07,687-Modulo05/enaho01a-2019-500.dta,0,0,True
+2019,tasa_ocupacion_14mas,pobre,1,67.8403,0.5246,66.8121,68.8686,0.7733,16778,4351031.0,porcentaje,05,ocu500,==1,edad >= 14,facpob07,687-Modulo05/enaho01a-2019-500.dta,0,0,True
+2025,tasa_ocupacion_14mas,pobre,0,66.9888,0.2704,66.4589,67.5188,0.4037,66313,21163163.959310412,porcentaje,05,ocu500,==1,edad >= 14,facpob07,1031-Modulo05/enaho01a-2025-500.dta,0,0,True
+2025,tasa_ocupacion_14mas,pobre,1,59.9317,0.5396,58.8741,60.9893,0.9004,17032,6371604.100376368,porcentaje,05,ocu500,==1,edad >= 14,facpob07,1031-Modulo05/enaho01a-2025-500.dta,0,0,True

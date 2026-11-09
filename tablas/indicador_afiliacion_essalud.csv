@@ -1,0 +1,5 @@
+anio,indicador,desagregacion,categoria,valor,ee,ic95_inf,ic95_sup,cv_pct,n_muestral,poblacion_expandida,medida,modulo,variable,condicion,universo,ponderador,archivo_fuente,excluidos_sin_dato,codigos_no_validos,confiable_cv15
+2019,afiliacion_essalud,pobre,0,31.7917,0.391,31.0255,32.558,1.2298,94185,25917244.0,porcentaje,04,p4191,==1,,facpob07,687-Modulo04/enaho01a-2019-400.dta,56,0,True
+2019,afiliacion_essalud,pobre,1,7.1565,0.4889,6.1984,8.1147,6.8312,25811,6546814.0,porcentaje,04,p4191,==1,,facpob07,687-Modulo04/enaho01a-2019-400.dta,56,0,True
+2025,afiliacion_essalud,pobre,0,29.3825,0.4156,28.568,30.197,1.4143,81539,25621408.987332106,porcentaje,04,p4191,==1,,facpob07,1031-Modulo04/enaho01a-2025-400.dta,90,0,True
+2025,afiliacion_essalud,pobre,1,11.5524,0.5422,10.4897,12.615,4.6933,24506,8819449.385159492,porcentaje,04,p4191,==1,,facpob07,1031-Modulo04/enaho01a-2025-400.dta,90,0,True

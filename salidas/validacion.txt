@@ -1,8 +1,8 @@
 VALIDACION ENAHO 2024
 ==============================================================================
-Generado: 2026-11-08 21:45  |  script: .claude/skills/limpiando-enaho/scripts/limpiar.py
+Generado: 2026-11-08 22:42  |  script: .claude/skills/limpiando-enaho/scripts/limpiar.py
 Fuentes: 966-Modulo34/sumaria-2024.dta (modulo 34) y 966-Modulo02/enaho01-2024-200.dta (modulo 02)
-Unidad de analisis: personas residentes habituales; ponderador facpob07.
+Indicadores territoriales: sumaria con factor07 x mieperho (INEI); individuales: personas con facpob07.
 Error estandar: linealizacion de Taylor (UPM = conglome, estratos = departamento x estrato).
 
 [APROBADA] Llaves como texto con longitud fija (conglome 6, vivienda 3, hogar 2)
@@ -23,12 +23,12 @@ Error estandar: linealizacion de Taylor (UPM = conglome, estratos = departamento
            25 códigos: 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
 [APROBADA] Sin factores de expansión faltantes o no positivos
            facpob07 faltantes: 0
-[APROBADA] Población expandida plausible (33-35 millones) (complementaria)
+[APROBADA] Población expandida plausible (31-36 millones) (complementaria)
            34,147,768 personas
 [APROBADA] Pobreza monetaria nacional (sumaria, factor07 x mieperho; metodo INEI) a <= 0.1 p.p. de 27.6 %
            27.58 % (IC 95 %: 26.59-28.57; CV 1.8 %)
-[APROBADA] Pobreza monetaria nacional (personas residentes, facpob07) a <= 0.1 p.p. de 27.6 %
-           27.53 % (IC 95 %: 26.54-28.52)
+[APROBADA] Pobreza monetaria nacional (personas residentes, facpob07) cercana a 27.6 %
+           27.53 % (IC 95 %: 26.54-28.52); estimador alternativo
 [APROBADA] La ponderacion importa: el promedio simple difiere del ponderado (complementaria)
            promedio simple 25.61 % vs ponderado 27.53 % (el simple NO se usa)
 [APROBADA] Pobreza extrema cercana a 5.5 % (complementaria)

@@ -1,22 +1,39 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>Inflación, actividad económica y brechas territoriales de la pobreza en el Perú, 2019-2024</title>
 <style>
-body { font-family: 'Times New Roman', Times, serif; font-size: 12pt; line-height: 1.6; color: #111;
-       background: #fff; max-width: 980px; margin: 0 auto; padding: 24px 16px; }
-h1 { font-size: 16pt; text-align: center; font-weight: bold; }
-h2 { font-size: 13pt; font-weight: bold; text-align: center; margin-top: 2em; }
-h3 { font-size: 12pt; font-weight: bold; text-align: left; }
-table.apa { border-collapse: collapse; margin: 0.5em 0 0.3em; width: 100%; font-size: 11pt; }
-table.apa thead th { border-top: 1.5px solid #000; border-bottom: 1px solid #000; padding: 4px 8px;
-       text-align: center; font-weight: normal; }
-table.apa td { padding: 3px 8px; text-align: right; }
-table.apa td:first-child, table.apa th:first-child { text-align: left; }
-table.apa tbody tr:last-child td { border-bottom: 1.5px solid #000; }
-.apa-num { font-weight: bold; margin: 1.4em 0 0; }
-.apa-tit { font-style: italic; margin: 0 0 0.4em; }
-.apa-nota { font-size: 10.5pt; margin-top: 0.2em; }
-figure { margin: 1.5em 0; } figure img { max-width: 100%; height: auto; }
-.referencias p { padding-left: 2em; text-indent: -2em; margin: 0.3em 0; }
+:root { --surface:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink2:#52514e; --ink3:#898781;
+        --grid:#e1e0d9; --axis:#c3c2b7; --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --surface:#1a1a19; --page:#0d0d0d;
+        --ink:#f0efec; --ink2:#c3c2b7; --ink3:#898781; --grid:#2c2c2a; --axis:#383835; }
+  :root:not([data-theme="light"]) figure img { background:#fcfcfb; border-radius:8px; } }
+:root[data-theme="dark"] { --surface:#1a1a19; --page:#0d0d0d; --ink:#f0efec; --ink2:#c3c2b7; --ink3:#898781;
+        --grid:#2c2c2a; --axis:#383835; }
+* { box-sizing: border-box; }
+body { font-family:system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size:16px; line-height:1.6; color:var(--ink); background:var(--page);
+       max-width:1040px; margin:0 auto; padding:32px 16px 64px; }
+h1 { font-size:2rem; line-height:1.2; letter-spacing:-0.01em; margin:0.2em 0 0.3em; }
+h2 { font-size:1.35rem; margin-top:2.2em; padding-top:0.6em; border-top:1px solid var(--grid); }
+h3 { font-size:1.08rem; margin-top:1.6em; }
+p, li { color:var(--ink); } a { color:var(--s1); }
+.lead { font-size:1.12rem; color:var(--ink2); }
+table.apa { border-collapse:collapse; margin:0.5em 0 0.3em; width:100%; font-size:0.92rem;
+            font-variant-numeric:tabular-nums; }
+table.apa thead th { border-top:1.5px solid var(--ink); border-bottom:1px solid var(--ink); padding:6px 10px;
+            text-align:right; font-weight:600; color:var(--ink2); }
+table.apa td { padding:5px 10px; text-align:right; border-bottom:1px solid var(--grid); }
+table.apa td:first-child, table.apa th:first-child { text-align:left; }
+table.apa tbody tr:last-child td { border-bottom:1.5px solid var(--ink); }
+.tabla-scroll { overflow-x:auto; }
+.apa-num { font-weight:700; margin:1.6em 0 0; }
+.apa-tit { font-style:italic; margin:0 0 0.5em; }
+.apa-nota { font-size:0.86rem; color:var(--ink2); margin-top:0.3em; }
+figure { margin:1.6em 0; } img { max-width:100%; height:auto; border-radius:6px; }
+code { font-size:0.88em; background:color-mix(in srgb, var(--ink) 6%, transparent); padding:1px 5px;
+        border-radius:4px; }
+pre { background:color-mix(in srgb, var(--ink) 5%, transparent); padding:12px; border-radius:8px; overflow-x:auto; }
+blockquote { margin:1em 0; padding:0.6em 1em; border-left:3px solid var(--s1);
+             background:color-mix(in srgb, var(--s1) 6%, transparent); border-radius:0 8px 8px 0; }
+.referencias p { padding-left:2em; text-indent:-2em; margin:0.4em 0; }
 
 code { font-size: 10.5pt; background: #f4f4f4; padding: 0 3px; }
 pre { background: #f4f4f4; padding: 8px; overflow-x: auto; }
@@ -63,5 +80,5 @@ uv run .claude/skills/informando-investigacion/scripts/publicar.py
 <p>Banco Central de Reserva del Perú. (2026). <em>BCRPData: Series estadísticas</em> [Base de datos]. https://estadisticas.bcrp.gob.pe/estadisticas/series/</p>
 <p>D2CML. (2024). <em>Límites departamentales del Perú</em> [Archivo GeoJSON]. GitHub. https://github.com/d2cml-ai/Data-Science-Python</p>
 <p>Instituto Nacional de Estadística e Informática. (2025). <em>Encuesta Nacional de Hogares sobre Condiciones de Vida y Pobreza 2024</em> [Base de datos: módulos 02 y 34]. https://proyectos.inei.gob.pe/microdatos/</p>
-<hr><p class="apa-nota">Documento generado el 2026-11-08 21:48 desde informe_final.md con
+<hr><p class="apa-nota">Documento generado el 2026-11-08 22:54 desde informe_final.md con
 publicar.py.</p></body></html>

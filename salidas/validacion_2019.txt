@@ -1,0 +1,40 @@
+VALIDACION ENAHO 2019
+==============================================================================
+Generado: 2026-11-08 22:42  |  script: .claude/skills/limpiando-enaho/scripts/limpiar.py
+Fuentes: 687-Modulo34/sumaria-2019.dta (modulo 34) y 687-Modulo02/enaho01-2019-200.dta (modulo 02)
+Indicadores territoriales: sumaria con factor07 x mieperho (INEI); individuales: personas con facpob07.
+Error estandar: linealizacion de Taylor (UPM = conglome, estratos = departamento x estrato).
+
+[APROBADA] Llaves como texto con longitud fija (conglome 6, vivienda 3, hogar 2)
+           conglome ej. '005009', ubigeo ej. '010101'
+[APROBADA] Hogares en la sumaria (sin conteo de referencia para este año) (complementaria)
+           34,565
+[APROBADA] Llaves de hogar únicas en la sumaria
+           0 duplicados
+[APROBADA] Llaves de persona únicas en el módulo 02
+           0 duplicados
+[APROBADA] Residentes habituales (sin conteo de referencia para este año) (complementaria)
+           120,052
+[APROBADA] Unión m:1 sin duplicar ni perder personas
+           120,052 personas antes y 120,052 después; 0 sin hogar en la sumaria
+[APROBADA] 25 códigos departamentales (01-25), Lima 15 y Callao 07 separados
+           25 códigos: 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+[APROBADA] Sin factores de expansión faltantes o no positivos
+           facpob07 faltantes: 0
+[APROBADA] Población expandida plausible (31-36 millones) (complementaria)
+           32,480,632 personas
+[APROBADA] Pobreza monetaria nacional (sumaria, factor07 x mieperho; metodo INEI) a <= 0.1 p.p. de 20.2 %
+           20.19 % (IC 95 %: 19.35-21.04; CV 2.1 %)
+[APROBADA] Pobreza monetaria nacional (personas residentes, facpob07) cercana a 20.2 % (complementaria)
+           20.17 % (IC 95 %: 19.32-21.01); estimador alternativo
+[APROBADA] La ponderacion importa: el promedio simple difiere del ponderado (complementaria)
+           promedio simple 21.51 % vs ponderado 20.17 % (el simple NO se usa)
+[APROBADA] Pobreza extrema cercana a 2.9 % (complementaria)
+           2.85 %
+[APROBADA] Pobreza urbana cercana a 14.6 %
+           14.58 %
+[APROBADA] Pobreza rural cercana a 40.8 %
+           40.78 %
+
+Resumen: 15 de 15 verificaciones aprobadas.
+RESULTADO: TODAS LAS VALIDACIONES ESENCIALES APROBADAS

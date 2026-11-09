@@ -1,0 +1,5 @@
+anio,indicador,desagregacion,categoria,valor,ee,ic95_inf,ic95_sup,cv_pct,n_muestral,poblacion_expandida,medida,modulo,variable,condicion,universo,ponderador,archivo_fuente,excluidos_sin_dato,codigos_no_validos,confiable_cv15
+2019,agua_red_publica,pobre,0,90.4559,0.4263,89.6204,91.2913,0.4712,94232,25930352.0,porcentaje,01,p110,"in 1,2",,facpob07,687-Modulo01/enaho01-2019-100.dta,0,0,True
+2019,agua_red_publica,pobre,1,78.5832,1.0815,76.4636,80.7029,1.3762,25820,6550278.0,porcentaje,01,p110,"in 1,2",,facpob07,687-Modulo01/enaho01-2019-100.dta,0,0,True
+2025,agua_red_publica,pobre,0,88.2756,0.4867,87.3216,89.2296,0.5514,81591,25642203.64516592,porcentaje,01,p110,"in 1,2",,facpob07,1031-Modulo01/enaho01-2025-100.dta,0,0,True
+2025,agua_red_publica,pobre,1,79.1148,1.0064,77.1422,81.0874,1.2721,24544,8837868.172268867,porcentaje,01,p110,"in 1,2",,facpob07,1031-Modulo01/enaho01-2025-100.dta,0,0,True
