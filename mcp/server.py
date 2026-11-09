@@ -335,7 +335,7 @@ def graficar_serie(codigos: list[str], desde: str, hasta: str, titulo: str, nume
         raise ToolError("Indiquen al menos un código de serie.")
     apa.aplicar_estilo()
     fig, ax = plt.subplots(figsize=(8, 5.2))
-    fuentes, nombres = [], []
+    fuentes, nombres, tablas = [], [], []
     estilos = ["-", "--", ":", "-."]
     tipos = set()
     for i, c in enumerate(codigos[:4]):
@@ -348,6 +348,7 @@ def graficar_serie(codigos: list[str], desde: str, hasta: str, titulo: str, nume
                 label=f"{etiqueta} ({ficha['codigo']})")
         fuentes.append(url)
         nombres.append(ficha["codigo"])
+        tablas.append(df.assign(codigo=ficha["codigo"], nombre=ficha["nombre"], fuente=url))
     if len(tipos) > 1:
         plt.close(fig)
         raise ToolError("Las series tienen frecuencias distintas; grafíquenlas por separado.")
@@ -364,7 +365,11 @@ def graficar_serie(codigos: list[str], desde: str, hasta: str, titulo: str, nume
                   f"Fuente: {apa.FUENTE_BCRP}.", abajo=0.17)
     nombre = archivo or f"bcrp_{'_'.join(nombres)}_{desde}_{hasta}.png"
     ruta = apa.guardar(fig, FIGURAS / Path(nombre).name)
-    return {"archivo": str(ruta.relative_to(RAIZ)).replace("\\", "/"), "codigos": nombres, "desde": desde,
+    csv = RAIZ / "tablas" / (Path(nombre).stem + ".csv")
+    csv.parent.mkdir(exist_ok=True)
+    pd.concat(tablas)[["codigo", "periodo", "valor", "nombre", "fuente"]].to_csv(csv, index=False, encoding="utf-8")
+    return {"archivo": str(ruta.relative_to(RAIZ)).replace("\\", "/"),
+            "datos": str(csv.relative_to(RAIZ)).replace("\\", "/"), "codigos": nombres, "desde": desde,
             "hasta": hasta, "fuentes": fuentes}
 
 

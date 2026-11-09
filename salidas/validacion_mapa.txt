@@ -1,0 +1,30 @@
+VALIDACION DEL MAPA (pobreza_monetaria)
+============================================================
+Union: ubigeo[:2] (indicadores.csv) = FIRST_IDDP (GeoJSON); unidades unidas: 25/25
+Coinciden con referencias/pobreza_departamento_2024.csv (|dif| <= 0.1 p.p.): 25/25
+  01 AMAZONAS        calculado  25.7  referencia  25.7  dif +0.0
+  02 ANCASH          calculado  22.8  referencia  22.8  dif +0.0
+  03 APURIMAC        calculado  24.0  referencia  24.0  dif +0.0
+  04 AREQUIPA        calculado  15.8  referencia  15.8  dif +0.0
+  05 AYACUCHO        calculado  32.8  referencia  32.8  dif +0.0
+  06 CAJAMARCA       calculado  45.0  referencia  45.0  dif +0.0
+  07 CALLAO          calculado  33.9  referencia  33.9  dif +0.0
+  08 CUSCO           calculado  18.5  referencia  18.5  dif +0.0
+  09 HUANCAVELICA    calculado  33.4  referencia  33.4  dif +0.0
+  10 HUANUCO         calculado  39.0  referencia  39.0  dif +0.0
+  11 ICA             calculado   6.0  referencia   6.0  dif +0.0
+  12 JUNIN           calculado  18.5  referencia  18.5  dif +0.0
+  13 LA LIBERTAD     calculado  30.2  referencia  30.2  dif +0.0
+  14 LAMBAYEQUE      calculado  14.0  referencia  14.0  dif +0.0
+  15 LIMA            calculado  27.1  referencia  27.1  dif +0.0
+  16 LORETO          calculado  43.0  referencia  43.0  dif +0.0
+  17 MADRE DE DIOS   calculado  11.1  referencia  11.1  dif +0.0
+  18 MOQUEGUA        calculado  11.0  referencia  11.0  dif +0.0
+  19 PASCO           calculado  39.0  referencia  39.0  dif +0.0
+  20 PIURA           calculado  31.9  referencia  31.9  dif +0.0
+  21 PUNO            calculado  39.9  referencia  39.9  dif +0.0
+  22 SAN MARTIN      calculado  22.0  referencia  22.0  dif +0.0
+  23 TACNA           calculado  24.0  referencia  24.0  dif +0.0
+  24 TUMBES          calculado  26.9  referencia  26.9  dif +0.0
+  25 UCAYALI         calculado  27.1  referencia  27.1  dif +0.0
+RESULTADO: APROBADA

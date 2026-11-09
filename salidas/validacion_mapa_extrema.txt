@@ -1,0 +1,3 @@
+VALIDACION DEL MAPA (pobreza_extrema)
+============================================================
+Union: ubigeo[:2] (indicadores.csv) = FIRST_IDDP (GeoJSON); unidades unidas: 25/25

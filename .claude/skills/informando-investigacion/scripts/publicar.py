@@ -1,0 +1,192 @@
+"""Publica el informe en HTML (APA 7, Times New Roman) y construye el tablero interactivo de resultados.
+
+    uv run .claude/skills/informando-investigacion/scripts/publicar.py
+    uv run .claude/skills/informando-investigacion/scripts/publicar.py --informe informes/informe_final.md
+
+Salidas:
+  informes/informe_final.html  el informe Markdown convertido a HTML con estilo APA 7 (figuras incrustadas,
+                               tablas con reglas horizontales, referencias con sangría francesa).
+  informes/dashboard.html      tablero Plotly: indicadores clave, mapa interactivo, pobreza por grupos con IC 95 %,
+                               series del BCRP guardadas en tablas/bcrp_*.csv y tabla de validación.
+Ambos archivos son autónomos (las imágenes se incrustan en base64) para revisarlos sin el repositorio.
+"""
+from __future__ import annotations
+
+import argparse
+import base64
+import json
+import re
+import sys
+from datetime import datetime
+from pathlib import Path
+
+import markdown
+import pandas as pd
+
+RAIZ = next(d for d in Path(__file__).resolve().parents if (d / "pyproject.toml").exists())
+sys.path.insert(0, str(RAIZ))
+from comun import apa  # noqa: E402
+
+FUENTE_CSS = "font-family: 'Times New Roman', Times, serif;"
+
+
+def _incrustar(html: str, base: Path) -> str:
+    def rep(m):
+        src = m.group(1)
+        p = (base / src).resolve()
+        if p.exists() and p.suffix.lower() in (".png", ".jpg", ".jpeg"):
+            b64 = base64.b64encode(p.read_bytes()).decode()
+            return f'src="data:image/png;base64,{b64}"'
+        return m.group(0)
+    return re.sub(r'src="([^"]+)"', rep, html)
+
+
+def informe_html(md_path: Path) -> Path:
+    texto = md_path.read_text(encoding="utf-8")
+    cuerpo = markdown.markdown(texto, extensions=["tables", "fenced_code", "attr_list", "sane_lists"])
+    cuerpo = cuerpo.replace("<table>", '<table class="apa">')
+    cuerpo = _incrustar(cuerpo, md_path.parent)
+    titulo = re.search(r"^#\s+(.+)$", texto, re.M)
+    titulo = titulo.group(1) if titulo else "Informe"
+    html = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>{titulo}</title>
+<style>{apa.CSS_APA}
+code {{ font-size: 10.5pt; background: #f4f4f4; padding: 0 3px; }}
+pre {{ background: #f4f4f4; padding: 8px; overflow-x: auto; }}
+blockquote {{ margin-left: 2em; }}
+</style></head><body>{cuerpo}
+<hr><p class="apa-nota">Documento generado el {datetime.now():%Y-%m-%d %H:%M} desde {md_path.name} con
+publicar.py.</p></body></html>"""
+    salida = md_path.with_suffix(".html")
+    salida.write_text(html, encoding="utf-8")
+    return salida
+
+
+def dashboard() -> Path:
+    import plotly.graph_objects as go
+    from plotly.subplots import make_subplots  # noqa: F401
+
+    ind = pd.read_csv(RAIZ / "salidas" / "indicadores.csv", dtype={"codigo": str})
+    pm = ind[ind.indicador == "pobreza_monetaria"]
+    nac = pm[pm.desagregacion == "nacional"].iloc[0]
+    area = pm[pm.desagregacion == "area"].set_index("categoria")
+    ext = ind[(ind.indicador == "pobreza_extrema") & (ind.desagregacion == "nacional")].iloc[0]
+    fuente_layout = {"family": "Times New Roman, Times, serif", "size": 14, "color": "#111"}
+    figs = []
+
+    geo = json.loads((RAIZ / "datos" / "peru_departamental_simple.geojson").read_text(encoding="utf-8"))
+    dep = pm[pm.desagregacion == "departamento"].copy()
+    m = go.Figure(go.Choropleth(geojson=geo, featureidkey="properties.FIRST_IDDP", locations=dep.codigo,
+                                z=dep.valor_pct, zmin=0, zmax=50, colorscale="Blues", marker_line_color="#404040",
+                                text=dep.categoria, colorbar={"title": "% de personas"},
+                                customdata=dep[["ic95_inf", "ic95_sup", "cv_pct"]].values,
+                                hovertemplate="<b>%{text}</b><br>Pobreza: %{z:.1f} %<br>IC 95 %: "
+                                              "%{customdata[0]:.1f}–%{customdata[1]:.1f}<br>CV: "
+                                              "%{customdata[2]:.1f} %<extra></extra>"))
+    m.update_geos(fitbounds="locations", visible=False)
+    m.update_layout(title="Pobreza monetaria por departamento, 2024 (% de personas)", font=fuente_layout,
+                    height=620, margin={"l": 0, "r": 0, "t": 50, "b": 0})
+    figs.append(("mapa", m))
+
+    d = dep.sort_values("valor_pct")
+    b = go.Figure(go.Bar(x=d.valor_pct, y=d.categoria, orientation="h", marker_color=apa.AZUL,
+                         error_x={"type": "data", "symmetric": False, "array": d.ic95_sup - d.valor_pct,
+                                  "arrayminus": d.valor_pct - d.ic95_inf, "color": "#404040"},
+                         hovertemplate="%{y}: %{x:.1f} %<extra></extra>"))
+    b.add_vline(x=nac.valor_pct, line_dash="dash", line_color=apa.GRIS,
+                annotation_text=f"Perú {nac.valor_pct:.1f} %")
+    b.update_layout(title="Ranking departamental con IC 95 %", font=fuente_layout, height=700,
+                    xaxis_title="% de personas en pobreza", plot_bgcolor="white", margin={"l": 120})
+    figs.append(("ranking", b))
+
+    grupos = []
+    for desag, etiqueta in [("area", "Área"), ("region_natural", "Región natural"), ("sexo", "Sexo"),
+                            ("grupo_edad", "Edad"), ("sexo_jefe", "Jefatura del hogar")]:
+        g = pm[pm.desagregacion == desag]
+        grupos.append(go.Bar(name=etiqueta, x=[f"{etiqueta}: {c}" for c in g.categoria], y=g.valor_pct,
+                             error_y={"type": "data", "symmetric": False, "array": g.ic95_sup - g.valor_pct,
+                                      "arrayminus": g.valor_pct - g.ic95_inf}))
+    gfig = go.Figure(grupos)
+    gfig.update_layout(title="Pobreza monetaria por grupos de población, 2024", font=fuente_layout, height=480,
+                       yaxis_title="% de personas", plot_bgcolor="white", showlegend=False,
+                       colorway=apa.PALETA)
+    figs.append(("grupos", gfig))
+
+    for csv in sorted((RAIZ / "tablas").glob("bcrp_*.csv")):
+        t = pd.read_csv(csv, dtype={"periodo": str})
+        f = go.Figure()
+        for (cod, nom), s in t.groupby(["codigo", "nombre"], sort=False):
+            x = pd.to_datetime(s.periodo + ("-01" if len(s.periodo.iloc[0]) == 7 else ""), errors="coerce")
+            f.add_trace(go.Scatter(x=x, y=s.valor, mode="lines", name=f"{nom} ({cod})"))
+        f.update_layout(title=f"BCRP: {', '.join(t.codigo.unique())}", font=fuente_layout, height=420,
+                        plot_bgcolor="white", legend={"orientation": "h", "y": -0.2}, colorway=apa.PALETA)
+        figs.append((csv.stem, f))
+
+    val = (RAIZ / "salidas" / "validacion.txt").read_text(encoding="utf-8")
+    tarjetas = [("Pobreza monetaria nacional", f"{nac.valor_pct:.1f} %",
+                 f"IC 95 %: {nac.ic95_inf:.1f}–{nac.ic95_sup:.1f}"),
+                ("Pobreza urbana", f"{area.loc['Urbana'].valor_pct:.1f} %", "estrato 1–5"),
+                ("Pobreza rural", f"{area.loc['Rural'].valor_pct:.1f} %", "estrato 6–8"),
+                ("Pobreza extrema", f"{ext.valor_pct:.1f} %", f"IC 95 %: {ext.ic95_inf:.1f}–{ext.ic95_sup:.1f}"),
+                ("Departamentos", "25 / 25", "unión por ubigeo y FIRST_IDDP")]
+    html_t = "".join(f'<div class="kpi"><div class="k">{a}</div><div class="v">{b}</div><div class="s">{c}</div>'
+                     f'</div>' for a, b, c in tarjetas)
+    graficos = "".join(f'<section class="panel">{f.to_html(full_html=False, include_plotlyjs=False)}</section>'
+                       for _, f in figs)
+    tabla_dep = apa.tabla_html(dep.sort_values("valor_pct", ascending=False)[
+        ["categoria", "valor_pct", "ic95_inf", "ic95_sup", "cv_pct", "n_muestral"]].rename(columns={
+            "categoria": "Departamento", "valor_pct": "Pobreza (%)", "ic95_inf": "IC 95 % inf.",
+            "ic95_sup": "IC 95 % sup.", "cv_pct": "CV (%)", "n_muestral": "Hogares en muestra"}),
+        1, "Pobreza monetaria por departamento, Perú 2024",
+        "Estimaciones ponderadas con factor07 × mieperho; IC por linealización de Taylor. Fuente: "
+        + apa.FUENTE_ENAHO + ".")
+    html = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Tablero socioeconómico del Perú</title>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+<style>{apa.CSS_APA}
+body {{ max-width: 1200px; }}
+.kpis {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 1em 0; }}
+.kpi {{ border-top: 2px solid #1f4e79; padding: 8px 4px; }}
+.kpi .k {{ font-size: 11pt; color: #404040; }} .kpi .v {{ font-size: 24pt; font-weight: bold; color: #1f4e79; }}
+.kpi .s {{ font-size: 10pt; color: #595959; }}
+.panel {{ margin: 1.5em 0; border-bottom: 1px solid #ddd; }}
+pre {{ font-size: 10pt; background: #f7f7f7; padding: 10px; overflow-x: auto; }}
+</style></head><body>
+<h1>Tablero socioeconómico del Perú: pobreza monetaria (ENAHO 2024) y entorno macroeconómico (BCRP)</h1>
+<p style="text-align:center">Generado el {datetime.now():%Y-%m-%d %H:%M} con
+<code>.claude/skills/informando-investigacion/scripts/publicar.py</code>. Todas las cifras provienen de
+<code>salidas/indicadores.csv</code> y de las tablas <code>tablas/bcrp_*.csv</code>.</p>
+<div class="kpis">{html_t}</div>
+{graficos}
+<section class="panel">{tabla_dep}</section>
+<h2>Validación del procesamiento</h2><pre>{val}</pre>
+<h2>Referencias</h2><div class="referencias">{''.join(f'<p>{markdown.markdown(r)[3:-4]}</p>'
+                                                      for r in apa.REFERENCIAS_APA.values())}</div>
+</body></html>"""
+    salida = RAIZ / "informes" / "dashboard.html"
+    salida.parent.mkdir(exist_ok=True)
+    salida.write_text(html, encoding="utf-8")
+    return salida
+
+
+def main():
+    for st in (sys.stdout, sys.stderr):
+        try:
+            st.reconfigure(encoding="utf-8")
+        except AttributeError:
+            pass
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--informe", default=str(RAIZ / "informes" / "informe_final.md"))
+    ap.add_argument("--sin-dashboard", action="store_true")
+    a = ap.parse_args()
+    md = Path(a.informe)
+    if md.exists():
+        print(f"Informe HTML: {informe_html(md).relative_to(RAIZ)}")
+    else:
+        print(f"Aviso: no existe {md}; solo se construye el tablero.")
+    if not a.sin_dashboard:
+        print(f"Tablero: {dashboard().relative_to(RAIZ)}")
+
+
+if __name__ == "__main__":
+    main()
