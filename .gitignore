@@ -1,0 +1,17 @@
+# Microdatos originales y cachés (se descargan; ver README)
+datos/
+*.dta
+*.zip
+salidas/*.parquet
+salidas/cache_bcrp/
+
+# Entorno
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Credenciales
+.env
+*.key
+.claude/settings.local.json

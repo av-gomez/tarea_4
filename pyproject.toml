@@ -1,0 +1,21 @@
+[project]
+name = "agente-socioeconomico-peru"
+version = "1.0.0"
+description = "Agente de investigacion socioeconomica: servidor MCP del BCRP y Skills de Claude Code para la ENAHO 2024 del INEI"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "fastmcp>=4,<5",
+    "httpx",
+    "pandas",
+    "pyarrow",
+    "geopandas",
+    "matplotlib",
+    "plotly",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["mcp", "tests"]
+pythonpath = ["mcp"]
