@@ -313,7 +313,7 @@ Productos:
 - Informe: [`informes/informe_final.md`](informes/informe_final.md) y `informes/informe_final.html`
 - Tablero interactivo: `informes/dashboard.html` (abrir en el navegador)
 - Verificación automática de cifras: [`informes/verificacion.md`](informes/verificacion.md)
-- Verificación manual de cinco afirmaciones y manejo de errores: [`informes/verificacion_manual.md`](informes/verificacion_manual.md)
+- Verificación manual de siete afirmaciones del informe 2019-2025 y manejo de errores: [`informes/verificacion_manual.md`](informes/verificacion_manual.md)
 - Plan: [`informes/plan.md`](informes/plan.md)
 
 ## 12. Evidencias del uso de inteligencia artificial
